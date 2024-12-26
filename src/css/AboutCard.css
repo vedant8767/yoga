@@ -1,0 +1,11 @@
+.aboutcard{
+    background-color: #CC7722;
+    color: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 400px;
+}
+.aboutcard p{
+    font-size: 2.5vh;
+    font-weight: 800;
+}
