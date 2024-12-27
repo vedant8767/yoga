@@ -50,6 +50,9 @@
     font-size:3vh ;
     cursor: pointer;
     color: white;
+    font-family: "Iowan Old Style", serif;
+    font-weight: bold;
+    font-size: 3.5vh;
 }
 .nav_items ul button:hover{
     color: black;
