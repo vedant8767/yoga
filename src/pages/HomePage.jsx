@@ -7,6 +7,7 @@ import TrainnerPage from './TrainnerPage'
 import Footer from '../components/Footer'
 import Testimonial from '../components/Testimonial'
 
+
 function HomePage() {
   return (
     <div>
