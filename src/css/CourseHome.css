@@ -23,7 +23,7 @@
     height: 80%;
     object-fit: cover;
     border-radius: 150px;
-    border: 2px solid #CC7722;
+    border: 2px solid #FF8E28;
 }
 .coursesbt{
     display: flex;
@@ -35,7 +35,7 @@
     font-weight: bold;
     width: 184px;
     height: 59px;
-    background-color: #CC7722;
+    background-color: #FF8E28;
     border-radius: 10px;
     color: white;
     font-size: 3vh;

@@ -3,7 +3,7 @@ import '../css/CoursesCard.css'
 
 function CoursesCard({img,title,description,details}) {
   return (
-    <div className='coursecard'>
+    <div className='coursecard' data-aos="fade-up">
         <div className="card_img">
             <img src={img} alt="" srcset="" />
         </div>

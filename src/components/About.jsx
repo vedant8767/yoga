@@ -11,7 +11,7 @@ function About() {
   return (
     <div className='about'>
         <div className="section1">
-            <div className="section1img">
+            <div className="section1img" data-aos="fade-up">
             <img src={img1} alt="" srcset="" />
             </div>
             <div className='section1_content'>
@@ -35,7 +35,7 @@ function About() {
                         yoga experiences to meet the needs 
                     of all students, from beginners to advanced practitioners. </p>
             </div>
-            <div className="section2_img">
+            <div className="section2_img" data-aos="fade-down">
                 <div className="imgsection1">
                     <img src={img2} alt="" />
                 </div>
@@ -50,7 +50,7 @@ function About() {
             </div>
         </div>
         <div className="section1">
-            <div className="section1img">
+            <div className="section1img" data-aos="fade-up">
             <img src={classes} alt="" srcset="" />
             </div>
             <div className='section1_content'>
@@ -78,15 +78,15 @@ function About() {
             </p>
         </div>
         <div className="section5">
-            <div className="section5part1">
+            <div className="section5part1" data-aos="flip-up">
             {content.map((item)=>(
                 <AboutCard content={item}/>
             ))}
             </div>
             <div className="section5part2">
-            <img src={img2} alt="" />
+            <img src='https://s3-alpha-sig.figma.com/img/860a/a8fc/048a3dcc207a5bd2556d14f656afba0d?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PibIOYOHveJsE45tQqYE6eS4POIjgZWZv3v-gjXrYGBwL3U4yyf1F1nCKAN5XtWf6DfRzIp8D8hVK3~nsetq1mXOy6YkGE76S8K3mjgfdRAy6r2FhhL51L6utpFNqbwGmtVYcwd7X8p2EuwE3a-H1kQJbXdf-Aa7u-mx0HIDZFmWg285HFBf~hClAsDigMNUzoPudUEqLKQV5tXGl464gb9qvoBFqGBxrm6aVgcrOPzISywHdiMYvyi9hXRlYEFpHQ~f2DIHKVEsMOIfs1podpAYxUyhOyl6CZJ9NiZ0K~~UOtC~EcXjCAc--x6UUcwCfMgvKVnWw1gCf5992f711Q__' alt="" />
             </div>
-            <div className="section5part1">
+            <div className="section5part1" data-aos="flip-down">
             {content.map((item)=>(
                 <AboutCard content={item}/>
             ))}

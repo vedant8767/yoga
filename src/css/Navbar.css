@@ -3,7 +3,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: #CC7722;
+    background: #FF8E28;
+    /* background: #FF8E28; */
     gap: 32px;
     position: fixed;
     z-index: 1000;
@@ -22,8 +23,8 @@
 }
 
 .navbar .nav_logo img{
-    width: 50px;
-    height: 40px;
+    width: 100px;
+    height: 80px;
     object-fit: contain;
 }
 .nav_logo h1{
@@ -42,12 +43,16 @@
     gap: 32px;
 }
 .nav_items ul button{
-    /* background-color: #CC7722; */
+    /* background-color: #FF8E28; */
     border: none;
     outline: none;
     background: transparent;
     font-size:3vh ;
     cursor: pointer;
+    color: white;
+}
+.nav_items ul button:hover{
+    color: black;
 }
 
 .nav_items ul li:last-child button {
@@ -59,4 +64,7 @@
     padding: 10px 25px;
     color: white;
 
+  }
+  .nav_items ul li:last-child button:hover {
+    color: #FF8E28;
   }
