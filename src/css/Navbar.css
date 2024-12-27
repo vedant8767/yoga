@@ -42,10 +42,19 @@
     gap: 32px;
 }
 .nav_items ul button{
+    /* background-color: #CC7722; */
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size:3vh ;
+}
+
+.nav_items ul li:last-child button {
     background-color: black;
     outline: none;
     border: none;
-    border-radius: 12px;
-    padding: 10px 20px;
+    font-size: 2.5vh;
+    border-radius: 20px;
+    padding: 10px 25px;
     color: white;
-}
+  }

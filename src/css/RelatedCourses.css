@@ -1,0 +1,27 @@
+.relatedcourses{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    align-items: center;
+    background-color: #FFF8E7;
+}
+.relatedcoursesheader{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    /* margin-left: 60px; */
+}
+.relatedcoursesheader h1{
+    font-size: 4.5vh;
+}
+.rcline{
+    width: auto;
+    height: 2px;
+    background-color: #CC7722;
+}
+
+.rcallcards{
+    display: flex;
+    gap: 30px;
+}

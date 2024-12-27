@@ -10,13 +10,11 @@ import Testimonial from '../components/Testimonial'
 function HomePage() {
   return (
     <div>
-        <Navbar/>
         <HomePageCaursol/>
         <About/>
         <CoursesPage/>
         <TrainnerPage/>
         <Testimonial/>
-        <Footer/>
     </div>
   )
 }

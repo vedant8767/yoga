@@ -1,0 +1,41 @@
+.relatedcoursescard{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 354px;
+    height: 369px;
+    align-items: center;
+    gap: 30px;
+    background-color: #FFC994;
+}
+.relatedcoursescard img{
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.rcbuttons{
+    display: flex;
+    gap: 20px;
+}
+#rc1{
+    background-color: #CC7722;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    width: 133px;
+    height: 38px;
+    border-radius: 31px;
+}
+#rc2{
+    background-color: #252525;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    width: 133px;
+    height: 38px;
+    border-radius: 31px;
+    
+}

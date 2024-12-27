@@ -1,0 +1,85 @@
+.yogaclasses{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    background: url('https://s3-alpha-sig.figma.com/img/67be/156f/ca9fcea48dde493454cfdceb63e7d892?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XSnm3Iw5~WvJ7jy6oma0RLyZM1ApHST-tvB9ccu2FpuRRk18O7vOngqRwcAbtk~hU~Pvpn-TIEVv7Tr1mvIbQd8TyMa6PCk14e-sDfRGyH1PU~KtOzWHFCcNfmBJhmDf-NGGmlJdXbMmi8v8VWQgqwyGaPdaVfL-PyssDs~bCMOtQBX9yK6gGe2aEm3d936LdDxZwg7WozpWZeMtJUUUQnPCOXPZ0wdP~DStmQw7~lotmt2tT5UlOfu4eVldfVraQ0GkvMEDDDMdqozk84yJATTv9k8-xZcE7LTtk~KYI6LscSIU-mHSR3BfNJRrZVMnaOkI~9UPBknl8vRPwnZnHw__');
+}
+.headeryoga{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.headeryoga h1{
+    color: #243642;
+}
+.line{
+    background-color: #CC7722;
+    width: 570px;
+    height: 3px;
+    border-radius: 5px;
+    margin-left: 10px;
+
+}
+.yogaclasseshome{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.yogaclassesleft{
+    width: 50%;
+}
+.yogaclassesleft p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: 25px;
+    font-size: 2.5vh;
+}
+.yogaclassesright{
+    width: 50%;
+    border:1px solid  #F69F5A ;
+    background-color:#FFDDC0;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.yogaclassesright form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.yogaclassesright form input{
+    width: 90%;
+    height: 50px;
+    border-radius: 14px;
+    color: #8C8C8C;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #C8C8C8;
+    outline: none;
+}
+.yogaclassesright form button{
+    background-color: #CC7722;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.ratings{
+    display: flex;
+    align-items: center;
+}
+.ratings p{
+    font-size: 3vh;
+    font-weight: bold;
+}
