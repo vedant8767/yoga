@@ -1,0 +1,76 @@
+.therapy{
+    width: 100%;
+    background: url('https://s3-alpha-sig.figma.com/img/67be/156f/ca9fcea48dde493454cfdceb63e7d892?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XSnm3Iw5~WvJ7jy6oma0RLyZM1ApHST-tvB9ccu2FpuRRk18O7vOngqRwcAbtk~hU~Pvpn-TIEVv7Tr1mvIbQd8TyMa6PCk14e-sDfRGyH1PU~KtOzWHFCcNfmBJhmDf-NGGmlJdXbMmi8v8VWQgqwyGaPdaVfL-PyssDs~bCMOtQBX9yK6gGe2aEm3d936LdDxZwg7WozpWZeMtJUUUQnPCOXPZ0wdP~DStmQw7~lotmt2tT5UlOfu4eVldfVraQ0GkvMEDDDMdqozk84yJATTv9k8-xZcE7LTtk~KYI6LscSIU-mHSR3BfNJRrZVMnaOkI~9UPBknl8vRPwnZnHw__');
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+.therapyheader{
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5vh;
+    align-self: flex-start;
+    color: #243642;
+    gap: 10px;
+    margin-left: 50px;
+}
+.therapyline{
+    width: auto;
+    height: 2px;
+    background-color: #CC7722;
+}
+.therapycontent{
+    display: flex;
+    width: 90%;
+    gap: 50px;
+}
+.tvleft{
+    width: 50%;
+}
+.tcright{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.tcright img{
+    width: 100%;
+    height: 300px;
+}
+.tvleft table{
+    border: 1px solid black;
+    border-radius: 20px 20px 0px 0px;
+    height: auto;
+    width: 100%;
+}
+
+.tvleft tr th{
+    padding: 20px;
+    border: 1px solid black;
+    background-color: #F7AF71;
+}
+.tvleft tr td{
+    padding: 20px;
+    border: 1px solid black;
+}
+.tcratings{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.tcratings p{
+    font-size: 4vh;
+    font-weight: bold;
+}
+.tcstars{
+    display: flex;
+    gap: 20px;
+}
+.tcstars img{
+    width: 40px;
+    height: 40px;
+}
