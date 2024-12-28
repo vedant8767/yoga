@@ -138,13 +138,13 @@
 
 @keyframes backgroundChange {
   0%, 13.67% {
-    background-image: url('../assets/silde1.png'); /* First Image */
+    background-image: url('https://images.pexels.com/photos/37351/silhouette-aerialist-female-woman.jpg?auto=compress&cs=tinysrgb&w=600'); /* First Image */
   }
   16.67%, 47% {
     background-image: url('../assets/slider2.png'); /* Second Image */
   }
   53%, 80.33% {
-    background-image: url('../assets/silde1.png'); /* Third Image */
+    background-image: url('https://images.pexels.com/photos/37351/silhouette-aerialist-female-woman.jpg?auto=compress&cs=tinysrgb&w=600'); /* Third Image */
   }
   86.33%, 100% {
     background-image: url('../assets/slider2.png'); /* Third Image */
@@ -169,13 +169,13 @@
 
 @keyframes backgroundChangeAfter {
   0%, 13.67% {
-    background-image: url('../assets/silde1.png'); /* First Image */
+    background-image: url('https://images.pexels.com/photos/37351/silhouette-aerialist-female-woman.jpg?auto=compress&cs=tinysrgb&w=600'); /* First Image */
   }
   16.67%, 47% {
     background-image: url('../assets/slider2.png'); /* Second Image */
   }
   53%, 80.33% {
-    background-image: url('../assets/silde1.png'); /* Third Image */
+    background-image: url('https://images.pexels.com/photos/37351/silhouette-aerialist-female-woman.jpg?auto=compress&cs=tinysrgb&w=600'); /* Third Image */
   }
   86.33%, 100% {
     background-image: url('../assets/slider2.png'); /* Third Image */

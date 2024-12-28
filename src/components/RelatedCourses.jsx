@@ -1,31 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import rc1 from '../assets/rc1.png'
 import rc2 from '../assets/rc2.png'
 import rc3 from '../assets/rc3.png'
 import RelatedCoursesCrad from './RelatedCoursesCrad'
 import '../css/RelatedCourses.css'
-import $ from 'jquery';
-
 
 function RelatedCourses() {
-    useEffect(() => {
-        const $slides = $('.slides');
-        
-        $slides.bind('contentchanged', function() {
-            animate($slides);
-        });
-
-        animate($slides);
-    }, []);
-
-    function animate($slides) {
-        const slidesLength = $slides.find('li').length;
-        if (slidesLength > 3) {
-            $slides.find('li:nth-last-child(-n+3)').clone().prependTo($slides);
-            $slides.addClass('animate');
-            $slides.css('animation-duration', slidesLength * 2 + 's');
-        }
-    }
     const rccards =[
         {
             image:rc1,
@@ -39,11 +19,6 @@ function RelatedCourses() {
             image:rc3,
             title:"500 Hours Yoga Teacher Training"
         },
-        {
-            image:rc1,
-            title:"200 Hours Yoga Teacher Training"
-        },
-        
     ]
   return (
     <div className='relatedcourses'>
@@ -51,24 +26,17 @@ function RelatedCourses() {
             <h1>Related Course</h1>
             <div className="rcline"></div>
         </div>
-        {/* <div className="rcallcards">
-            {
-                rccards.map((item)=>(
-                    <RelatedCoursesCrad image={item.image} title={item.title}/>
-                ))
-            }
-        </div> */}
-        <div class="wrap">
-        <div class="slide-container">
-            <ul class="slides">
-                {
-                    rccards.map((item)=>(
-                       <li><RelatedCoursesCrad image={item.image} title={item.title}/></li>
-                    ))
-                }
-            </ul>
-        </div>
-        </div>
+        <div className="rcallcards">
+                <div>
+                    {/* Duplicating cards for seamless looping */}
+                    {[...rccards, ...rccards].map((item, index) => (
+                        <RelatedCoursesCrad key={index} image={item.image} title={item.title} />
+                    ))}
+                     {[...rccards, ...rccards].map((item, index) => (
+                        <RelatedCoursesCrad key={index} image={item.image} title={item.title} />
+                    ))}
+                </div>
+            </div>
     </div>
   )
 }

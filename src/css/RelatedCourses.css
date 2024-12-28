@@ -1,4 +1,4 @@
-.relatedcourses{
+/* .relatedcourses{
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    /* margin-left: 60px; */
+    
 }
 .relatedcoursesheader h1{
     font-size: 4.5vh;
@@ -24,71 +24,133 @@
 .rcallcards{
     display: flex;
     gap: 30px;
+} */
+.relatedcourses {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    align-items: center;
+    background-color: #FFF8E7;
 }
 
-  .wrap{
-    width:100%;
-    height:100vh;
-    position:relative;
-    overflow:hidden;
-  }
-  
-  .slide-container{
-    position:absolute;
-    left:0;
-    height:100%;
-  }
-  
-  .slides{
-    display:flex;
-    flex:row;
-    flex-wrap:no-wrap;
-    height:100%;
-    margin:0;
-    padding:0;
-  }
-  
-  .animate{
-    animation: moveSlideshow 20s linear infinite;
-  }
-  
-  @keyframes moveSlideshow {
-    100% {
-      transform: translate3d(calc(-100% + 100vw), 0, 0);
-    }
-  }
-  
-  .slides li{
-    display: block;
-    box-sizing:border-box;
-    width:33.33vw;
-    height:100%;
+.relatedcoursesheader {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.relatedcoursesheader h1 {
+    font-size: 4.5vh;
+}
+
+.rcline {
+    width: auto;
+    height: 2px;
+    background-color: #FF8E28;
+}
+
+.rcallcards {
+    display: flex;
+    overflow: hidden; /* Prevents content overflow */
+    position: relative;
+    width: 100%; /* Full-width container */
+    height: auto; /* Adjust to fit card content */
+    align-items: center; /* Ensure proper vertical alignment */
+    padding: 10px 0; /* Optional padding for spacing */
+}
+
+.rcallcards > div {
+    display: flex;
+    animation: scroll 20s linear infinite; /* Increased speed of scrolling */
+    position: relative;
+}
+
+.rcallcards > div > * {
+    flex: 0 0 auto;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    margin: 0 15px; /* Adds spacing between cards */
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align:center;
-  }
-  
-  .slides li > div{
-    display:flex;
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
-    border-radius: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    text-align:center;
-    justify-content: center;
-    align-self: center;
-  }
-  
-  .slides li span{
-    display:block;
-    font-size:40vh;
-    line-height:100vh;
-    font-weight:800;
-    letter-spacing: -.06em;
-    color:#00509A;
-  }
-  
-  
-  
+    height: auto; /* Ensure the card height fits content */
+    width: auto; /* Prevent cards from being cut off */
+}
+
+.rcallcards > div > *:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+/* Seamless scrolling */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% / 3)); /* Moves one card width at a time */
+    }
+}
+/* Original CSS remains unchanged */
+
+/* Responsive design for tablets (width <= 768px) */
+@media (max-width: 768px) {
+    .relatedcourses {
+        padding: 15px; /* Reduced padding for smaller screens */
+        gap: 30px; /* Adjust gap for smaller screens */
+    }
+
+    .relatedcoursesheader h1 {
+        font-size: 4vh; /* Slightly smaller font size */
+    }
+
+    .rcallcards {
+        height: auto; /* Ensure proper scaling for cards */
+        padding: 8px 0; /* Adjust padding */
+    }
+
+    .rcallcards > div > * {
+        margin: 0 10px; /* Reduce spacing between cards */
+    }
+
+    /* Adjust scrolling speed for smaller screens */
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-100% / 3)); /* Adjust as needed for seamless experience */
+        }
+    }
+}
+
+/* Responsive design for mobile devices (width <= 480px) */
+@media (max-width: 480px) {
+    .relatedcourses {
+        padding: 10px; /* Further reduced padding */
+        gap: 20px; /* Compact gap for smaller devices */
+    }
+
+    .relatedcoursesheader h1 {
+        font-size: 3.5vh; /* Smaller font size for better fit */
+    }
+
+    .rcallcards {
+        height: auto; /* Ensure proper scaling for cards */
+        padding: 5px 0; /* Compact padding */
+    }
+
+    .rcallcards > div > * {
+        margin: 0 8px; /* Even tighter spacing between cards */
+    }
+
+    /* Adjust scrolling speed for smaller screens */
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-100% / 3)); /* Adjust as needed for seamless experience */
+        }
+    }
+}
