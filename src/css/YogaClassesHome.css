@@ -82,7 +82,24 @@
     font-size: 3vh;
     font-weight: bold;
 }
+@media (min-width: 768px) and (max-width: 1023px){
+ .yogaclassesleft h3{
+    color: red;
+ }
+}
 
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    .yogaclassesleft h3{
+        color: blue;
+     }
+}
+
+@media (min-width: 1920px) {
+    .yogaclassesleft h3{
+        color: green;
+     }
+}
 /* Responsive Styles for Tablet and Mobile */
 
 @media only screen and (max-width: 768px) {
@@ -132,9 +149,6 @@
         width: 120px;
         height: 35px;
     }
-}
-
-@media only screen and (max-width: 480px) {
     .yogaclasses {
         margin-top: 60px;
         padding: 10px;
@@ -184,4 +198,56 @@
     .ratings p {
         font-size: 3vh;
     }
+}
+
+@media only screen and (max-width: 480px) {
+    /* .yogaclasses {
+        margin-top: 60px;
+        padding: 10px;
+    }
+
+    .headeryoga {
+        gap: 5px;
+    }
+    .headeryoga h1{
+        font-size: 3vh;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .yogaclasseshome {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .yogaclassesleft {
+        width: 100%;
+    }
+
+    .yogaclassesleft p {
+        font-size: 2.5vh;
+        line-height: 30px;
+    }
+
+    .yogaclassesright {
+        width: 100%;
+        border-radius: 15px;
+        padding: 15px;
+    }
+
+    .yogaclassesright form input {
+        width: 90%;
+        height: 40px;
+    }
+
+    .yogaclassesright form button {
+        width: 100px;
+        height: 30px;
+    }
+
+    .ratings p {
+        font-size: 3vh;
+    } */
 }
