@@ -27,6 +27,7 @@ function Tranniner() {
               settings: {
                   slidesToShow: 1,  // Show only 1 slide on small screens
                   slidesToScroll: 1,
+                  arrows: false,
               }
           }
       ]

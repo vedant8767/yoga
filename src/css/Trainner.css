@@ -135,12 +135,12 @@
     }
 
     .trainner_carosal {
-        width: 95%; /* Full width carousel */
+        width: 100%; /* Full width carousel */
     }
 
     .trainnercard {
-        width: 180px; /* Smaller card size */
-        height: 180px; /* Smaller card height */
+        width: 80%; /* Smaller card size */
+        height: auto; /* Smaller card height */
     }
 
     .trainnercard img {
