@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../css/CourseindDetails.css';
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 const CourseindDetails = () => {
   const [activeSection, setActiveSection] = useState("Program details");
@@ -166,7 +167,16 @@ const CourseindDetails = () => {
           </button>
         ))}
       </nav>
+      <SwitchTransition>
+        <CSSTransition
+          key={activeSection}
+          timeout={300}
+          classNames="fade"
+          unmountOnExit
+        >
       <div className="detailcontent">{sections[activeSection]}</div>
+      </CSSTransition>
+      </SwitchTransition>
     </div>
   );
 };

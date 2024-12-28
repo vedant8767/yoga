@@ -11,17 +11,17 @@ function WorkShop() {
     <div className='workshop'>
         <h1>WORKSHOPS YOU MIGHT LIKE:</h1>
         <div className="workshopdisplay">
-            <div className="workshop_left">
-                <div className="workshopcard">
+            <div className="workshop_left" data-aos="fade-up">
+                <div className="workshopcard" >
                     <img src={left1} alt="" />
                     <p>How does <span>Arieal Yoga</span> help you?</p>
                 </div>
-                <div className="workshopcard">
+                <div className="workshopcard" >
                     <img src={left2} alt="" />
                     <p><span>Meditation</span> to ease your soul</p>
                 </div>
             </div>
-            <div className="workshop_center">
+            <div className="workshop_center" data-aos="fade-up">
                 <div className='centerworkshopcard'>
                     <img src={centerimage} alt="" />
                     <div class="overlay">
@@ -44,12 +44,12 @@ function WorkShop() {
                     <p><span>Face Yoga</span> can change your skin appearance</p>
                 </div>
             </div>
-            <div className="workshop_left">
-                <div className="workshopcard">
+            <div className="workshop_left" data-aos="fade-up">
+                <div className="workshopcard" >
                         <img src={right1} alt="" />
                         <p>Know the Miracles of <span>Sound Healing</span></p>
                     </div>
-                <div className="workshopcard">
+                <div className="workshopcard" >
                     <img src={right2} alt="" />
                     <p>What <span>Diet and Nutrition</span> has an effect</p>
                 </div>

@@ -12,7 +12,7 @@ function TherapyHome() {
             <div className="therapyline"></div>
         </div>
         <div className="therapycontent">
-            <div className="tvleft">
+            <div className="tvleft" data-aos="fade-up">
                 <table>
                     <tr>
                         <th>TITLE</th>
@@ -40,7 +40,7 @@ function TherapyHome() {
                     </tr>
                 </table>
             </div>
-            <div className="tcright">
+            <div className="tcright" data-aos="fade-up">
                 <img src={tc} alt="" srcset="" />
                 <div className="tcratings">
                     <p>Ratings:</p>
