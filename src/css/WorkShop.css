@@ -269,6 +269,18 @@ span{
 
 /* Media queries for smaller screens */
 @media (max-width: 768px) {
+  .workshop{
+    width: 100%;
+    padding: 20px;
+  }
+  .workshop_left{
+    width: 90%;
+  }
+  .workshop_left img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
   .workshopdisplay{
     flex-direction: column;
   }
@@ -282,6 +294,7 @@ span{
 
   .content button {
       font-size: 1.6vh;
+      background-color: #FF8E28;
   }
   .workshop_left{
     height: auto;
@@ -289,7 +302,7 @@ span{
 }
 
 @media (max-width: 480px) {
-  .workshop h1 {
+  /* .workshop h1 {
       font-size: 2vh;
   }
 
@@ -305,5 +318,5 @@ span{
   .content button {
       padding: 8px 15px;
       font-size: 1.4vh;
-  }
+  } */
 }

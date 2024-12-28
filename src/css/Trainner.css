@@ -140,7 +140,7 @@
 
     .trainnercard {
         width: 80%; /* Smaller card size */
-        height: auto; /* Smaller card height */
+        height: 300px; /* Smaller card height */
     }
 
     .trainnercard img {
@@ -157,6 +157,11 @@
     .overlapcontent {
         left: 30px; /* Adjusted position */
         font-size: 1.6vh; /* Adjusted font size */
+    }
+    .trainner{
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
     }
 }
 
@@ -175,8 +180,9 @@
     }
 
     .trainnercard {
-        width: 150px; /* Smaller card size */
-        height: 150px; /* Smaller card height */
+        width: 80%; /* Smaller card size */
+        height: auto; 
+        margin-bottom: 30px;/* Smaller card height */
     }
 
     .trainnercard img {
