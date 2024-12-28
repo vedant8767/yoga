@@ -97,7 +97,7 @@
 
     .firstdivleft, .firstdivright, .seconddivleft, .seconddivright {
         width: 100%;
-        border-radius: 10px;
+        /* border-radius: 10px; */
     }
 
     .firstdivleft, .firstdivright {
@@ -110,6 +110,22 @@
 
     .crfirstdiv p, .crseconddiv p {
         font-size: 2.2vh;
+    }
+    .firstdivleft{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .firstdivright{
+        border-radius: 0px 0px 10px 10px;
+        border-top:1px solid #B05200 ;
+        border-left: none;
+    }
+    .seconddivleft{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .seconddivright{
+        border-radius: 0px 0px 10px 10px;
+        border-top:1px solid #B05200 ;
+        border-left: none;
     }
 }
 
@@ -135,7 +151,7 @@
     .firstdivleft, .firstdivright, .seconddivleft, .seconddivright {
         width: 100%;
         padding: 10px;
-        border-radius: 10px;
+        /* border-radius: 10px; */
     }
 
     .crfirstdiv p, .crseconddiv p {
