@@ -34,3 +34,72 @@
     align-items: center;
     gap: 20px;
 }
+@media screen and (max-width: 1024px) {
+    .testimonial {
+        gap: 20px; /* Reduced gap for smaller screens */
+        padding-bottom: 30px; /* Adjusted padding for smaller screens */
+    }
+
+    .top_testimonial h1,
+    .top_testimonial h2 {
+        font-size: 4vh; /* Reduced font size for better fit */
+    }
+
+    .testimonial_content p {
+        font-size: 2.5vh; /* Adjusted font size */
+        width: 90%; /* Adjusted width to fit smaller screens */
+    }
+
+    .testimonial_content span {
+        font-size: 3.5vh; /* Reduced font size for better readability */
+    }
+
+    .testmonialinfo {
+        flex-direction: column; /* Stack the testimonial info vertically */
+        gap: 10px; /* Reduced gap */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top_testimonial h1,
+    .top_testimonial h2 {
+        font-size: 3.5vh; /* Further reduce font size */
+    }
+
+    .testimonial_content p {
+        font-size: 2vh; /* Adjusted font size */
+        width: 100%; /* Full width for text */
+    }
+
+    .testimonial_content span {
+        font-size: 3vh; /* Adjusted font size */
+    }
+
+    .testmonialinfo {
+        flex-direction: column; /* Stack testimonial info vertically */
+        gap: 15px; /* Adjusted gap for smaller screens */
+        align-items: center; /* Center-align the info */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .top_testimonial h1,
+    .top_testimonial h2 {
+        font-size: 3vh; /* Reduce font size for small screens */
+    }
+
+    .testimonial_content p {
+        font-size: 1.8vh; /* Further reduce font size */
+        line-height: 25px; /* Adjust line height for better readability */
+    }
+
+    .testimonial_content span {
+        font-size: 2.5vh; /* Reduce font size for small screens */
+    }
+
+    .testmonialinfo {
+        flex-direction: column; /* Stack vertically for very small screens */
+        gap: 10px;
+        align-items: center; /* Center-align info */
+    }
+}

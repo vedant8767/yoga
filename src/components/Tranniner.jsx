@@ -13,7 +13,23 @@ function Tranniner() {
         slidesToShow: 3,
         slidesToScroll: 2,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+              breakpoint: 1024, // for tablet and small laptop screens
+              settings: {
+                  slidesToShow: 2,  // Show 2 slides for medium screens
+                  slidesToScroll: 1,
+              }
+          },
+          {
+              breakpoint: 768, // for smaller screens like mobile devices
+              settings: {
+                  slidesToShow: 1,  // Show only 1 slide on small screens
+                  slidesToScroll: 1,
+              }
+          }
+      ]
       };
     
       const images = [
