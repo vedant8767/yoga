@@ -10,7 +10,7 @@ function YogaClasses() {
       <YogaClassesHome/>
       <ClassesinDetail/>
       <Curriculum/>
-      {/* <RelatedCourses/> */}
+      <RelatedCourses/>
     </div>
   )
 }
