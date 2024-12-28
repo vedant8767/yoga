@@ -1,3 +1,4 @@
+/* Original Styles */
 .curriculum{
     display: flex;
     flex-direction: column;
@@ -43,29 +44,23 @@
     border-radius: 10px;
 }
 
-
 .firstdivleft{
     padding: 20px;
     width: 50%;
-    /* border-radius: 10px; */
     background-color: #F06F0887;
     border-radius:10px 0px 0px 10px ;
-
 }
 .firstdivright{
     padding: 20px;
     width: 50%;
-    /* border-radius: 10px; */
     background-color: #F7AF71;
     border-radius:0px 10px 10px 0px ;
     border-left:1px solid #B05200 ;
-
 }
 .seconddivleft{
     padding: 20px;
     border-radius:10px 0px 0px 10px ;
     width: 50%;
-    /* border-radius: 10px; */
     background-color: #F69F5A7A;
 }
 .seconddivright{
@@ -73,6 +68,77 @@
     border-left:1px solid #B05200 ;
     width: 50%;
     border-radius:0px 10px 10px 0px ;
-    /* border-radius: 10px; */
     background-color: #FBCDA3;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .curriculum{
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .curriculumhead{
+        margin-left: 30px;
+    }
+
+    .curriculumhead h1{
+        font-size: 6vw;
+    }
+
+    .linecurriculum{
+        width: 120px;
+    }
+
+    .crfirstdiv, .crseconddiv {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .firstdivleft, .firstdivright, .seconddivleft, .seconddivright {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .firstdivleft, .firstdivright {
+        padding: 15px;
+    }
+
+    .seconddivleft, .seconddivright {
+        padding: 15px;
+    }
+
+    .crfirstdiv p, .crseconddiv p {
+        font-size: 2.2vh;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .curriculum{
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .curriculumhead h1{
+        font-size: 8vw;
+    }
+
+    .linecurriculum{
+        width: 100px;
+    }
+
+    .crfirstdiv, .crseconddiv {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .firstdivleft, .firstdivright, .seconddivleft, .seconddivright {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .crfirstdiv p, .crseconddiv p {
+        font-size: 2vh;
+    }
 }

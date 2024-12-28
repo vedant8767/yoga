@@ -4,7 +4,6 @@
     background-color: #FFF8E7;
     margin-top: 100px;
     justify-content: center;
-    /* align-items: center; */
     padding: 50px;
     display: flex;
 }
@@ -50,4 +49,58 @@
     border-radius: 10px;
     color: white;
     font-size: 3vh;
+}
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    /* Tablet and smaller laptop screens */
+    .coursehome {
+        flex-direction: column; /* Stack the content vertically */
+        padding: 20px;
+    }
+    .coursehomeleft {
+        width: 100%; /* Full width on smaller screens */
+        padding: 10px;
+    }
+    .coursehoemright {
+        width: 100%; /* Full width on smaller screens */
+        margin-top: 20px; /* Add some spacing between the sections */
+    }
+    .coursehoemright img {
+        height: 60%; /* Adjust image size for tablets */
+    }
+    .coursesbt {
+        flex-direction: column; /* Stack the buttons vertically */
+        gap: 20px; /* Reduce the gap between buttons */
+    }
+    #cbt1, #cbt2 {
+        width: 100%; /* Make buttons full width on smaller screens */
+        font-size: 2.5vh; /* Adjust font size for readability */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* For smaller screens like mobile devices */
+    .coursehome {
+        padding: 10px; /* Reduce padding for mobile */
+    }
+    .coursehomeleft {
+        width: 100%; /* Full width on small screens */
+        padding: 10px;
+    }
+    .coursehoemright {
+        width: 100%; /* Full width for mobile devices */
+        margin-top: 15px; /* Adjust margin for better spacing */
+    }
+    .coursehoemright img {
+        height: 50%; /* Adjust image size for mobile */
+        border-radius: 100px; /* More rounded image on mobile */
+    }
+    .coursesbt {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px; /* Reduce the gap between buttons */
+    }
+    #cbt1, #cbt2 {
+        width: 100%; /* Make buttons full width */
+        font-size: 2.2vh; /* Smaller font size for mobile */
+    }
 }
