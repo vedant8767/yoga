@@ -15,7 +15,7 @@ function Footer() {
                      transformative yoga journey. 
                     Join us and embark on a path of holistic well-being and self-discovery.</p>
                 <div className='socialmedia'>
-                    <FaPhone className='icon'/><span><p>+91 75586 60993</p></span>
+                    <FaPhone id='phone' className='icon'/><span><p>+91 75586 60993</p></span>
                 </div>
                 <div className='socialmedia'><FaEnvelope className='icon'/><span><p>info@example.com</p></span></div>
                 <div className='socialmedia'>

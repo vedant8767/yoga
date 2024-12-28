@@ -144,6 +144,10 @@ a{
 .icon{
     width: 20px;
     height: 20px;
+    cursor: pointer;
+}
+#phone{
+    transform: scaleX(-1);
 }
 
 @media screen and (max-width: 1024px) {
@@ -187,7 +191,7 @@ a{
 
     .footerinfo p {
         width: 100%; /* Full width for better readability */
-        text-align: center; /* Center-align text for smaller screens */
+        /* text-align: center;  */
     }
 
     .footerpart3 {
@@ -202,42 +206,51 @@ a{
     }
 
     .icon {
-        width: 15px; /* Adjust icon size */
-        height: 15px;
+        width: 35px; /* Adjust icon size */
+        height: 35px;
+    }
+    .footerinfo img{
+        width: 200px;
+        height: 150px;
+    }
+    span p{
+        font-size: 2.5vh;
+        font-weight: 800;
+        color: #252525;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .footerinfo img {
-        width: 50px; /* Smaller logo for compact design */
+    /* .footerinfo img {
+        width: 50px;
         height: 50px;
     }
 
     .footerinfo h1 {
-        font-size: 2.5vh; /* Further reduce font size */
+        font-size: 2.5vh;
     }
 
     .loactioncard button {
-        height: 40px; /* Adjust button height */
-        font-size: 14px; /* Reduce font size */
+        height: 40px; 
+        font-size: 14px; 
     }
 
     .footerpart1,
     .footerpart2,
     .footerpart3 {
-        padding: 10px; /* Reduce padding for smaller devices */
-        gap: 10px; /* Minimize gaps */
+        padding: 10px; 
+        gap: 10px; 
     }
 
     .footermenu,
     .footercourses,
     .locations,
     .exploreteachers {
-        width: 100%; /* Full width for narrow screens */
+        width: 100%; 
     }
 
     .socialmedia {
-        flex-wrap: wrap; /* Allow icons to wrap for better alignment */
+        flex-wrap: wrap; 
         gap: 10px;
-    }
+    } */
 }
