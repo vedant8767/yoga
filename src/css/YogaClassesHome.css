@@ -89,6 +89,8 @@
     .yogaclasses {
         margin-top: 80px;
         padding: 15px;
+        justify-content: center;
+        align-items: center;
     }
 
     .headeryoga {
@@ -97,12 +99,15 @@
     }
 
     .line {
-        width: 100%;
+        width: auto;
     }
 
     .yogaclasseshome {
         flex-direction: column;
         gap: 30px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
     }
 
     .yogaclassesleft {
