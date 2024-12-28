@@ -1,9 +1,26 @@
-.TeacherTranningHome{
+
+/* Original Styles */
+.TeacherTranningHome {
     width: 100%;
     min-height: 100vh;
+    margin-top: 100px;
+    font-size: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5vh;
-    margin-top: 100px;
+}
+
+/* Responsive Styles for Tablet and Mobile */
+@media only screen and (max-width: 768px) {
+    .TeacherTranningHome {
+        font-size: 4vh; /* Adjust font size for tablets */
+        margin-top: 80px; /* Adjust top margin for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .TeacherTranningHome{
+        font-size: 3.5vh; /* Adjust font size for mobile devices */
+        margin-top: 60px; /* Adjust top margin for mobile devices */
+    }
 }

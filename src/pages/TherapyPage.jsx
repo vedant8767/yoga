@@ -10,7 +10,7 @@ function TherapyPage() {
       <TherapyHome/>
       <Details/>
       <Curriculum/>
-      <RelatedCourses/>
+      {/* <RelatedCourses/> */}
     </div>
   )
 }
