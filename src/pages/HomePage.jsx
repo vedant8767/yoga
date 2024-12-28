@@ -14,8 +14,8 @@ function HomePage() {
         <HomePageCaursol/>
         <About/>
         <CoursesPage/>
-        <TrainnerPage/>
-        <Testimonial/>
+        {/* <TrainnerPage/> */}
+        {/* <Testimonial/> */}
     </div>
   )
 }

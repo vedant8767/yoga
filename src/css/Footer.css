@@ -20,14 +20,12 @@ a{
     padding: 20px;
 }
 .footerinfo{
-    /* width: auto; */
     width: 440px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 .footermenu{
-    /* width: auto; */
     width: 425px;
     display: flex;
     flex-direction: column;
@@ -50,7 +48,6 @@ a{
     width: 150px;
 }
 .footercourses{
-    /* width: auto; */
     width: 395px;
     display: flex;
     flex-direction: column;
@@ -64,12 +61,10 @@ a{
 .locations{
     display: flex;
     flex-direction: column;
-    /* width: auto; */
     width: 425px;
     gap: 20px;
 }
 .locationpart2{
-    /* width: auto; */
     width: 425px;
     margin-top: 40px;
 }
@@ -77,8 +72,6 @@ a{
     display: flex;
     flex-direction: column;
     width: 395px;
-    /* width:900px; */
-    /* width: auto; */
     gap: 10px;
 }
 
@@ -151,4 +144,100 @@ a{
 .icon{
     width: 20px;
     height: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        gap: 20px; /* Reduced gap for better spacing */
+        padding: 20px;
+    }
+
+    .footerpart1,
+    .footerpart2 {
+        flex-direction: column; /* Stack sections vertically on medium screens */
+        align-items: center;
+    }
+
+    .footerinfo,
+    .footermenu,
+    .footercourses,
+    .locations,
+    .exploreteachers,
+    .locationpart2 {
+        width: 90%; /* Adjusted width to fit smaller screens */
+    }
+
+    .socialmedia {
+        justify-content: center; /* Center social media icons */
+    }
+
+    .loactioncard button {
+        width: 100%; /* Make buttons full-width */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footerinfo h1,
+    .footermenu h1,
+    .footercourses h1,
+    .locations h1,
+    .exploreteachers h1 {
+        font-size: 3vh; /* Reduce font size for better fit */
+    }
+
+    .footerinfo p {
+        width: 100%; /* Full width for better readability */
+        text-align: center; /* Center-align text for smaller screens */
+    }
+
+    .footerpart3 {
+        flex-direction: column; /* Stack items vertically */
+        gap: 15px; /* Adjust gap for spacing */
+        text-align: center; /* Center-align footer navigation */
+    }
+
+    .footernav {
+        flex-wrap: wrap; /* Wrap navigation links */
+        justify-content: center; /* Center-align links */
+    }
+
+    .icon {
+        width: 15px; /* Adjust icon size */
+        height: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footerinfo img {
+        width: 50px; /* Smaller logo for compact design */
+        height: 50px;
+    }
+
+    .footerinfo h1 {
+        font-size: 2.5vh; /* Further reduce font size */
+    }
+
+    .loactioncard button {
+        height: 40px; /* Adjust button height */
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .footerpart1,
+    .footerpart2,
+    .footerpart3 {
+        padding: 10px; /* Reduce padding for smaller devices */
+        gap: 10px; /* Minimize gaps */
+    }
+
+    .footermenu,
+    .footercourses,
+    .locations,
+    .exploreteachers {
+        width: 100%; /* Full width for narrow screens */
+    }
+
+    .socialmedia {
+        flex-wrap: wrap; /* Allow icons to wrap for better alignment */
+        gap: 10px;
+    }
 }

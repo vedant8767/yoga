@@ -1,4 +1,4 @@
-.coursecard{
+/* .coursecard{
     display: flex;
     gap: 15px;
     width: 500px;
@@ -33,19 +33,7 @@
     display: flex;
     gap: 25px;
 }
-/* table tr{
-    padding: 10px;
-    border-collapse: collapse
-}
-table tr {
-    border-bottom:2px solid #252525;
-    border-left:2px solid #252525 ;
-}
-table tr td{
-    border-bottom:2px solid #252525;
-    border-left:2px solid #252525 ;
-    padding: 5px;
-} */
+
 table {
     border-collapse: collapse;
   }
@@ -61,7 +49,7 @@ table {
   }
   
   tr td:first-child {
-    font-weight: bold; /* Bold text for the first column */
+    font-weight: bold; 
   }
 #view{
     border: none;
@@ -79,10 +67,138 @@ table {
     border: none;
     outline: none;
     width: 120px;
-    /* padding: 10px; */
     background-color: #252525;
     color: white;
     font-weight: bold;
     border-radius: 20px;
     font-size: 2vh;
+} */
+
+.coursecard {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    gap: 15px;
+    width: 100%; /* Adjust width to 100% for better responsiveness */
+    max-width: 500px; /* Limits max width for larger screens */
+    padding: 20px 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 3px solid #FF8E28;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better aesthetics */
+}
+
+.card_img {
+    flex: 1; /* Takes available space proportionally */
+    max-width: 150px; /* Ensures image doesn't dominate small screens */
+    border-radius: 10px;
+}
+
+.card_img img {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.courses_card_contents {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    flex: 2; /* Adjusts space for content */
+    text-align: center; /* Centers text for smaller screens */
+}
+
+.courses_button {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* Aligns buttons at the center */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%; /* Makes the table responsive */
+    margin: 10px 0;
+}
+
+tr {
+    padding: 10px;
+}
+
+td {
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+tr td:nth-child(2) {
+    border-left: 1px solid black;
+}
+
+tr td:first-child {
+    font-weight: bold;
+}
+
+#view,
+#enroll {
+    border: none;
+    outline: none;
+    padding: 0px;
+    width: 100px;
+    height: 35px;
+    font-weight: bold;
+    font-size: 1.8vh;
+    border-radius: 20px;
+}
+
+#view {
+    background-color: #FF8E28;
+    color: white;
+}
+
+#enroll {
+    background-color: #252525;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .coursecard {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .card_img {
+        max-width: 120px; /* Shrinks image for smaller screens */
+    }
+
+    .courses_card_contents {
+        text-align: center;
+        width: 100%;
+    }
+
+    #view,
+    #enroll {
+        width: 90px; /* Reduce button size */
+        font-size: 1.5vh; /* Adjust font size */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .coursecard {
+        padding: 15px 5px;
+        gap: 10px;
+    }
+
+    .card_img {
+        max-width: 100px; /* Further adjust image size */
+    }
+
+    #view,
+    #enroll {
+        width: 80px; /* Smaller buttons */
+        height: 30px;
+        font-size: 1.3vh;
+    }
 }

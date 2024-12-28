@@ -10,7 +10,7 @@
  */
 /* HomePageCarousel.css */
 /* HomePageCarousel.css */
-.homepage {
+/* .homepage {
   width: 100%;
   height: 100vh;
 }
@@ -22,8 +22,7 @@
   background-position: center;
   position: relative;
   animation: backgroundChange 15s infinite;
-  /* Adding these properties to prevent white flash */
-  background-color: black; /* Fallback color during transitions */
+  background-color: black; 
   will-change: background-image;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -31,20 +30,20 @@
 
 @keyframes backgroundChange {
   0%,13.67% {
-    background-image: url('../assets/silde1.png'); /* First Image */
+    background-image: url('../assets/silde1.png'); 
 }
 16.67%,47%{
-    background-image: url('../assets/slider2.png'); /* Second Image */
+    background-image: url('../assets/slider2.png'); 
 }
 53%,80.33% {
-    background-image: url('../assets/silde1.png'); /* Third Image */
+    background-image: url('../assets/silde1.png');
 }
 86.33%,100% {
-    background-image: url('../assets/slider2.png'); /* Third Image */
+    background-image: url('../assets/slider2.png'); 
 }
 }
 
-/* Add a pseudo-element for smooth transitions */
+
 .carousel-container::after {
   content: '';
   position: absolute;
@@ -63,16 +62,16 @@
 
 @keyframes backgroundChangeAfter {
   0%,13.67% {
-    background-image: url('../assets/silde1.png'); /* First Image */
+    background-image: url('../assets/silde1.png'); 
 }
 16.67%,47%{
-    background-image: url('../assets/slider2.png'); /* Second Image */
+    background-image: url('../assets/slider2.png');
 }
 53%,80.33% {
-    background-image: url('../assets/silde1.png'); /* Third Image */
+    background-image: url('../assets/silde1.png'); 
 }
 86.33%,100% {
-    background-image: url('../assets/slider2.png'); /* Third Image */
+    background-image: url('../assets/slider2.png');
 }
 }
 
@@ -83,7 +82,6 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  /* background-color: rgba(0, 0, 0, 0.5); */
   padding: 2rem;
   border-radius: 8px;
   z-index: 2;
@@ -118,4 +116,165 @@
 
 .content-overlay button:hover {
   background-color: #e0e0e0;
+} */
+
+.homepage {
+  width: 100%;
+  height: 100vh;
+}
+
+.carousel-container {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  animation: backgroundChange 15s infinite;
+  background-color: black; /* Fallback color during transitions */
+  will-change: background-image;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+@keyframes backgroundChange {
+  0%, 13.67% {
+    background-image: url('../assets/silde1.png'); /* First Image */
+  }
+  16.67%, 47% {
+    background-image: url('../assets/slider2.png'); /* Second Image */
+  }
+  53%, 80.33% {
+    background-image: url('../assets/silde1.png'); /* Third Image */
+  }
+  86.33%, 100% {
+    background-image: url('../assets/slider2.png'); /* Third Image */
+  }
+}
+
+.carousel-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: backgroundChangeAfter 15s infinite;
+  will-change: opacity, background-image;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+@keyframes backgroundChangeAfter {
+  0%, 13.67% {
+    background-image: url('../assets/silde1.png'); /* First Image */
+  }
+  16.67%, 47% {
+    background-image: url('../assets/slider2.png'); /* Second Image */
+  }
+  53%, 80.33% {
+    background-image: url('../assets/silde1.png'); /* Third Image */
+  }
+  86.33%, 100% {
+    background-image: url('../assets/slider2.png'); /* Third Image */
+  }
+}
+
+.content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  z-index: 2;
+  width: 80%;
+}
+
+.content-overlay img {
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+.content-overlay h1 {
+  font-size: 3vh;
+  margin-bottom: 1rem;
+}
+
+.content-overlay p {
+  font-size: 2.5vh;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.content-overlay button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.content-overlay button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) { /* Tablets */
+  .content-overlay img {
+    width: 120px;
+    height: 120px;
+  }
+  .content-overlay h1 {
+    font-size: 2.5vh;
+  }
+  .content-overlay p {
+    font-size: 2vh;
+  }
+  .content-overlay button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 768px) { /* Mobile Landscape */
+  .content-overlay img {
+    width: 100px;
+    height: 100px;
+  }
+  .content-overlay h1 {
+    font-size: 2vh;
+  }
+  .content-overlay p {
+    font-size: 1.8vh;
+  }
+  .content-overlay button {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) { /* Mobile Portrait */
+  .content-overlay img {
+    width: 80px;
+    height: 80px;
+  }
+  .content-overlay h1 {
+    font-size: 1.8vh;
+  }
+  .content-overlay p {
+    font-size: 1.5vh;
+  }
+  .content-overlay button {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
 }

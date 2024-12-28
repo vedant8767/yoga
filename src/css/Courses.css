@@ -1,4 +1,4 @@
-.courses{
+/* .courses{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -25,4 +25,69 @@
     margin-top: 20px;
     justify-content: center;
     gap: 30px;
+} */
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 30px;
+    background: url('https://s3-alpha-sig.figma.com/img/67be/156f/ca9fcea48dde493454cfdceb63e7d892?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XSnm3Iw5~WvJ7jy6oma0RLyZM1ApHST-tvB9ccu2FpuRRk18O7vOngqRwcAbtk~hU~Pvpn-TIEVv7Tr1mvIbQd8TyMa6PCk14e-sDfRGyH1PU~KtOzWHFCcNfmBJhmDf-NGGmlJdXbMmi8v8VWQgqwyGaPdaVfL-PyssDs~bCMOtQBX9yK6gGe2aEm3d936LdDxZwg7WozpWZeMtJUUUQnPCOXPZ0wdP~DStmQw7~lotmt2tT5UlOfu4eVldfVraQ0GkvMEDDDMdqozk84yJATTv9k8-xZcE7LTtk~KYI6LscSIU-mHSR3BfNJRrZVMnaOkI~9UPBknl8vRPwnZnHw__');
+    background-size: cover; /* Ensures the background image covers the full area */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+.courses h1 {
+    text-align: center;
+    color: #243642;
+    font-size: 4.5vh;
+    margin: 0 10px; /* Adds padding for smaller screens */
+}
+
+.courses h2 {
+    text-align: center;
+    color: #FF8E28;
+    font-size: 4.5vh;
+    margin: 0 10px; /* Adds padding for smaller screens */
+}
+
+.coursesallcards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .courses h1,
+    .courses h2 {
+        font-size: 3.5vh; /* Reduces heading size for tablets */
+    }
+
+    .coursesallcards {
+        gap: 20px; /* Reduces spacing between cards */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .courses {
+        padding-top: 20px;
+    }
+
+    .courses h1,
+    .courses h2 {
+        font-size: 3vh; /* Further reduces heading size for mobile devices */
+    }
+
+    .coursesallcards {
+        gap: 15px; /* Further reduces spacing for cards */
+        margin-top: 10px; /* Reduces margin for smaller screens */
+    }
 }

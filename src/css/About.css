@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Coiny");
+/* @import url("https://fonts.googleapis.com/css?family=Coiny");
 .about{
     width: 100%;
     min-height: 100vh;
     padding-top: 50px;
     padding-bottom: 50px;
-    /* padding: 50px 50px; */
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -23,22 +22,20 @@
     height: 300px;
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    transition: transform 1.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 1.2s ease; /* Adjusted duration for smoothness */
-    transform: scale(1); /* Default state */
+    transition: transform 1.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 1.2s ease; 
+    transform: scale(1); 
     cursor: pointer;
 }
 
-/* Updated hover selector for smoothness */
 .section1img:hover {
-    transform: scale(1.1); /* Smooth scaling */
-    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.3); /* Slightly more shadow */
+    transform: scale(1.1); 
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.3); 
 }
 
 .section1img img{
     object-fit: cover;
     height: 100%;
     width: 100%;
-    /* border: 1px solid black; */
     border-radius: 50px;
 }
 .section1_content{
@@ -67,7 +64,7 @@
     object-fit: cover;
     border: 3px solid #FF8E28;
     border-radius: 15px;
-    /* border-radius: 250px; */
+    
 }
 .section2_img{
     display: flex;
@@ -118,30 +115,13 @@
     gap: 50px;
     justify-content: center;
 }
-/* .section5part2{
-    width: 200px;
-    height: auto;
-    object-fit: contain;
-    -webkit-animation: bounce .4s ease infinite alternate;
-}
-@-webkit-keyframes bounce {
-    0% {
-        text-shadow:
-                    0 5px 0 #ccc,
-                    0 2px 3px rgba(0, 0, 0, 1);  
-    }
-    100% {
-      transform:translateY(-20px);
-      text-shadow:  0 50px 0 #black,
-                    0 0px 20px rgba(0, 0, 0, .8);
-    }
-  } */
+
   .section5part2 {
     width: 200px;
     height: auto;
-    object-fit: contain; /* Ensure this is used on <img> or <video> */
+    object-fit: contain; 
     -webkit-animation: bounce 0.4s ease infinite alternate;
-    animation: bounce 0.4s ease infinite alternate; /* Add standard animation for broader browser support */
+    animation: bounce 0.4s ease infinite alternate; 
 }
 .section5part2 img{
     border-radius: 20px;
@@ -150,15 +130,15 @@
 @-webkit-keyframes bounce {
     0% {
         text-shadow: 0 5px 0 #ccc, 0 2px 3px rgba(0, 0, 0, 1);  
-        transform: translateY(0); /* Ensure it starts at the original position */
+        transform: translateY(0);
     }
     100% {
         transform: translateY(-20px);
-        text-shadow: 0 50px 0 #000, 0 0px 20px rgba(0, 0, 0, 0.8); /* Fixed color code */
+        text-shadow: 0 50px 0 #000, 0 0px 20px rgba(0, 0, 0, 0.8);
     }
 }
 
-/* Add the standard keyframes for non-WebKit browsers */
+
 @keyframes bounce {
     0% {
         text-shadow: 0 5px 0 #ccc, 0 2px 3px rgba(0, 0, 0, 1);  
@@ -178,4 +158,217 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+} */
+/* Importing font */
+@import url("https://fonts.googleapis.com/css?family=Coiny");
+
+/* General About Section */
+.about {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 20px; /* Adjusted padding for smaller screens */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF8E7;
+}
+
+/* Section 1 */
+.section1 {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Reduced gap for smaller screens */
+}
+
+.section1img {
+    width: 80%; /* Responsive scaling */
+    max-width: 504px;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 1.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 1.2s ease;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.section1img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.section1_content {
+    width: 90%; /* Default width for smaller screens */
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center; /* Center text on smaller screens */
+}
+
+/* Section 2 */
+.section2 {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping */
+    gap: 20px;
+    justify-content: center;
+}
+
+.section2content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.imgsection1 {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+}
+
+.imgsection1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid #FF8E28;
+    border-radius: 15px;
+}
+
+.section2_img {
+    display: flex;
+    flex-wrap: wrap; /* Wrap images for smaller screens */
+    gap: 10px;
+}
+
+.imgsection2,
+.imgsection3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.imgsection2 img,
+.imgsection3 img {
+    height: auto;
+    width: 100%;
+    max-width: 150px;
+    object-fit: cover;
+    border: 3px solid #FF8E28;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/* Section 4 */
+.section4 {
+    width: 90%; /* Adjust for smaller screens */
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center; /* Center content */
+}
+
+.section4 h3 {
+    color: #FF8E28;
+}
+
+/* Section 5 */
+.section5 {
+    width: 100%; /* Full width for smaller screens */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.section5part1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center; /* Center align for smaller screens */
+}
+
+.section5part2 {
+    width: 200px;
+    height: auto;
+    object-fit: contain; 
+    -webkit-animation: bounce 0.4s ease infinite alternate;
+    animation: bounce 0.4s ease infinite alternate; 
+}
+.section5part2 img{
+    border-radius: 20px;
+}
+
+.section5part2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+@keyframes bounce {
+    0% {
+        text-shadow: 0 5px 0 #ccc, 0 2px 3px rgba(0, 0, 0, 1);  
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+        text-shadow: 0 50px 0 #000, 0 0px 20px rgba(0, 0, 0, 0.8);
+    }
+}
+@-webkit-keyframes bounce {
+    0% {
+        text-shadow: 0 5px 0 #ccc, 0 2px 3px rgba(0, 0, 0, 1);  
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+        text-shadow: 0 50px 0 #000, 0 0px 20px rgba(0, 0, 0, 0.8);
+    }
+}
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .about {
+        padding: 30px 10px; /* Adjusted padding */
+    }
+    .section1_content,
+    .section2content {
+        text-align: center;
+        width: 100%;
+    }
+    .section1img {
+        width: 90%;
+    }
+    .imgsection1,
+    .imgsection2 img,
+    .imgsection3 img {
+        max-width: 120px; /* Adjusted width for smaller screens */
+    }
+    .section4 {
+        width: 100%;
+    }
+    .section5part2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section1img {
+        width: 100%;
+    }
+    .imgsection1 img {
+        max-width: 100px;
+    }
+    .section4 h3 {
+        font-size: 1.2rem;
+    }
+    .section5part2 {
+        max-width: 150px;
+    }
 }
