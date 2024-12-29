@@ -395,3 +395,30 @@
 
     }
 }
+
+
+
+/* portrait mobile and tablet */
+@media (min-width: 768px) and (max-width: 1024px){
+    
+   }
+   
+   /* desktop mobile view */
+   @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+       .section5{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+       }
+       .section5part1{
+        width: 100%;
+        gap: 20px;
+       }
+       
+   }
+   
+   @media (min-width: 1920px) {
+       
+   }

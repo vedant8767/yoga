@@ -104,3 +104,40 @@
         font-size: 2.2vh; /* Smaller font size for mobile */
     }
 }
+/* portrait mobile and tablet */
+@media (min-width: 768px) and (max-width: 1024px){
+   
+}
+
+/* desktop mobile view */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    .coursehome{
+        padding-top: 100px;
+        justify-content: flex-start;
+        gap:100px;
+    }
+    .coursehomeleft h1{
+        font-size: 2vh;
+    }
+    .coursehomeleft p{
+        font-size: 1vh;
+        line-height: 60px;
+    }
+    #cbt1{
+        width: 500px;
+        font-size: 2vh;
+        height: 80px;
+        padding: 10px;
+    }
+    #cbt2{
+        width: 500px;
+        font-size: 2vh;
+        height: 80px;
+        padding: 10px;
+
+    }
+}
+
+@media (min-width: 1920px) {
+    
+}

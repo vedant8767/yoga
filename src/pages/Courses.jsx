@@ -12,7 +12,7 @@ function Courses() {
       <CourseindDetails/>
       <Curriculum/>
       <Cr/>
-      {/* <RelatedCourses/> */}
+      <RelatedCourses/>
     </div>
   )
 }

@@ -85,16 +85,27 @@
 
 /* portrait mobile and tablet */
 @media (min-width: 768px) and (max-width: 1024px){
- .yogaclassesleft h3{
-    color: red;
- }
+
 }
 
 /* desktop mobile view */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
-    .yogaclassesleft h3{
-        color: blue;
-     }
+    .yogaclasseshome{
+        flex-direction: column;
+    }
+    .yogaclassesleft{
+        width: 100%;
+    }
+    .yogaclassesleft p{
+        font-size: 0.7vh;
+        line-height: 30px;
+    }
+    .ratings p{
+        font-size: 2vh;
+    }
+    .yogaclassesright{
+        width: 100%;
+    }
 }
 
 @media (min-width: 1920px) {

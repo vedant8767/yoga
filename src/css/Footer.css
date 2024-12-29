@@ -254,3 +254,139 @@ a{
         gap: 10px;
     } */
 }
+
+
+/* portrait mobile and tablet */
+@media (min-width: 768px) and (max-width: 1024px){
+    /* .footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .footerpart1{
+        width: 100%;
+        flex-direction: row;
+        gap: 10px;
+        align-items: start;
+        justify-content: center;
+        
+    }
+    .footerinfo{
+        width: 50%;
+        
+    }
+    .footerinfo h1{
+        font-size: 2vh;
+    }
+    .footerinfo p{
+        font-size: 1.5vh;
+    }
+    .footercourses{
+        width: 50%;
+    }
+    .footercourses h1{
+        font-size: 2vh;
+    }
+    .footermenu{
+        width: 50%;
+       
+    }
+    .footermenu h1{
+        font-size: 2vh;
+    }
+    .footerpart2{
+        flex-direction: row;
+    }
+    .locations h1{
+        font-size: 2vh;
+    }
+    .loactioncard p{
+        font-size: 2vh;
+    }
+    .loactioncard button{
+        width: 100px;
+        font-size: 2vh;
+        height: 30px;
+    }
+    .exploreteachers h1{
+        font-size: 2vh;
+    }
+    .exploreteachers p a{
+        font-size: 1vh;
+    } */
+    
+}
+   
+   /* desktop mobile view */
+   @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    .footerinfo{
+        align-items: start;
+    }
+    .footerinfo img{
+        width: 200px;
+        height: 200px;
+    }
+       .footerinfo h1{
+        font-size: 2vh;
+       }
+       .footerinfo p{
+        font-size: 0.7vh;
+        width: 100%;
+       }
+       .icon{
+        width: 30px;
+        height: 30px;
+       }
+       .socialmedia span p{
+        font-size: 1.5vh;
+        margin-top: 10px;
+        color: black;
+       }
+       .footermenu h1{
+        font-size: 2vh;
+       }
+       .footermenu p a{
+        font-size: 1.5vh;
+       }
+       .meunpart1{
+        width: 50%;
+       }
+       .meunpart2{
+        width: 50%;
+       }
+       .footercourses h1{
+        font-size: 2vh;
+       }
+       .footercourses p a{
+        font-size: 1.5vh;
+        margin-bottom: 5px;
+       }
+       .courses_list{
+        margin-top: 10px;
+        width: 100%;
+       }
+       .locations h1{
+        font-size: 2vh;
+       }
+       .loactioncard p{
+        font-size:1.4vh;
+        /* color: violet; */
+       }
+       .loactioncard button{
+        width: 30%;
+        font-size: 1.3vh;
+        height: 50px;
+       }
+       .exploreteachers h1{
+         font-size: 2vh;
+       }
+       .footerpart3 p{
+        font-size: 1.3vh;
+       }
+   }
+   
+   @media (min-width: 1920px) {
+       .yogaclassesleft h3{
+           color: green;
+        }
+   }

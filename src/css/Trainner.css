@@ -201,3 +201,25 @@
         font-size: 1.5vh; /* Adjusted font size */
     }
 }
+
+/* portrait mobile and tablet */
+@media (min-width: 768px) and (max-width: 1024px){
+   
+   }
+   
+   /* desktop mobile view */
+   @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+       .trainner_content h1{
+        font-size: 2vh;
+       }
+       .trainner_content h2{
+        font-size: 1.5vh;
+       }
+       .trainnercard{
+        height: 100%;
+       }
+   }
+   
+   @media (min-width: 1920px) {
+       
+   }

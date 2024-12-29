@@ -48,3 +48,27 @@
         font-size: 1.8vh; /* Further reduce font size for readability */
     }
 }
+
+
+/* portrait mobile and tablet */
+@media (min-width: 768px) and (max-width: 1024px){
+    .aboutcard{
+        max-width: 90%;
+        
+       }
+   }
+   
+   /* desktop mobile view */
+   @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+       .aboutcard{
+        max-width: 100%;
+       }
+       .aboutcard p{
+        font-size: 2vh;
+        font-weight: 400;
+       }
+   }
+   
+   @media (min-width: 1920px) {
+       
+   }

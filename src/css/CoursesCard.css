@@ -218,3 +218,40 @@ tr td:first-child {
         font-size: 1.3vh;
     } */
 }
+/* portrait mobile and tablet */
+@media (min-width: 768px) and (max-width: 1024px){
+    
+}
+
+/* desktop mobile view */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    .coursecard{
+        max-width: 90%;
+        height: auto;
+    }
+    .courses_card_contents h3{
+        font-size: 1.5vh;
+    }
+    .courses_card_contents p{
+        font-size: 1vh;
+    }
+    .courses_card_contents table{
+        font-size: 1vh;
+    }
+    #view{
+        width: auto;
+        height: auto;
+        padding: 15px;
+        font-size: 1.5vh;
+    }
+    #enroll{
+        width: auto;
+        font-size: 1.5vh;
+        height: auto;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 1920px) {
+    
+}
