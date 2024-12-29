@@ -197,19 +197,21 @@
 
 .content-overlay img {
   margin-top: 20px;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
 }
 
 .content-overlay h1 {
-  font-size: 3vh;
+  font-size: 9vh;
   margin-bottom: 1rem;
 }
 
 .content-overlay p {
-  font-size: 2.5vh;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 4vh;
+  font-weight: 500;
+  margin-top: -15px;
+  /* margin-bottom: 1.5rem; */
 }
 
 .content-overlay button {

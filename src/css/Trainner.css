@@ -1,5 +1,6 @@
 .trainner {
     width: 100%;
+    /* height: auto; */
     min-height: 100vh;
     /* background-color: #FFF8E7; */
     display: flex;
@@ -7,6 +8,8 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    background-color: #FFF8E7;
+    padding-bottom: 50px;
 }
 
 .trainner_content {
@@ -17,6 +20,10 @@
     gap: 15px;
 }
 
+.trainner_content h1{
+    font-weight: 7vh;
+    margin-top: 20px;
+}
 .trainner_content p {
     width: 80%;
     line-height: 25px;
@@ -24,7 +31,7 @@
 
 .trainner_content h2 {
     color: #CC7722;
-    font-size: 5vh;
+    font-size: 7vh;
 }
 
 .trainner_carosal {
@@ -35,7 +42,7 @@
 .trainnercard {
     position: relative;
     width: 250px;
-    height: 250px;
+    height: auto;
     margin-right: 20px; 
 }
 

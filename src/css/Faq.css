@@ -85,7 +85,7 @@
   }
   .faqleft img{
     width: 100%;
-    border-radius: 300px;
+    border-radius: 120px;
   }
   .faqright{
     width: 70%;
@@ -95,7 +95,7 @@
     color: #CC7722;
     font-size: 24px;
     margin-bottom: 20px;
-    text-align: center;
+    /* text-align: center; */
   }
   
   .faq-list {
@@ -120,6 +120,7 @@
   }
   .faq-question span{
     color: black;
+    font-weight: 600;
   }
   
   .faq-icon {

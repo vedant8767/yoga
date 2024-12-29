@@ -54,7 +54,7 @@ function About() {
             <img src={classes} alt="" srcset="" />
             </div>
             <div className='section1_content'>
-            <h2>WHY CHOOSE US?</h2>
+            <h1>WHY CHOOSE US?</h1>
             <p>At 8 Limbs Yoga, we believe that yoga is more than just a physical practice. 
                 It's a journey of self-discovery and transformation. That's why we offer a
                  variety of yoga experiences to meet the needs of all students, from beginners

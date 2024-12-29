@@ -11,12 +11,12 @@
 } */
 
 .aboutcard {
-    background: linear-gradient(45deg, #CC7722, #FF512F);
+    background: #CC7722;
     color: black;
     border-radius: 15px;
-    padding: 10px; /* Adjust for smaller screens */
-    width: 90%; /* Adjust width to fit smaller screens */
-    max-width: 400px; /* Maintain max width for larger screens */
+    padding: 20px; 
+    width: 100%; /* Adjust width to fit smaller screens */
+     /* Maintain max width for larger screens */
     margin: 0 auto; /* Center the card */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
