@@ -401,9 +401,7 @@
       display: flex;
       
     }
-    .navbar{
-     
-    }
+    
     .nav_items {
       flex-direction: column;
       justify-content: flex-start;
