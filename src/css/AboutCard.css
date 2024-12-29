@@ -1,5 +1,5 @@
 /* .aboutcard{
-    background: linear-gradient(45deg, #FF8E28, #FF512F);
+    background: linear-gradient(45deg, #CC7722, #FF512F);
     color: black;
     border-radius: 15px;
     padding: 15px;
@@ -11,7 +11,7 @@
 } */
 
 .aboutcard {
-    background: linear-gradient(45deg, #FF8E28, #FF512F);
+    background: linear-gradient(45deg, #CC7722, #FF512F);
     color: black;
     border-radius: 15px;
     padding: 10px; /* Adjust for smaller screens */

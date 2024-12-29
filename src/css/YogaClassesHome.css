@@ -18,7 +18,7 @@
     color: #243642;
 }
 .line {
-    background-color: #FF8E28;
+    background-color: #CC7722;
     width: 570px;
     height: 3px;
     border-radius: 5px;
@@ -65,7 +65,7 @@
     outline: none;
 }
 .yogaclassesright form button {
-    background-color: #FF8E28;
+    background-color: #CC7722;
     outline: none;
     border: none;
     height: 40px;

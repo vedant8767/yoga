@@ -130,7 +130,7 @@
     color: black;
   }
 span{
-    color: #FF8E28;
+    color: #CC7722;
 } */
 .workshop{
   width: 100%;
@@ -264,7 +264,7 @@ span{
   color: black;
 }
 span{
-  color: #FF8E28;
+  color: #CC7722;
 }
 
 /* Media queries for smaller screens */
@@ -294,7 +294,7 @@ span{
 
   .content button {
       font-size: 1.6vh;
-      background-color: #FF8E28;
+      background-color: #CC7722;
   }
   .workshop_left{
     height: auto;
