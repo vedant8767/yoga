@@ -73,10 +73,7 @@
 
 /* Responsive Styles */
 @media only screen and (max-width: 768px) {
-    .curriculum{
-        padding: 15px;
-        gap: 15px;
-    }
+    
 
     .curriculumhead{
         margin-left: 30px;
@@ -127,9 +124,6 @@
         border-top:1px solid #B05200 ;
         border-left: none;
     }
-}
-
-@media only screen and (max-width: 480px) {
     .curriculum{
         padding: 10px;
         gap: 10px;
@@ -151,10 +145,66 @@
     .firstdivleft, .firstdivright, .seconddivleft, .seconddivright {
         width: 100%;
         padding: 10px;
-        /* border-radius: 10px; */
     }
 
     .crfirstdiv p, .crseconddiv p {
         font-size: 2vh;
     }
+}
+/* portrait mobile and tablet */
+@media (min-width: 768px) and (max-width: 1024px){
+    .curriculumhead h1{
+       font-size: 4vh;
+    }
+   }
+   
+   /* desktop mobile view */
+   @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    .curriculumhead h1{
+        color: blue;
+           font-size: 4vh;
+    }
+    .curriculum{
+        gap: 20px;
+    }
+    .crfirstdiv{
+        flex-direction: column;
+    }
+    .crseconddiv{
+        flex-direction: column;
+    }
+   }
+   
+   @media (min-width: 1920px) {
+    .curriculumhead h1{
+           color: green;
+        }
+   }
+@media only screen and (max-width: 480px) {
+    /* .curriculum{
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .curriculumhead h1{
+        font-size: 8vw;
+    }
+
+    .linecurriculum{
+        width: 100px;
+    }
+
+    .crfirstdiv, .crseconddiv {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .firstdivleft, .firstdivright, .seconddivleft, .seconddivright {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .crfirstdiv p, .crseconddiv p {
+        font-size: 2vh;
+    } */
 }
