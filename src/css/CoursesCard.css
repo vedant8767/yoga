@@ -78,9 +78,7 @@ table {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    /* width: 100%;  */
     max-width: 500px; 
-    /* max-height: 400px; */
     padding: 20px 10px;
     justify-content: center;
     align-items: center;
@@ -107,11 +105,9 @@ table {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* justify-content: center; */
-    flex: 2; /* Adjusts space for content */
+    flex: 2; 
     margin-left: 10px;
     margin-right: 20px;
-    /* text-align: center;  */
 }
 .courses_card_contents h3{
     font-size: 4vh;
@@ -120,13 +116,12 @@ table {
 .courses_button {
     display: flex;
     gap: 15px;
-    /* justify-content: center;  */
 }
 
 table {
     text-align: center;
     border-collapse: collapse;
-    width: 100%; /* Makes the table responsive */
+    width: 100%; 
     margin: 10px 0;
 }
 
@@ -169,15 +164,18 @@ tr td:first-child {
     color: white;
 }
 
-/* Responsive Adjustments */
+
 @media screen and (max-width: 768px) {
+    .coursecard{
+        justify-content: center;
+        align-items: center;
+    }
     .card_img{
-        max-width: 100%;
-        /* max-width: 700px; */
+        max-width:95%;
         object-fit: cover;
-        /* height: 200px; */
         height:auto;
-        /* background-color: #CC7722; */
+        margin-right: 10px;
+        padding: 0px;
     }
     .card_img img{
         width: 100%;
@@ -185,52 +183,33 @@ tr td:first-child {
         object-fit: cover;
     }
     .coursecard {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column; 
         align-items: center;
         width: 100%;
     }
 
-    /* .card_img {
-        max-width: 120px; 
-    } */
-
     .courses_card_contents {
-        text-align: center;
-        width: 100%;
+        width: 95%;
     }
 
     #view,
     #enroll {
         padding: 15px;
-        width: auto; 
-        height: auto;/* Reduce button size */
-        font-size: 2vh; /* Adjust font size */
+        width: 50%; 
+        height: auto;
+        font-size: 2vh;
     }
 }
 
 @media screen and (max-width: 480px) {
-    /* .coursecard {
-        padding: 15px 5px;
-        gap: 10px;
-    }
-
-    .card_img {
-        max-width: 100px; 
-    }
-
-    #view,
-    #enroll {
-        width: 80px;
-        height: 30px;
-        font-size: 1.3vh;
-    } */
+    
 }
-/* portrait mobile and tablet */
+
 @media (min-width: 768px) and (max-width: 1024px){
     
 }
 
-/* desktop mobile view */
+
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
     .coursecard{
         max-width: 90%;

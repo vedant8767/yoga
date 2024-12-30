@@ -162,11 +162,11 @@
 /* Importing font */
 @import url("https://fonts.googleapis.com/css?family=Coiny");
 
-/* General About Section */
+
 .about {
     width: 100%;
     min-height: 100vh;
-    padding: 50px 20px; /* Adjusted padding for smaller screens */
+    padding: 50px 20px; 
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -175,21 +175,20 @@
     background-color: #FFF8E7;
 }
 
-/* Section 1 */
+
 .section1 {
     display: flex;
-    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
-    gap: 100px; /* Reduced gap for smaller screens */
+    gap: 100px; 
 }
 
 .section1img {
-    width: 80%; /* Responsive scaling */
+    width: 80%; 
     max-width: 504px;
     height: auto;
     border-radius: 20px;
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
     transition: transform 1.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 1.2s ease;
     transform: scale(1);
     cursor: pointer;
@@ -203,13 +202,11 @@
 }
 
 .section1_content {
-    width: 90%; /* Default width for smaller screens */
+    width: 90%; 
     max-width: 500px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
-    /* text-align: center;  */
 }
 .section1_content h1{
     font-size: 7vh;
@@ -221,10 +218,9 @@
     font-size: 7vh;
 }
 
-/* Section 2 */
 .section2 {
     display: flex;
-    flex-wrap: wrap; /* Enable wrapping */
+    flex-wrap: wrap; 
     gap: 100px;
     justify-content: center;
 }
@@ -253,7 +249,7 @@
 
 .section2_img {
     display: flex;
-    flex-wrap: wrap; /* Wrap images for smaller screens */
+    flex-wrap: wrap; 
     gap: 10px;
 }
 
@@ -275,14 +271,13 @@
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-/* Section 4 */
+
 .section4 {
-    width: 90%; /* Adjust for smaller screens */
-    /* max-width: 800px; */
+    width: 90%; 
     display: flex;
     flex-direction: column;
     gap: 10px;
-    text-align: center; /* Center content */
+    text-align: center; 
 }
 .section4 h2{
     font-size: 7vh;
@@ -297,9 +292,8 @@
     margin-top: -15px;
 }
 
-/* Section 5 */
 .section5 {
-    width: 100%; /* Full width for smaller screens */
+    width: 100%; 
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
@@ -311,7 +305,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    text-align: center; /* Center align for smaller screens */
+    text-align: center; 
 }
 
 .section5part2 {
@@ -351,10 +345,11 @@
         text-shadow: 0 50px 0 #000, 0 0px 20px rgba(0, 0, 0, 0.8);
     }
 }
-/* Responsive Media Queries */
+
 @media (max-width: 768px) {
     .about {
-        padding: 30px 10px; /* Adjusted padding */
+        gap: 40px;
+        padding: 30px 10px; 
     }
     .section1_content,
     .section2content {
@@ -392,15 +387,51 @@
         width: 100%;
     }
     .section5{
-      gap: 40px;  
+      gap: 40px; 
+      padding: 20px;
+      margin-top: -40px; 
     }
     .section5part1{
         gap: 25px;
     }
+    .section1{
+        gap: 10px;
+    }
+    .section1_content{
+        padding: 20px;
+    }
+    .section1 h1{
+        font-size: 5vh;
+        text-align: start;
+    }
+    .section2{
+        gap: 10px;
+        margin-top: -60px;
+    }
+    .section2content{
+        padding: 20px;
+    }
+    .section2 h2{
+        font-size: 5vh;
+        text-align: start;
+    }
+    .section4{
+        padding: 20px;
+        margin-top: -50px;
+    }
+    .section4 h2{
+        font-size: 5vh;
+        text-align: start;
+    }
+    .section4 h3{
+        font-size: 5vh;
+        text-align: start;
+    }
+
 }
 
 @media (max-width: 480px) {
-    .section1img {
+    /* .section1img {
         width: 100%;
     }
     .imgsection1 img {
@@ -412,17 +443,13 @@
     .section5part2 {
         max-width: 150px;
 
-    }
+    } */
 }
 
-
-
-/* portrait mobile and tablet */
 @media (min-width: 768px) and (max-width: 1024px){
     
    }
    
-   /* desktop mobile view */
    @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
        .section5{
         width: 100%;
@@ -441,3 +468,5 @@
    @media (min-width: 1920px) {
        
    }
+
+   

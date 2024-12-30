@@ -394,30 +394,50 @@ span{
     padding: 20px;
   }
   .workshop_left{
-    width: 90%;
+    width: 100%;
   }
-  .workshop_left img{
+  .workshop_center{
+    width: 100%;
+  }
+  .centerworkshopcard p{
+    font-size:2.7vh ;
+    margin-top: 10px;
+  }
+  .workshopcard{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .workshopcard img{
+    width: 100%;
+    height: auto;
+  }
+  .workshopcard p{
+    font-size: 2.5vh;
+    text-align: start;
+  }
+  /* .workshop_left img{
     width: 100%;
     height: auto;
     object-fit: cover;
-  }
+  } */
   .workshopdisplay{
     flex-direction: column;
+    width: 100%;
   }
   .workshop h1 {
-      font-size: 3vh;
+      font-size: 5vh;
+      text-align: center;
   }
 
-  .workshopcard img {
+  /* .workshopcard img {
       height: 120px;
-  }
+  } */
 
   .content button {
       font-size: 1.6vh;
       background-color: #CC7722;
-  }
-  .workshop_left{
-    height: auto;
   }
 }
 

@@ -71,7 +71,7 @@
     }
     .courses h1,
     .courses h2 {
-        font-size: 3vh; /* Reduces heading size for tablets */
+        font-size: 4vh; /* Reduces heading size for tablets */
     }
 
     .coursesallcards {
