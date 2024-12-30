@@ -199,7 +199,7 @@
 .testimonial-container {
     text-align: center;
     padding: 2rem;
-    background-color: #f9f9f9;
+     background-color: #FFF8E7;;
   }
   
   /* Heading for the section */
@@ -213,10 +213,10 @@
   .testimonial-card {
     max-width: 600px;
     margin: 0 auto;
-    background: #e9f1ff;
+    background-color: #FFF8E7;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     position: relative; /* Necessary for positioning arrows and dots inside */
     overflow: hidden; /* Prevent overflow */
   }
@@ -252,7 +252,7 @@
     display: flex !important;
     justify-content: center;
     gap: 10px;
-    z-index: 10; /* Ensure dots appear above other elements */
+    z-index: 10; 
   }
   
   .slick-dots.custom-dots li button:before {
@@ -266,24 +266,24 @@
   }
   
   /* Slick arrows styling */
-  .slick-prev,
-  .slick-next {
+  /* .slick-prev, */
+  /* .slick-next {
     position: absolute;
-    top: 50%; /* Center vertically */
+    top: 50%;
     transform: translateY(-50%);
-    z-index: 10; /* Ensure arrows appear above content */
+    z-index: 10;
     width: 30px;
     height: 30px;
     color: #555;
-  }
+  } */
   
-  .slick-prev {
+  /* .slick-prev {
     left: 10px;
   }
   
   .slick-next {
     right: 10px;
-  }
+  } */
   
   .slick-prev:before,
   .slick-next:before {

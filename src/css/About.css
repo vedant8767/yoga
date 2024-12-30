@@ -266,7 +266,7 @@
 
 .imgsection2 img,
 .imgsection3 img {
-    height: auto;
+    height: 100%;
     width: 100%;
     max-width: 150px;
     object-fit: cover;
@@ -294,6 +294,7 @@
 }
 .section4 h3 {
     color: #CC7722;
+    margin-top: -15px;
 }
 
 /* Section 5 */
@@ -301,8 +302,9 @@
     width: 100%; /* Full width for smaller screens */
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 60px;
     justify-content: center;
+    
 }
 
 .section5part1 {

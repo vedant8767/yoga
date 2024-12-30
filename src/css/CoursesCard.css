@@ -76,29 +76,29 @@ table {
 
 .coursecard {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    flex-wrap: wrap;
     gap: 15px;
-    width: 100%; /* Adjust width to 100% for better responsiveness */
-    max-width: 500px; /* Limits max width for larger screens */
+    /* width: 100%;  */
+    max-width: 500px; 
     padding: 20px 10px;
     justify-content: center;
     align-items: center;
     background-color: white;
     border: 3px solid #CC7722;
     border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better aesthetics */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card_img {
-    flex: 1; /* Takes available space proportionally */
-    max-width: 150px; /* Ensures image doesn't dominate small screens */
+    height: 100%;
+    max-width: 150px;
     border-radius: 10px;
 }
 
 .card_img img {
     width: 100%;
-    height: auto; /* Maintains aspect ratio */
-    object-fit: contain;
+    height: 100%; 
+    object-fit: cover;
     border-radius: 20px;
 }
 
@@ -106,18 +106,24 @@ table {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: center;
+    /* justify-content: center; */
     flex: 2; /* Adjusts space for content */
-    text-align: center; /* Centers text for smaller screens */
+    margin-left: 10px;
+    margin-right: 20px;
+    /* text-align: center;  */
 }
-
+.courses_card_contents h3{
+    font-size: 4vh;
+    font-weight: bolder;
+}
 .courses_button {
     display: flex;
     gap: 15px;
-    justify-content: center; /* Aligns buttons at the center */
+    /* justify-content: center;  */
 }
 
 table {
+    text-align: center;
     border-collapse: collapse;
     width: 100%; /* Makes the table responsive */
     margin: 10px 0;
@@ -145,7 +151,7 @@ tr td:first-child {
     border: none;
     outline: none;
     padding: 0px;
-    width: 100px;
+    width: 45%;
     height: 35px;
     font-weight: bold;
     font-size: 1.8vh;

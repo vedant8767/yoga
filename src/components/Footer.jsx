@@ -5,7 +5,7 @@ import { FaEnvelope, FaPhone, FaWhatsapp, FaInstagram, FaFacebook } from 'react-
 
 function Footer() {
   return (
-    <div className='footer'>
+    <footer className='footer'>
         <div className="footerpart1">
             <div className="footerinfo">
                 <img src={footerlogo} alt="" srcset="" />
@@ -83,6 +83,7 @@ function Footer() {
             </div>
             <div className="exploreteachers">
                     <h1>EXPLORE TEACHER TRAINING</h1>
+                    <div className="teachers">
                     <p><a href="">100 Hours Yoga Teacher Training</a></p>
                     <p><a href="">100 Hours Yoga Teacher Training</a></p>
                     <p><a href="">100 Hours Yoga Teacher Training</a></p>
@@ -90,17 +91,20 @@ function Footer() {
                     <p><a href="">100 Hours Yoga Teacher Training</a></p>
                     <p><a href="">Prenatal and Postnatal Yoga Teacher Training</a></p>
                     <p><a href="">Online Courses</a></p>
+                    </div>
             </div>
         </div>
         <div className="footerpart3">
+            <div className="footerbottom">
             <p>© 2024 8 Limbs Yoga Studios. All rights reserved. </p>
             <div className="footernav">
                 <p><a href="">Refund Policy </a></p>
                 <p><a href="">Privacy policy  </a></p>
                 <p><a href="">Terms and condition </a></p>
             </div>
+            </div>
         </div>
-    </div>
+    </footer>
   )
 }
 

@@ -24,6 +24,7 @@ function WorkShop() {
             <div className="workshop_center" data-aos="fade-up">
                 <div className='centerworkshopcard'>
                     <img src={centerimage} alt="" />
+                    <p><span>Face Yoga</span> can change your skin appearance</p>
                     <div class="overlay">
                     <div class="content">
                         <div className="hovercontent">
@@ -41,7 +42,7 @@ function WorkShop() {
                         </div>
                     </div>
                     </div>
-                    <p><span>Face Yoga</span> can change your skin appearance</p>
+                    
                 </div>
             </div>
             <div className="workshop_left" data-aos="fade-up">
