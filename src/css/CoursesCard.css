@@ -80,6 +80,7 @@ table {
     gap: 15px;
     /* width: 100%;  */
     max-width: 500px; 
+    /* max-height: 400px; */
     padding: 20px 10px;
     justify-content: center;
     align-items: center;
@@ -91,7 +92,7 @@ table {
 
 .card_img {
     height: 100%;
-    max-width: 150px;
+    max-width: 170px;
     border-radius: 10px;
 }
 

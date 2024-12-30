@@ -5,17 +5,22 @@
     margin-top: 100px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
     gap: 50px;
-    padding: 20px;
+    padding: 60px;
     background: url('https://s3-alpha-sig.figma.com/img/67be/156f/ca9fcea48dde493454cfdceb63e7d892?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XSnm3Iw5~WvJ7jy6oma0RLyZM1ApHST-tvB9ccu2FpuRRk18O7vOngqRwcAbtk~hU~Pvpn-TIEVv7Tr1mvIbQd8TyMa6PCk14e-sDfRGyH1PU~KtOzWHFCcNfmBJhmDf-NGGmlJdXbMmi8v8VWQgqwyGaPdaVfL-PyssDs~bCMOtQBX9yK6gGe2aEm3d936LdDxZwg7WozpWZeMtJUUUQnPCOXPZ0wdP~DStmQw7~lotmt2tT5UlOfu4eVldfVraQ0GkvMEDDDMdqozk84yJATTv9k8-xZcE7LTtk~KYI6LscSIU-mHSR3BfNJRrZVMnaOkI~9UPBknl8vRPwnZnHw__');
 }
 .headeryoga {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 10px;
 }
 .headeryoga h1 {
+    font-size: 7vh;
     color: #243642;
+    /* align-self: start; */
 }
 .line {
     background-color: #CC7722;
@@ -33,9 +38,12 @@
 .yogaclassesleft {
     width: 50%;
 }
+.yogaclassesleft h3{
+    font-size: 4vh;
+}
 .yogaclassesleft p {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-top: 5px;
     line-height: 25px;
     font-size: 2.5vh;
 }
@@ -47,11 +55,19 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
     gap: 20px;
+}
+.yogaclassesright h3{
+    /* align-self: center; */
+    margin-left: 28px;
 }
 .yogaclassesright form {
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     gap: 15px;
 }
 .yogaclassesright form input {

@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
     padding: 20px;
 }
 .therapyheader{
@@ -16,7 +16,7 @@
     font-size: 2.5vh;
     align-self: flex-start;
     color: #243642;
-    gap: 10px;
+    gap: 3px;
     margin-left: 50px;
 }
 .therapyline{
@@ -26,8 +26,11 @@
 }
 .therapycontent{
     display: flex;
+    justify-content: center;
     width: 90%;
+    /* align-items: center; */
     gap: 50px;
+    /* background-color: #243642; */
 }
 .tvleft{
     width: 50%;
@@ -36,11 +39,14 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 10px;
 }
 .tcright img{
     width: 100%;
-    height: 300px;
+    height: 350px;
+    border-radius: 20px;
+    border: 3px solid #CC7722;
+    margin-top: 10px;
 }
 .tvleft table{
     border: 1px solid black;
@@ -73,8 +79,12 @@
 .tcstars img{
     width: 40px;
     height: 40px;
+    border: none;
 }
 
+.therapyheader h1{
+    font-size: 7vh;
+}
 /* Responsive Styles */
 @media only screen and (max-width: 768px) {
     .therapy{

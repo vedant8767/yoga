@@ -204,7 +204,8 @@
   
   /* Heading for the section */
   .heading {
-    font-size: 2rem;
+    font-size: 7vh;
+    /* font-size: 2rem; */
     margin-bottom: 1rem;
     color: #444;
   }
@@ -214,6 +215,7 @@
     max-width: 600px;
     margin: 0 auto;
     background-color: #FFF8E7;
+    /* background-color: aqua; */
     padding: 2rem;
     border-radius: 12px;
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
@@ -222,18 +224,24 @@
   }
   
   /* Star ratings */
-  .stars {
+  .stars span{
     color: #ffcc00;
-    font-size: 1.5rem;
+  }
+  .stars {
+    color: yellow;
+    font-size: 7vh;
     margin-bottom: 1rem;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
   }
   
   /* Testimonial quote styling */
   .quote {
-    font-size: 1.1rem;
+    font-size: 3vh;
     color: #333;
     margin-bottom: 1rem;
-    font-style: italic;
+    /* font-style: italic; */
   }
   
   /* Author name styling */
@@ -262,12 +270,12 @@
   }
   
   .slick-dots.custom-dots li.slick-active button:before {
-    color: #ffcc00;
+    color: #CC7722;
   }
   
-  /* Slick arrows styling */
-  /* .slick-prev, */
-  /* .slick-next {
+  Slick arrows styling
+  /* .slick-prev, 
+  .slick-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -275,15 +283,15 @@
     width: 30px;
     height: 30px;
     color: #555;
-  } */
-  
-  /* .slick-prev {
+  }
+   */
+  .slick-prev {
     left: 10px;
   }
   
   .slick-next {
     right: 10px;
-  } */
+  }
   
   .slick-prev:before,
   .slick-next:before {

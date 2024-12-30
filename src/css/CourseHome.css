@@ -4,8 +4,16 @@
     background-color: #FFF8E7;
     margin-top: 100px;
     justify-content: center;
-    padding: 50px;
+    padding: 40px;
     display: flex;
+}
+.coursehome h1{
+    font-size: 8vh;
+}
+.coursehome p{
+    font-weight: bold;
+    font-size: 3vh;
+    width: 80%;
 }
 .coursehomeleft{
     width: 60%;
@@ -22,7 +30,7 @@
     height: 80%;
     object-fit: cover;
     border-radius: 150px;
-    border: 2px solid #CC7722;
+    border: 6px solid #CC7722;
 }
 .coursesbt{
     display: flex;

@@ -153,8 +153,8 @@ const CourseindDetails = () => {
   };
 
   return (
-    <div className="container">
-      <nav className="detailnav">
+    <div className="container1">
+      <nav className="detailnav1">
         {Object.keys(sections).map((section) => (
           <button
             key={section}

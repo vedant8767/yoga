@@ -5,9 +5,9 @@ function RelatedCoursesCrad({image,title}) {
   return (
     <div className='relatedcoursescard'>
         <img src={image} alt="" />
-        <h4>{title}</h4>
+        <p>{title}</p>
         <div className="rcbuttons">
-            <button id='rc1'>View Details</button>
+            <button id='rc1'>View Details →</button>
             <button id='rc2'>Enroll Now</button>
         </div>
     </div>
