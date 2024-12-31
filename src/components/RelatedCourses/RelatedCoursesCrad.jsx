@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/RelatedCoursesCard.css'
+import '../../css/RelatedCoursesCard.css'
 
 function RelatedCoursesCrad({image,title}) {
   return (

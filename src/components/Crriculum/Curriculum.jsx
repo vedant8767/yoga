@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/Cirriculum.css'
+import '../../css/Cirriculum.css'
 
 function Curriculum() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
-import '../css/YogaClassesHome.css'
-import star from '../assets/ic_round-star.png'
-import star1 from '../assets/ic_round-star1.png'
+import '../../css/YogaClassesHome.css'
+import star from '../../assets/ic_round-star.png'
+import star1 from '../../assets/ic_round-star1.png'
 
 
 function YogaClassesHome() {

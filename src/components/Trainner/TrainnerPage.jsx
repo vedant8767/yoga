@@ -1,5 +1,5 @@
 import React from 'react'
-import Tranniner from '../components/Tranniner'
+import Tranniner from './Tranniner'
 
 function TrainnerPage() {
   return (

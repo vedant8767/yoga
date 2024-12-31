@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../css/Details.css';
+import '../../css/Details.css';
 
 const Details = () => {
   const [activeSection, setActiveSection] = useState("Program details");

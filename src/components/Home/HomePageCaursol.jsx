@@ -87,10 +87,10 @@
 // export default HomePageCarousel;
 // HomePageCarousel.jsx
 import React from 'react';
-import '../css/HomePageCaursol.css';
-import logo from '../assets/logo.png';
-import img2 from '../assets/img2.jpg';
-import img3 from '../assets/img3.jpg';
+import '../../css/HomePageCaursol.css';
+// import logo from '../assets/logo.png';
+// import img2 from '../assets/img2.jpg';
+// import img3 from '../assets/img3.jpg';
 
 function HomePageCarousel() {
   return (

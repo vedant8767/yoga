@@ -1,9 +1,9 @@
 import React from 'react'
-import CourseHome from '../components/CourseHome'
-import Curriculum from '../components/Curriculum'
-import RelatedCourses from '../components/RelatedCourses'
-import Cr from '../components/Cr'
-import CourseindDetails from '../components/CourseindDetails'
+import CourseHome from '../components/Courses/CourseHome'
+import Curriculum from '../components/Crriculum/Curriculum'
+import RelatedCourses from '../components/RelatedCourses/RelatedCourses'
+import Cr from '../components/Courses/Cr'
+import CourseindDetails from '../components/Courses/CourseindDetails'
 
 function Courses() {
   return (

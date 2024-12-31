@@ -231,10 +231,10 @@
 // export default ClassesinDetail;
 import React, { useState } from "react";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
-import "../css/ClassesinDetail.css";
-import img1 from "../assets/left2.png";
-import img2 from "../assets/left1.png";
-import img3 from "../assets/studio.png";
+import "../../css/ClassesinDetail.css";
+import img1 from "../../assets/left2.png";
+import img2 from "../../assets/left1.png";
+import img3 from "../../assets/studio.png";
 
 const ClassesinDetail = () => {
   const [activeSection, setActiveSection] = useState("Program details");

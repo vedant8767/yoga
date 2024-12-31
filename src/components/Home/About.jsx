@@ -1,10 +1,10 @@
 import React from 'react'
 import AboutCard from './AboutCard'
-import img1 from '../assets/studio.png'
-import img2 from '../assets/img2.jpg'
-import img3 from '../assets/img3.jpg'
-import classes from '../assets/classes.png'
-import '../css/About.css'
+import img1 from '../../assets/studio.png'
+import img2 from '../../assets/img2.jpg'
+import img3 from '../../assets/img3.jpg'
+import classes from '../../assets/classes.png'
+import '../../css/About.css'
 
 function About() {
     const content =["Immerse yourself in the wisdom of our world-class instructors.","Immerse yourself in the wisdom of our world-class instructors.","Immerse yourself in the wisdom of our world-class instructors."]
@@ -24,7 +24,7 @@ function About() {
             </div>
         </div>
         <div className="section2">
-            <div className="section2content">
+        <div className="section2content">
                 <h2>MISSION AND VISSION</h2>
                 <p>At 8 Limbs Yoga, we believe that yoga is more than just a physical practice.
                     It's a journey of self-discovery and transformation. 

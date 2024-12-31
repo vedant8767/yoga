@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../css/CourseindDetails.css';
+import '../../css/CourseindDetails.css';
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 const CourseindDetails = () => {

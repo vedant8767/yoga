@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/Cr.css'
+import '../../css/Cr.css'
 
 function Cr() {
   return (

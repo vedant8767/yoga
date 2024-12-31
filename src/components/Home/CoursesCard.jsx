@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/CoursesCard.css'
+import '../../css/CoursesCard.css'
 
 function CoursesCard({img,title,description,details}) {
   return (

@@ -27,7 +27,7 @@
 // export default Testimonial
 import React from "react";
 import Slider from "react-slick"; // Import React Slick
-import "../css/Testimonial.css"; // Import CSS for styling
+import "../../css/Testimonial.css"; // Import CSS for styling
 
 const Testimonial = () => {
   const settings = {

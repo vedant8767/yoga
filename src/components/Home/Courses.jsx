@@ -1,7 +1,7 @@
 import React from 'react'
 import CoursesCard from './CoursesCard'
-import '../css/Courses.css'
-import card from '../assets/card.jpg'
+import '../../css/Courses.css'
+import card from '../../assets/card.jpg'
 
 function Courses() {
     const coursescardcontent=[

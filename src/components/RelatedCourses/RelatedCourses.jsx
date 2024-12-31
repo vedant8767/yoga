@@ -61,11 +61,11 @@
 
 // export default RelatedCourses
 import React from 'react';
-import rc1 from '../assets/rc1.png';
-import rc2 from '../assets/rc2.png';
-import rc3 from '../assets/rc3.png';
+import rc1 from '../../assets/rc1.png';
+import rc2 from '../../assets/rc2.png';
+import rc3 from '../../assets/rc3.png';
 import RelatedCoursesCrad from './RelatedCoursesCrad';
-import '../css/RelatedCourses.css';
+import '../../css/RelatedCourses.css';
 
 function RelatedCourses() {
     const rccards = [

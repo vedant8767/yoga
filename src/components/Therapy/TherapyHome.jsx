@@ -1,8 +1,8 @@
 import React from 'react'
-import '../css/TherapyHome.css'
-import star from '../assets/ic_round-star.png'
-import star1 from '../assets/ic_round-star1.png'
-import tc from '../assets/classes.png'
+import '../../css/TherapyHome.css'
+import star from '../../assets/ic_round-star.png'
+import star1 from '../../assets/ic_round-star1.png'
+import tc from '../../assets/classes.png'
 
 function TherapyHome() {
   return (

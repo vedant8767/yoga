@@ -1,10 +1,10 @@
 import React from 'react'
-import YogaClassesHome from '../components/YogaClassesHome'
-import Curriculum from '../components/Curriculum'
-import RelatedCourses from '../components/RelatedCourses'
-import ClassesinDetail from '../components/ClassesinDetail'
-import TrainnerPage from './TrainnerPage'
-import InstructorCarousel from '../components/InstructorCarousel'
+import YogaClassesHome from '../components/Yogaclasses/YogaClassesHome'
+import Curriculum from '../components/Crriculum/Curriculum'
+import RelatedCourses from '../components/RelatedCourses/RelatedCourses'
+import ClassesinDetail from '../components/Yogaclasses/ClassesinDetail'
+import TrainnerPage from '../components/Trainner/TrainnerPage'
+import InstructorCarousel from '../components/Yogaclasses/InstructorCarousel'
 
 function YogaClasses() {
   return (

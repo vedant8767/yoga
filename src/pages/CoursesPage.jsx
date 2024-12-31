@@ -1,6 +1,6 @@
 import React from 'react'
-import Courses from '../components/Courses'
-import WorkShop from '../components/WorkShop'
+import Courses from '../components/Home/Courses'
+import WorkShop from '../components/Home/WorkShop'
 
 function CoursesPage() {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
-import '../css/InstructorCarousel.css';
+import '../../css/InstructorCarousel.css';
 
 const InstructorCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

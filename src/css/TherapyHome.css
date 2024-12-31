@@ -1,4 +1,4 @@
-/* Original Styles */
+
 .therapy{
     width: 100%;
     background: url('https://s3-alpha-sig.figma.com/img/67be/156f/ca9fcea48dde493454cfdceb63e7d892?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XSnm3Iw5~WvJ7jy6oma0RLyZM1ApHST-tvB9ccu2FpuRRk18O7vOngqRwcAbtk~hU~Pvpn-TIEVv7Tr1mvIbQd8TyMa6PCk14e-sDfRGyH1PU~KtOzWHFCcNfmBJhmDf-NGGmlJdXbMmi8v8VWQgqwyGaPdaVfL-PyssDs~bCMOtQBX9yK6gGe2aEm3d936LdDxZwg7WozpWZeMtJUUUQnPCOXPZ0wdP~DStmQw7~lotmt2tT5UlOfu4eVldfVraQ0GkvMEDDDMdqozk84yJATTv9k8-xZcE7LTtk~KYI6LscSIU-mHSR3BfNJRrZVMnaOkI~9UPBknl8vRPwnZnHw__');
@@ -28,9 +28,7 @@
     display: flex;
     justify-content: center;
     width: 90%;
-    /* align-items: center; */
     gap: 50px;
-    /* background-color: #243642; */
 }
 .tvleft{
     width: 50%;
@@ -85,7 +83,7 @@
 .therapyheader h1{
     font-size: 7vh;
 }
-/* Responsive Styles */
+
 @media only screen and (max-width: 768px) {
     .therapy{
         padding: 20px;
@@ -165,12 +163,12 @@
 }
 
 
-/* portrait mobile and tablet */
+
 @media (min-width: 768px) and (max-width: 1024px){
    
    }
    
-   /* desktop mobile view */
+  
    @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
        .therapyheader h1{
         font-size: 2vh;

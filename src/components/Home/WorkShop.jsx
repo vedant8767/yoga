@@ -1,10 +1,10 @@
 import React from 'react'
-import '../css/WorkShop.css'
-import centerimage from '../assets/center.png'
-import left1 from '../assets/left1.png'
-import left2 from '../assets/left2.png'
-import right1 from '../assets/right1.png'
-import right2 from '../assets/right2.png'
+import '../../css/WorkShop.css'
+import centerimage from '../../assets/center.png'
+import left1 from '../../assets/left1.png'
+import left2 from '../../assets/left2.png'
+import right1 from '../../assets/right1.png'
+import right2 from '../../assets/right2.png'
 
 function WorkShop() {
   return (

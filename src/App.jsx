@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 import './App.css'
-import Faq from './components/Faq'
-import Footer from './components/Footer'
-import Navbar from './components/Navbar'
+import Faq from './components/Faq/Faq'
+import Footer from './components/Footer/Footer'
+import Navbar from './components/Navbar/Navbar'
 import HomePage from './pages/HomePage'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
