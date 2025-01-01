@@ -1,4 +1,4 @@
-/* Base styles */
+
 .faq-container {
   width: 100%;
   display: flex;
@@ -80,7 +80,6 @@
   line-height: 1.5;
 }
 
-/* Tablets (768px and down) */
 @media screen and (max-width: 768px) {
   .faq-container {
     flex-direction: column;
@@ -103,7 +102,7 @@
   }
 }
 
-/* Mobile devices (480px and down) */
+
 @media screen and (max-width: 480px) {
   .faq-container {
     padding: 20px 15px;
@@ -127,7 +126,7 @@
   }
 }
 
-/* Large screens (1200px and up) */
+
 @media screen and (min-width: 1200px) {
   .faq-container {
     padding: 50px max(50px, calc((100vw - 1440px) / 2));
@@ -136,14 +135,14 @@
   }
 }
 
-/* Extra large screens (1440px and up) */
+
 @media screen and (min-width: 1440px) {
   .faq-container {
     padding: 50px calc((100vw - 1440px) / 2 + 50px);
   }
 }
 
-/* High-DPI screens */
+
 @media screen and (-webkit-min-device-pixel-ratio: 2),
        screen and (min-resolution: 192dpi) {
   .faq-item {

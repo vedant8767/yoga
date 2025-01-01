@@ -1,4 +1,4 @@
-/* Base styles */
+
 .footer {
     width: 100%;
     min-height: 100vh;
@@ -24,7 +24,7 @@
     font-size: clamp(18px, 3vh, 24px);
   }
   
-  /* Footer Part 1 */
+ 
   .footerpart1 {
     width: 90%;
     display: flex;
@@ -179,7 +179,7 @@
     flex-wrap: wrap;
   }
   
-  /* Tablet Breakpoint */
+  
   @media screen and (max-width: 1024px) {
     .footerpart1,
     .footerpart2 {
@@ -202,8 +202,7 @@
       height: 200px;
     }
   }
-  
-  /* Mobile Breakpoint */
+
   @media screen and (max-width: 768px) {
     .footer {
       gap: 30px;
@@ -252,8 +251,7 @@
       height: 180px;
     }
   }
-  
-  /* Small Mobile Breakpoint */
+
   @media screen and (max-width: 480px) {
     .footer {
       padding: 20px 10px;
@@ -278,7 +276,7 @@
     }
   }
   
-  /* Large Screens */
+ 
   @media screen and (min-width: 1440px) {
     .footerpart1,
     .footerpart2,
@@ -288,10 +286,9 @@
   }
 
 
-  /* Base styles */
 .footer {
   width: 100%;
-  min-height: auto; /* Changed from 100vh to auto */
+  min-height: auto; 
   background-color: #FFF8E7;
   display: flex;
   flex-direction: column;
@@ -301,31 +298,27 @@
   box-sizing: border-box;
 }
 
-/* Rest of the existing styles remain the same... */
 
-/* Updated Footer Part 2 */
 .footerpart2 {
   width: 90%;
-  height: auto; /* Changed from max-height */
+  height: auto; 
   display: flex;
   gap: clamp(20px, 4vw, 50px);
   flex-wrap: wrap;
 }
 
-/* Footer Part 3 */
 .footerpart3 {
   width: 100%;
   padding: 20px;
-  height: auto; /* Changed from max-height */
+  height: auto; 
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid black;
   box-sizing: border-box;
-  margin-top: auto; /* Push to bottom if needed */
-}
+  margin-top: auto;
 
-/* Large Screens */
+}
 @media screen and (min-width: 1440px) {
   .footer {
     min-height: auto;
@@ -340,4 +333,3 @@
   }
 }
 
-/* Rest of the media queries remain the same... */

@@ -1,52 +1,38 @@
-/* .aboutcard{
-    background: linear-gradient(45deg, #CC7722, #FF512F);
-    color: black;
-    border-radius: 15px;
-    padding: 15px;
-    width: 400px;
-}
-.aboutcard p{
-    font-size: 2.5vh;
-    font-weight: 800;
-} */
-
 .aboutcard {
     background: #CC7722;
     color: white;
     /* color: black; */
     border-radius: 25px;
     padding: 10px; 
-    width: 90%; /* Adjust width to fit smaller screens */
-     /* Maintain max width for larger screens */
-    margin: 0 auto; /* Center the card */
+    width: 90%; 
+    margin: 0 auto; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .aboutcard p {
-    font-size: 2.2vh; /* Use viewport height for scaling font size */
+    font-size: 2.2vh; 
     font-weight: 800;
-    text-align: center; /* Align text for better readability */
-    line-height: 1.5; /* Add better spacing for text */
+    text-align: center; 
+    line-height: 1.5; 
 }
 
-/* Media queries for additional responsiveness */
 @media (max-width: 768px) {
     .aboutcard {
         padding: 8px;
-        width: 95%; /* Increase flexibility for smaller screens */
+        width: 95%; 
     }
     .aboutcard p {
-        font-size: 2vh; /* Scale font size for smaller devices */
+        font-size: 2vh; 
     }
 }
 
 @media (max-width: 480px) {
     .aboutcard {
         padding: 5px;
-        width: 100%; /* Full width for very small screens */
+        width: 100%; 
     }
     .aboutcard p {
-        font-size: 1.8vh; /* Further reduce font size for readability */
+        font-size: 1.8vh;
     }
 }
 

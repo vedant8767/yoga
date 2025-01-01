@@ -1,4 +1,4 @@
-/* Original Styles */
+
 .container {
   background: url('https://s3-alpha-sig.figma.com/img/67be/156f/ca9fcea48dde493454cfdceb63e7d892?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XSnm3Iw5~WvJ7jy6oma0RLyZM1ApHST-tvB9ccu2FpuRRk18O7vOngqRwcAbtk~hU~Pvpn-TIEVv7Tr1mvIbQd8TyMa6PCk14e-sDfRGyH1PU~KtOzWHFCcNfmBJhmDf-NGGmlJdXbMmi8v8VWQgqwyGaPdaVfL-PyssDs~bCMOtQBX9yK6gGe2aEm3d936LdDxZwg7WozpWZeMtJUUUQnPCOXPZ0wdP~DStmQw7~lotmt2tT5UlOfu4eVldfVraQ0GkvMEDDDMdqozk84yJATTv9k8-xZcE7LTtk~KYI6LscSIU-mHSR3BfNJRrZVMnaOkI~9UPBknl8vRPwnZnHw__');
   padding: 20px 50px;
@@ -60,66 +60,7 @@
   line-height: 30px;
 }
 
-/* Responsive Styles for Tablet and Mobile */
 
-/* @media only screen and (max-width: 768px) {
-  .container {
-      padding: 15px;
-  }
-  
-  .detailnav {
-      gap: 15px;
-      overflow-x: scroll;
-  }
-  
-  .nav-item {
-      font-size: 14px;
-      padding: 8px;
-  }
-  
-  .detailsection {
-      flex-direction: column;
-      gap: 20px;
-  }
-  
-  .detailsectionleft {
-      width: 100%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .container {
-      padding: 10px;
-  }
-  
-  .detailnav {
-      gap: 10px;
-      overflow-x: auto;
-  }
-  
-  .nav-item {
-      font-size: 12px;
-      padding: 6px;
-  }
-  
-  .detailsection {
-      flex-direction: column;
-      gap: 15px;
-  }
-  
-  .detailsectionleft {
-      width: 100%;
-      gap: 20px;
-  }
-  
-  .detailsectionleft h2 {
-      font-size: 18px;
-  }
-  
-  .detailsectionleft p {
-      font-size: 14px;
-  }
-} */
 
 
 @media (max-width: 768px) {
@@ -133,7 +74,8 @@
   }
 
   .nav-item {
-      font-size: 14px;
+    font-size: 5vh;
+      /* font-size: 14px; */
       padding: 8px;
   }
 
@@ -211,9 +153,7 @@
   .yogaclassesright{
     width: 50%;
   }
-  /* .detailnav button{
-    
-  } */
+  
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){

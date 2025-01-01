@@ -62,62 +62,61 @@
 @media screen and (max-width: 1024px) {
     /* Tablet and smaller laptop screens */
     .coursehome {
-        flex-direction: column; /* Stack the content vertically */
+        flex-direction: column; 
         padding: 20px;
     }
     .coursehomeleft {
-        width: 100%; /* Full width on smaller screens */
+        width: 100%; 
         padding: 10px;
     }
     .coursehoemright {
-        width: 100%; /* Full width on smaller screens */
-        margin-top: 20px; /* Add some spacing between the sections */
+        width: 100%; 
+        margin-top: 20px; 
     }
     .coursehoemright img {
-        height: 60%; /* Adjust image size for tablets */
+        height: 60%; 
     }
     .coursesbt {
-        flex-direction: column; /* Stack the buttons vertically */
-        gap: 20px; /* Reduce the gap between buttons */
+        flex-direction: column; 
+        gap: 20px; 
     }
     #cbt1, #cbt2 {
-        width: 100%; /* Make buttons full width on smaller screens */
-        font-size: 2.5vh; /* Adjust font size for readability */
+        width: 100%; 
+        font-size: 2.5vh; 
     }
 }
 
 @media screen and (max-width: 768px) {
-    /* For smaller screens like mobile devices */
     .coursehome {
-        padding: 10px; /* Reduce padding for mobile */
+        padding: 10px; 
     }
     .coursehomeleft {
-        width: 100%; /* Full width on small screens */
+        width: 100%; 
         padding: 10px;
     }
     .coursehoemright {
-        width: 100%; /* Full width for mobile devices */
-        margin-top: 15px; /* Adjust margin for better spacing */
+        width: 100%; 
+        margin-top: 15px; 
     }
     .coursehoemright img {
-        height: 50%; /* Adjust image size for mobile */
-        border-radius: 100px; /* More rounded image on mobile */
+        height: 50%;
+        border-radius: 100px; 
     }
     .coursesbt {
-        flex-direction: column; /* Stack buttons vertically */
-        gap: 15px; /* Reduce the gap between buttons */
+        flex-direction: column; 
+        gap: 15px; 
     }
     #cbt1, #cbt2 {
-        width: 100%; /* Make buttons full width */
-        font-size: 2.2vh; /* Smaller font size for mobile */
+        width: 100%; 
+        font-size: 2.2vh; 
     }
 }
-/* portrait mobile and tablet */
+
+
 @media (min-width: 768px) and (max-width: 1024px){
    
 }
 
-/* desktop mobile view */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
     .coursehome{
         padding-top: 100px;

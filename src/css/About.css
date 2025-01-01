@@ -1,167 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css?family=Coiny");
-.about{
-    width: 100%;
-    min-height: 100vh;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFF8E7;
-}
-.section1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
-.section1img {
-    width: 504px;
-    height: 300px;
-    border-radius: 50px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    transition: transform 1.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 1.2s ease; 
-    transform: scale(1); 
-    cursor: pointer;
-}
-
-.section1img:hover {
-    transform: scale(1.1); 
-    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.3); 
-}
-
-.section1img img{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    border-radius: 50px;
-}
-.section1_content{
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.section2{
-    display: flex;
-    gap: 50px;
-}
-.section2content{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 500px;
-}
-.imgsection1{
-    width: 200px;
-    height: 250px;
-}
-.imgsection1 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: 3px solid #CC7722;
-    border-radius: 15px;
-    
-}
-.section2_img{
-    display: flex;
-    gap: 10px;
-    
-}
-.imgsection2{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
- .imgsection3{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    
-}
-.imgsection2 img{
-    height: 120px;
-    width: 150px;
-    object-fit: cover;
-    border: 3px solid #CC7722;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
-
-.imgsection3 img{
-    height: 120px;
-    width: 150px;
-    object-fit: cover;
-    border: 3px solid #CC7722;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-}
-.section4{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    width: 85%;
-}
-.section4 h3{
-    color: #CC7722;
-}
-.section5{
-    width: 90%;
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-}
-
-  .section5part2 {
-    width: 200px;
-    height: auto;
-    object-fit: contain; 
-    -webkit-animation: bounce 0.4s ease infinite alternate;
-    animation: bounce 0.4s ease infinite alternate; 
-}
-.section5part2 img{
-    border-radius: 20px;
-}
-
-@-webkit-keyframes bounce {
-    0% {
-        text-shadow: 0 5px 0 #ccc, 0 2px 3px rgba(0, 0, 0, 1);  
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-20px);
-        text-shadow: 0 50px 0 #000, 0 0px 20px rgba(0, 0, 0, 0.8);
-    }
-}
-
-
-@keyframes bounce {
-    0% {
-        text-shadow: 0 5px 0 #ccc, 0 2px 3px rgba(0, 0, 0, 1);  
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-20px);
-        text-shadow: 0 50px 0 #000, 0 0px 20px rgba(0, 0, 0, 0.8);
-    }
-}
-
-.section5part2 img{
-    width: 100%;
-    height: 100%;
-}
-.section5part1{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-} */
-/* Importing font */
 @import url("https://fonts.googleapis.com/css?family=Coiny");
-
 
 .about {
     width: 100%;
@@ -184,7 +21,8 @@
     width: 40%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
+    padding: 20px 0px;
 }
 .section1_content h1{
     font-size: 7vh;
@@ -210,7 +48,8 @@
     width: 40%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
+    padding: 20px 0px;
 }
 .section2_img{
     width: 40%;

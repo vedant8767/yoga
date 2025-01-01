@@ -1,280 +1,318 @@
-.InstructorCarousel{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    background: url('https://s3-alpha-sig.figma.com/img/67be/156f/ca9fcea48dde493454cfdceb63e7d892?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XSnm3Iw5~WvJ7jy6oma0RLyZM1ApHST-tvB9ccu2FpuRRk18O7vOngqRwcAbtk~hU~Pvpn-TIEVv7Tr1mvIbQd8TyMa6PCk14e-sDfRGyH1PU~KtOzWHFCcNfmBJhmDf-NGGmlJdXbMmi8v8VWQgqwyGaPdaVfL-PyssDs~bCMOtQBX9yK6gGe2aEm3d936LdDxZwg7WozpWZeMtJUUUQnPCOXPZ0wdP~DStmQw7~lotmt2tT5UlOfu4eVldfVraQ0GkvMEDDDMdqozk84yJATTv9k8-xZcE7LTtk~KYI6LscSIU-mHSR3BfNJRrZVMnaOkI~9UPBknl8vRPwnZnHw__');
-    gap: 10px;
-}
-.carousel-title h1{
-    font-size: 7vh;
-    margin-top: 40px;
-    margin-left: 80px;
 
-}
-.InstructorCarouselcard{
-    display: flex;
-    width: 90%;
-    height: 350px;
-    background-color: white;
-    border-radius: 20px;
-    padding: 30px;
-    gap: 60px;
-    border: 2px solid #F7AF71;
-}
-.InstructorCarouselimg{
-    width: 50%;
-    height:100% ;
-    border-radius: 10px;
-}
-.InstructorCarouselimg img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-.InstructorCarouselcontent{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-}
-.Instructorcardreview{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.awards ul li{
-    /* font-size: 2vh; */
-    font-family: 'Inter', sans-serif;
-    margin-left: 15px;
-    font-size: 2vh;
-    line-height: 17px;
-    font-weight: 600;
-}
-.Instructorcardreview p{
-    font-weight: bold;
-
+.InstructorCarousel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  background: url('https://s3-alpha-sig.figma.com/img/67be/156f/ca9fcea48dde493454cfdceb63e7d892?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XSnm3Iw5~WvJ7jy6oma0RLyZM1ApHST-tvB9ccu2FpuRRk18O7vOngqRwcAbtk~hU~Pvpn-TIEVv7Tr1mvIbQd8TyMa6PCk14e-sDfRGyH1PU~KtOzWHFCcNfmBJhmDf-NGGmlJdXbMmi8v8VWQgqwyGaPdaVfL-PyssDs~bCMOtQBX9yK6gGe2aEm3d936LdDxZwg7WozpWZeMtJUUUQnPCOXPZ0wdP~DStmQw7~lotmt2tT5UlOfu4eVldfVraQ0GkvMEDDDMdqozk84yJATTv9k8-xZcE7LTtk~KYI6LscSIU-mHSR3BfNJRrZVMnaOkI~9UPBknl8vRPwnZnHw__');
+  gap: 10px;
+  padding: clamp(10px, 2vw, 20px);
+  box-sizing: border-box;
 }
 
-.Instructorname h2{font-family: 'Inter', sans-serif;}
-.Instructorrole p{
-    font-weight: 700;
-    font-size: 2.5vh;
+
+.carousel-title h1 {
+  font-size: clamp(24px, 7vh, 48px);
+  margin-top: clamp(20px, 4vh, 40px);
+  margin-left: clamp(20px, 5vw, 80px);
 }
+
+
+.InstructorCarouselcard {
+  display: flex;
+  width: 90%;
+  height: auto;
+  min-height: 350px;
+  background-color: white;
+  border-radius: 20px;
+  padding: clamp(15px, 3vw, 30px);
+  gap: clamp(20px, 4vw, 60px);
+  border: 2px solid #F7AF71;
+  box-sizing: border-box;
+}
+
+
+.InstructorCarouselimg {
+  width: 50%;
+  height: auto;
+  min-height: 300px;
+  border-radius: 10px;
+}
+
+.InstructorCarouselimg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+.InstructorCarouselcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.Instructorcardreview {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.awards ul li {
+  font-family: 'Inter', sans-serif;
+  margin-left: 15px;
+  font-size: clamp(14px, 2vh, 18px);
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.Instructorcardreview p {
+  font-weight: bold;
+}
+
+.Instructorname h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(18px, 2.5vh, 24px);
+}
+
+.Instructorrole p {
+  font-weight: 700;
+  font-size: clamp(16px, 2.5vh, 20px);
+}
+
 
 .carousel-container1 {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    position: relative;
-    background: url('https://s3-alpha-sig.figma.com/img/67be/156f/ca9fcea48dde493454cfdceb63e7d892?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XSnm3Iw5~WvJ7jy6oma0RLyZM1ApHST-tvB9ccu2FpuRRk18O7vOngqRwcAbtk~hU~Pvpn-TIEVv7Tr1mvIbQd8TyMa6PCk14e-sDfRGyH1PU~KtOzWHFCcNfmBJhmDf-NGGmlJdXbMmi8v8VWQgqwyGaPdaVfL-PyssDs~bCMOtQBX9yK6gGe2aEm3d936LdDxZwg7WozpWZeMtJUUUQnPCOXPZ0wdP~DStmQw7~lotmt2tT5UlOfu4eVldfVraQ0GkvMEDDDMdqozk84yJATTv9k8-xZcE7LTtk~KYI6LscSIU-mHSR3BfNJRrZVMnaOkI~9UPBknl8vRPwnZnHw__');
+  width: 100%;
+  margin: 0 auto;
+  padding: clamp(10px, 2vw, 20px);
+  position: relative;
+  background: inherit;
+}
+
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  padding: clamp(10px, 2vw, 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructor-card {
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
+  min-height: 350px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #CC7722;
+}
+
+.instructor-content {
+  display: flex;
+  padding: clamp(15px, 3vw, 24px);
+  gap: clamp(15px, 2vw, 24px);
+}
+
+.instructor-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.instructor-rating{
+  display: flex;
+}
+.rating-stars{
+  display: flex;
+  gap: 10px;
+}
+.rating-label {
+  color: black;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(16px, 3vh, 20px);
+  margin-right: 10px;
+}
+.star-filled {
+  color: #fbbf24;
+  fill: #fbbf24;
+}
+
+.star-empty {
+  color: #d1d5db;
+}
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.carousel-button:hover {
+  background-color: #f3f4f6;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d1d5db;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #2563eb;
+}
+
+/* Tablet Breakpoint */
+@media screen and (max-width: 1024px) {
+  .InstructorCarouselcard {
+    width: 95%;
+    gap: 30px;
   }
-  
-  /* .carousel-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-  } */
-  
-  .carousel-wrapper {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .carousel-slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .carousel-slide {
-    min-width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+
   .instructor-card {
-    width: 70%;
-    height: 350px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    border: 2px solid #CC7722;
+    width: 95%;
   }
-  
-  .instructor-content {
-    display: flex;
-    padding: 24px;
-    gap: 24px;
+
+  .carousel-title h1 {
+    margin-left: clamp(15px, 3vw, 40px);
   }
-  .instructor-details{
-    display: flex;
+}
+
+/* Mobile Breakpoint */
+@media screen and (max-width: 768px) {
+  .carousel-slides{
+    width: 100%;
+    /* overflow-x: hidden; */
+  }
+  .carousel-slide{
+    width: 90%;
+  }
+  .InstructorCarouselcard {
     flex-direction: column;
+    height: auto;
     gap: 10px;
   }
-  .rating-label{
-    color: black;
-    font-weight: 700;
-    font-family: 'Inter', sans-serif;
-    font-size: 3vh;
-    margin-right: 10px;
-  }
-  
-  @media (max-width: 768px) {
-    .instructor-content {
-      flex-direction: column;
-    }
-  }
-  
-  .instructor-image-container {
-    flex: 0 0 33.333%;
-  }
-  
-  .instructor-image {
+
+  .InstructorCarouselimg {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
+    height: 100px;
+    min-height: 250px;
+    max-height: 100px;
   }
-  
-  .instructor-details {
-    flex: 1;
+
+  .instructor-content {
+    flex-direction: column;
+    gap: 0px;
   }
-  
-  .instructor-header {
-    margin-bottom: 16px;
+
+  .carousel-title h1 {
+    text-align: center;
+    margin-left: 0;
   }
-  
-  .instructor-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0;
+
+  .Instructorcardreview {
+    justify-content: center;
   }
-  
-  .instructor-role {
-    color: #666;
-    margin: 4px 0 0 0;
+
+  .awards ul {
+    padding-left: 0;
   }
-  
-  .instructor-description {
-    color: #333;
-    margin-bottom: 16px;
+
+  .awards ul li {
+    margin-left: 20px;
     line-height: 1.6;
   }
-  
-  .instructor-rating {
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
+  .InstructorCarouselcard {
+    padding: 15px;
+    width: 100%;
   }
-   
-  .rating-stars {
-    display: flex;
-    gap: 10px;
+
+  .InstructorCarouselimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
-  
-  .star-filled {
-    color: #fbbf24;
-    fill: #fbbf24;
+
+  .awards ul li {
+    font-size: 14px;
+    /* color: #CC7722; */
   }
-  
-  .star-empty {
-    color: #d1d5db;
+
+  .carousel-slide {
+    padding: 10px;
   }
-  
-  .instructor-additional-info {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  
-  .info-section {
-    margin-bottom: 12px;
-  }
-  
-  .info-title {
-    font-weight: 600;
-    margin: 0 0 4px 0;
-  }
-  
-  .info-text {
-    color: #666;
-    margin: 0;
-  }
-  
-  .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
-  }
-  
-  .carousel-button:hover {
-    background-color: #f3f4f6;
-  }
-  
-  .carousel-button.prev {
-    left: 10px;
-  }
-  
-  .carousel-button.next {
-    right: 10px;
-  }
-  
-  .carousel-dots {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 16px;
-  }
-  
-  .dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #d1d5db;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .dot.active {
-    background-color: #2563eb;
-  }
-.Instructordescription p{
+  .Instructorrole p{
     font-size: 2vh;
-    line-height: 17px;
-    font-weight: 600;
-}
-.Instructorname h2{
-    font-size: 3.5vh;
-}
-  @media (max-width: 768px) {
-    .instructor-content {
-      flex-direction: column;
-    }
-    
-    .instructor-image-container {
-      width: 100%;
-      margin-bottom: 16px;
-    }
-    
-    .carousel-button {
-      width: 32px;
-      height: 32px;
-    }
   }
+  .Instructordescription p{
+    font-size: 2vh;
+  }
+  .rating-label{
+    font-size: 2vh;
+  }
+  .carousel-button{
+    background-color: transparent;
+    background: transparent;
+  }
+}
+
+/* Small Mobile Breakpoint */
+@media screen and (max-width: 480px) {
+ 
+}
+
+/* Large Screens */
+@media screen and (min-width: 1440px) {
+  .InstructorCarouselcard,
+  .instructor-card {
+    max-width: 1400px;
+  }
+
+  .carousel-container1 {
+    max-width: 1400px;
+  }
+}

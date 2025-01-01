@@ -1,4 +1,4 @@
-/* Original Styles */
+
 .aboutus {
     width: 100%;
     min-height: 100vh;
@@ -12,14 +12,14 @@
 /* Responsive Styles for Tablet and Mobile */
 @media only screen and (max-width: 768px) {
     .aboutus {
-        font-size: 4vh; /* Adjust font size for tablets */
-        margin-top: 80px; /* Adjust top margin for smaller screens */
+        font-size: 4vh; 
+        margin-top: 80px; 
     }
 }
 
 @media only screen and (max-width: 480px) {
     .aboutus {
-        font-size: 3.5vh; /* Adjust font size for mobile devices */
-        margin-top: 60px; /* Adjust top margin for mobile devices */
+        font-size: 3.5vh; 
+        margin-top: 60px; 
     }
 }
