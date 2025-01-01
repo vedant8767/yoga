@@ -162,18 +162,18 @@ function Navbar() {
       name: 'Teacher Training Courses',
       slug: '/TeacherTrainingCourses',
       dropdown: [
-        { name: 'Basic Training', slug: '/TeacherTrainingCourses/basic' },
-        { name: 'Advanced Training', slug: '/TeacherTrainingCourses/advanced' },
-        { name: 'Specialized Courses', slug: '/TeacherTrainingCourses/specialized' }
+        { name: 'Basic Training', slug: '/TeacherTrainingCourses' },
+        { name: 'Advanced Training', slug: '/TeacherTrainingCourses' },
+        { name: 'Specialized Courses', slug: '/TeacherTrainingCourses' }
       ]
     },
     {
       name: 'Yoga Classes',
       slug: '/YogaClasses',
       dropdown: [
-        { name: 'Beginner Classes', slug: '/YogaClasses/beginner' },
-        { name: 'Intermediate Classes', slug: '/YogaClasses/intermediate' },
-        { name: 'Advanced Classes', slug: '/YogaClasses/advanced' }
+        { name: 'Beginner Classes', slug: '/YogaClasses' },
+        { name: 'Intermediate Classes', slug: '/YogaClasses' },
+        { name: 'Advanced Classes', slug: '/YogaClasses' }
       ]
     },
     { name: 'Therapy', slug: '/Therapy' },
