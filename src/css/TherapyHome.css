@@ -91,7 +91,10 @@
     }
 
     .therapyheader {
-        margin-left: 20px;
+        margin-left: 25px;
+    }
+    .therapyheader h1{
+        font-size: 4vh;
     }
 
     .therapycontent {
@@ -122,8 +125,15 @@
     .tcratings p{
         font-size: 3vh;
     }
+    .therapyline{
+        width: 70%;
+    }
 }
-
+@media only screen and (max-width: 320px) {
+    .tcstars{
+        gap: 10px;
+    }
+}
 @media only screen and (max-width: 480px) {
     .therapy{
         padding: 10px;
@@ -131,8 +141,8 @@
     }
 
     .therapyheader {
-        font-size: 5vw;
-        margin-left: 10px;
+        /* font-size: 5vw; */
+        margin-left: 25px;
     }
 
     .therapycontent {

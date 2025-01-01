@@ -92,11 +92,33 @@
    }
    
    /* desktop mobile view */
-   @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
      .crheader h1{
-        font-size: 2vh;
+        font-size: 5vh;
+        color: #CC7722;
+     }
+     .cr{
+        justify-content: start;
+        align-items: start;
      }
    }
+   @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    .crheader h1{
+       font-size: 3vh;
+       /* color: #CC7722; */
+    }
+    .cr{
+        justify-content: start;
+        align-items: start;
+     }
+    
+  }
+  @media (min-width: 1366px) and (max-width: 1920px) {
+    /* .cr{
+        justify-content: start;
+        align-items: start;
+     } */
+  }
    
    @media (min-width: 1920px) {
        

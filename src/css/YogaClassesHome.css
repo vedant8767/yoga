@@ -191,7 +191,7 @@
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
-    .yogaclassesleft p{
+    /* .yogaclassesleft p{
         font-size: 3vh;
     }
     .yogaclassesright{
@@ -213,11 +213,11 @@
         width: 250px;
         height: 40px;
         font-size: 1.5vh;
-    }
+    } */
 }
 
 @media (min-width: 1366px) and (max-width: 1920px) {
-.yogaclassesleft p{
+/* .yogaclassesleft p{
     line-height: 40px;
 }
 .yogaclassesright{
@@ -239,10 +239,10 @@
     width: 250px;
     height: 60px;
     font-size: 2.5vh;
-}
+} */
 }
 @media (min-width: 2560px) {
-    .yogaclassesleft h3{
+    /* .yogaclassesleft h3{
         color: black;
     }
     .yogaclassesleft p{
@@ -274,7 +274,7 @@
     .stars img{
         width: 100px;
         height: 100px;
-    }
+    } */
 }
 
 

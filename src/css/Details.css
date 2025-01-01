@@ -87,6 +87,10 @@
   .detailsectionleft {
       width: 100%;
   }
+  .detailsectionleft h2{
+    font-size: 4vh;
+    /* color: red; */
+  }
     .container {
       padding: 10px;
   }
@@ -111,12 +115,11 @@
       gap: 20px;
   }
 
-  .detailsectionleft h2 {
-      font-size: 18px;
-  }
+  
 
   .detailsectionleft p {
-      font-size: 14px;
+      font-size: 2vh;
+      margin-top: -10px;
   }
   .yogaclassesright{
     width: 100%;

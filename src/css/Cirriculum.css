@@ -80,21 +80,13 @@
     }
 
     .curriculumhead h1{
-        font-size: 6vw;
+        font-size: 6vh;
     }
 
     .linecurriculum{
-        width: 120px;
+        width: auto;
     }
 
-    .crfirstdiv, .crseconddiv {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .firstdivleft, .firstdivright, .seconddivleft, .seconddivright {
-        width: 100%;
-    }
 
     .firstdivleft, .firstdivright {
         padding: 15px;
@@ -105,7 +97,7 @@
     }
 
     .crfirstdiv p, .crseconddiv p {
-        font-size: 2.2vh;
+        font-size: 2vh;
     }
     .firstdivleft{
         border-radius: 10px 10px 0px 0px;
@@ -138,7 +130,7 @@
 
     .crfirstdiv, .crseconddiv {
         flex-direction: column;
-        width: 100%;
+        width: 90%;
     }
 
     .firstdivleft, .firstdivright, .seconddivleft, .seconddivright {
@@ -147,7 +139,7 @@
     }
 
     .crfirstdiv p, .crseconddiv p {
-        font-size: 2vh;
+        font-size: 1.7vh;
     }
 }
 
@@ -155,9 +147,9 @@
     .curriculumhead h1{
        font-size: 4vh;
     }
-   }
+}
  
-   @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
     .curriculumhead{
         margin-left: 30px;
     }
@@ -230,9 +222,4 @@
     }
    }
    
-   @media (min-width: 1920px) {
-  
-   }
-@media only screen and (max-width: 480px) {
-   
-}
+

@@ -59,14 +59,10 @@
     gap: 15px;
     margin-bottom: 15px;
   }
-
-  .nav-item  {
-    font-size: 4vh;
-    padding: 8px;
-    /* color:rebeccapurple; */
-    /* color: #CC7722; */
+  .detailnav button{
+    font-size: 2.3vh;
   }
-
+  
   .detailsection {
     flex-direction: column;
     gap: 30px;
@@ -75,6 +71,7 @@
   .detailsection img{
     width: 100%;
   }
+
 }
 
 
@@ -99,24 +96,23 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
-  .detailcontent{
-    flex-direction: column;
-  }
-  .detailsection{
-    flex-direction: column;
-  }
-  .detailsection img{
-    /* border: 10px solid red; */
-  }
+ 
+  
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+  
   .detailcontent{
-    flex-direction: column;
+    flex-direction: row;
   }
   .detailsection{
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .detailsection .tvleft{
+    width: 50%;
   }
   .detailsection img{
-    border: 10px solid red;
+    width: 50%;
   }
+  
 }

@@ -1,50 +1,100 @@
-.relatedcoursescard{
+/* Card styles */
+.relatedcoursescard {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    width: 354px;
-    height: 330px;
+    width: 100%;
+    max-width: 354px;
+    height: auto;
+    min-height: 330px;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     background-color: #FFC994;
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow: hidden; /* Prevent content overflow */
 }
-.relatedcoursescard img{
+
+.relatedcoursescard img {
     height: 190px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
-.relatedcoursescard p{
-    font-size: 3vh;
+
+.relatedcoursescard p {
+    font-size: clamp(18px, 2.5vh, 24px);
     font-weight: bold;
     text-align: justify;
-    /* white-space: nowrap; */
     padding: 0px 20px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
-.rcbuttons{
+
+.rcbuttons {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     margin-bottom: 20px;
     padding: 0px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
 }
-#rc1{
+
+#rc1, #rc2 {
     background-color: #CC7722;
     border: none;
     outline: none;
     color: white;
     font-weight: bold;
-    width: 133px;
+    width: 120px; /* Reduced width for mobile */
     height: 38px;
     border-radius: 31px;
+    cursor: pointer;
 }
-#rc2{
+
+#rc2 {
     background-color: #252525;
-    border: none;
-    outline: none;
-    color: white;
-    font-weight: bold;
-    width: 133px;
-    height: 38px;
-    border-radius: 31px;
+}
+
+/* Mobile Specific */
+@media screen and (max-width: 767px) {
+    .relatedcoursescard {
+        width: calc(100% - 20px);
+        max-width: 354px;
+        min-width: unset; /* Remove min-width constraint */
+        transform: scale(0.95); /* Slightly reduce size to ensure visibility */
+    }
     
+    .rcbuttons {
+        padding: 0px 10px;
+        gap: 10px;
+    }
+    
+    #rc1, #rc2 {
+        width: 110px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .relatedcoursescard {
+        width: 100%;
+    }
+    
+    #rc1, #rc2 {
+        width: 133px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .relatedcoursescard {
+        width: 354px;
+    }
+    
+    #rc1, #rc2 {
+        width: 133px;
+    }
 }
