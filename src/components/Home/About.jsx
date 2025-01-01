@@ -36,9 +36,9 @@ function About() {
                     of all students, from beginners to advanced practitioners. </p>
             </div>
             <div className="section2_img" data-aos="fade-down">
-                <div className="imgsection1">
+                {/* <div className="imgsection1">
                     <img src={img2} alt="" />
-                </div>
+                </div> */}
                 <div className="imgsection2">
                     <img src={img3} alt="" />
                     <img src={img2} alt="" />

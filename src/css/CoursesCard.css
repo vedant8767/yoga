@@ -225,13 +225,13 @@ tr td:first-child {
         font-size: 1vh;
     }
     #view{
-        width: auto;
+        width: 50%;
         height: auto;
         padding: 15px;
         font-size: 1.5vh;
     }
     #enroll{
-        width: auto;
+        width: 50%;
         font-size: 1.5vh;
         height: auto;
         padding: 15px;
@@ -240,4 +240,35 @@ tr td:first-child {
 
 @media (min-width: 1920px) {
     
+}
+
+@media (min-width: 2560px) {
+    .coursecard{
+        max-width: 1200px;
+    }
+    .card_img{
+        max-width: 400px;
+    }
+    #view{
+        height: 60px;
+    }
+    #enroll{
+        height: 60px;
+    }
+    .coursescard{
+        justify-content: start;
+        align-items: start;
+    }
+    .courses_card_contents{
+        gap: 30px;
+    }
+    .courses_card_contents h3{
+        font-size: 4vh;
+    }
+    .courses_card_contents p{
+        font-size: 2.5vh;
+    }
+    .courses_card_contents table{
+        font-size: 2.5vh;
+    }
 }

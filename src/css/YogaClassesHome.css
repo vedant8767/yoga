@@ -99,12 +99,48 @@
     font-weight: bold;
 }
 
-/* portrait mobile and tablet */
+@media only screen and (max-width: 768px) {
+    .yogaclasses{
+        width: 100%;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .headeryoga{
+        width: 90%;
+    }
+    .headeryoga h1{
+        font-size: 4.5vh;
+        margin-top: 20px;
+    }
+    .line{
+        width: auto;
+    }
+    .yogaclasseshome{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .yogaclassesleft{
+        width: 90%;
+    }
+    .yogaclassesright{
+        width: 90%;
+    }
+    .yogaclassesleft h3{
+        font-size: 3vh;
+        margin-bottom: 15px;
+    }
+    .yogaclassesleft p{
+        font-size: 2vh;
+    }
+}
 @media (min-width: 768px) and (max-width: 1024px){
 
 }
 
-/* desktop mobile view */
+
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
     .yogaclasseshome{
         flex-direction: column;
@@ -129,154 +165,6 @@
         color: green;
      }
 }
-/* Responsive Styles for Mobile */
 
-@media only screen and (max-width: 768px) {
-    .yogaclasses {
-        margin-top: 80px;
-        padding: 15px;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .headeryoga {
-        gap: 5px;
-        margin-top: 50px;
-    }
 
-    .line {
-        width: auto;
-    }
-
-    .yogaclasseshome {
-        flex-direction: column;
-        gap: 30px;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .yogaclassesleft {
-        width: 100%;
-    }
-
-    .yogaclassesleft p {
-        font-size: 3vh;
-    }
-
-    .yogaclassesright {
-        width: 100%;
-        border-radius: 20px;
-    }
-
-    .yogaclassesright form input {
-        width: 80%;
-        height: 45px;
-    }
-
-    .yogaclassesright form button {
-        width: 120px;
-        height: 35px;
-    }
-    .yogaclasses {
-        margin-top: 60px;
-        padding: 10px;
-    }
-
-    .headeryoga {
-        gap: 5px;
-    }
-    .headeryoga h1{
-        font-size: 3vh;
-    }
-
-    .line {
-        width: 100%;
-    }
-
-    .yogaclasseshome {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .yogaclassesleft {
-        width: 100%;
-    }
-
-    .yogaclassesleft p {
-        font-size: 2.5vh;
-        line-height: 30px;
-    }
-
-    .yogaclassesright {
-        width: 100%;
-        border-radius: 15px;
-        padding: 15px;
-    }
-
-    .yogaclassesright form input {
-        width: 90%;
-        height: 40px;
-    }
-
-    .yogaclassesright form button {
-        width: 100px;
-        height: 30px;
-    }
-
-    .ratings p {
-        font-size: 3vh;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    /* .yogaclasses {
-        margin-top: 60px;
-        padding: 10px;
-    }
-
-    .headeryoga {
-        gap: 5px;
-    }
-    .headeryoga h1{
-        font-size: 3vh;
-    }
-
-    .line {
-        width: 100%;
-    }
-
-    .yogaclasseshome {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .yogaclassesleft {
-        width: 100%;
-    }
-
-    .yogaclassesleft p {
-        font-size: 2.5vh;
-        line-height: 30px;
-    }
-
-    .yogaclassesright {
-        width: 100%;
-        border-radius: 15px;
-        padding: 15px;
-    }
-
-    .yogaclassesright form input {
-        width: 90%;
-        height: 40px;
-    }
-
-    .yogaclassesright form button {
-        width: 100px;
-        height: 30px;
-    }
-
-    .ratings p {
-        font-size: 3vh;
-    } */
-}

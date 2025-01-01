@@ -169,7 +169,7 @@ const Details = () => {
           </button>
         ))}
       </nav>
-      <div className="detailcontent">{sections[activeSection]}</div>
+      <div className="detailcontent2">{sections[activeSection]}</div>
     </div>
   );
 };

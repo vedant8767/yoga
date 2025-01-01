@@ -1,433 +1,271 @@
-/* .navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: #CC7722;
-    gap: 32px;
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-    height: 100px;
-    padding: 30px 10px;
-    color: white;
-    top: 0px;
+/* ... your existing CSS ... */
+
+.has-dropdown {
+  position: relative;
 }
 
-.navbar .nav_logo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #CC7722;
+  min-width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 1001;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.navbar .nav_logo img{
-    width: 100px;
-    height: 80px;
-    object-fit: contain;
-}
-.nav_logo h1{
-    font-size: 2.5vh;
-    font-weight: 900;
-}
-.nav_logo h2{
-    font-size: 2vh;
-    font-weight: 500;
-}
-.nav_items ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 32px;
-}
-.nav_items ul button{
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size:3vh ;
-    cursor: pointer;
-    color: white;
-    font-family: "Iowan Old Style", serif;
-    font-weight: bold;
-    font-size: 3.5vh;
-}
-.nav_items ul button:hover{
-    color: black;
-}
-
-.nav_items ul li:last-child button {
-    background-color: black;
-    outline: none;
-    border: none;
-    font-size: 2.5vh;
-    border-radius: 20px;
-    padding: 10px 25px;
-    color: white;
-
-  }
-  .nav_items ul li:last-child button:hover {
-    color: #CC7722;
-  } */
-
-  /* .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #CC7722;
-    padding: 20px;
-    color: white;
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-    top: 0;
-  }
-  
-  .nav_logo img {
-    width: 80px;
-    height: auto;
-  }
-  
-  .nav_items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    height: 100vh;
-    width: 70%;
-    background: #CC7722;
-    transition: right 0.3s ease-in-out;
-    gap: 20px;
-  } */
-  
-  .nav_items.open {
-    right: 0;
-  }
-  
-  /* .nav_items ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .nav_items ul li {
-    text-align: center;
-  }
-  
-  .nav_items ul button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    font-family: 'Iowan Old Style', serif;
-    font-weight: bold;
-  }
-  
-  .nav_items ul button:hover {
-    color: black;
-  }
-  
-  .nav_items ul li:last-child button {
-    background-color: black;
-    border-radius: 20px;
-    padding: 10px 25px;
-    font-size: 16px;
-  }
-  
-  .nav_items ul li:last-child button:hover {
-    color: #CC7722;
-  } */
-  
-  /* .hamburger {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25px;
-    height: 20px;
-    padding: 0;
-    position: relative;
-    z-index: 1100;
-  }
-  
-  .hamburger span {
+@media (min-width: 769px) {
+  .has-dropdown:hover .dropdown-menu,
+  .dropdown-menu.show {
     display: block;
-    width: 100%;
-    height: 3px;
-    background: white;
-    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
   }
   
-  .hamburger.open span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+  .dropdown-menu:hover {
+    display: block;
+    opacity: 1;
+    visibility: visible;
   }
-  
-  .hamburger.open span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .hamburger.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  } */
-
-  /* mysty */
-  /* .navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: #CC7722;
-    gap: 32px;
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-    height: 100px;
-    padding: 30px 10px;
-    color: white;
-    top: 0px;
 }
 
-.navbar .nav_logo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* ... rest of your existing CSS ... */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #CC7722;
+  gap: 32px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100px;
+  padding: 30px 10px;
+  color: white;
+  top: 0px;
 }
 
-.navbar .nav_logo img{
-    width: 100px;
-    height: 80px;
-    object-fit: contain;
+.nav_logo img {
+  width: 80px;
+  height: auto;
 }
-.nav_logo h1{
-    font-size: 2.5vh;
-    font-weight: 900;
+
+.nav_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 100%;
+  background: #CC7722;
+  transition: right 0.3s ease-in-out;
+  gap: 20px;
 }
-.nav_logo h2{
-    font-size: 2vh;
-    font-weight: 500;
+
+.nav_items.open {
+  right: 0;
 }
-.nav_items ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 32px;
+
+.nav_items ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
-.nav_items ul button{
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size:3vh ;
-    cursor: pointer;
-    color: white;
-    font-family: "Iowan Old Style", serif;
-    font-weight: bold;
-    font-size: 3.5vh;
+
+.nav_items ul li {
+  text-align: center;
+  position: relative;
 }
-.nav_items ul button:hover{
-    color: black;
+
+.nav_items ul button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: 'Iowan Old Style', serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav_items ul button:hover {
+  color: black;
 }
 
 .nav_items ul li:last-child button {
-    background-color: black;
-    outline: none;
-    border: none;
-    font-size: 2.5vh;
-    border-radius: 20px;
-    padding: 10px 25px;
-    color: white;
-
-  }
-  .nav_items ul li:last-child button:hover {
-    color: #CC7722;
-  }
-
-  
-  
-  @media (max-width: 768px) {
-    .hamburger {
-      display: flex;
-    }
-  
-    .nav_items {
-      flex-direction: column;
-      justify-content: flex-start;
-      padding-top: 60px;
-    }
-  }
-  
-  @media (min-width: 769px) {
-    .nav_items {
-      position: static;
-      flex-direction: row;
-      height: auto;
-      width: auto;
-      background: transparent;
-      transition: none;
-    }
-  
-    .nav_items ul {
-      flex-direction: row;
-      gap: 32px;
-    }
-  
-    .hamburger {
-      display: none;
-    }
-  }
-   */
-   .navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: #CC7722;
-    gap: 32px;
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-    height: 100px;
-    padding: 30px 10px;
-    color: white;
-    top: 0px;
+  background-color: black;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-size: 16px;
 }
-  
-  .nav_logo img {
-    width: 80px;
-    height: auto;
+
+.nav_items ul li:last-child button:hover {
+  color: #CC7722;
+}
+
+/* Dropdown styles */
+.dropdown-icon {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.3s ease;
+  margin-left: 4px;
+}
+
+.dropdown-icon.rotated {
+  transform: rotate(180deg);
+}
+
+.has-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #CC7722;
+  min-width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 1001;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Hover functionality for desktop */
+@media (min-width: 769px) {
+  .has-dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
   }
-  
-  .nav_items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    height: 100vh;
-    width: 100%;
-    background: #CC7722;
-    transition: right 0.3s ease-in-out;
-    gap: 20px;
-  }
-  
-  .nav_items.open {
-    right: 0;
-  }
-  
-  .nav_items ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .nav_items ul li {
-    text-align: center;
-  }
-  
-  .nav_items ul button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    font-family: 'Iowan Old Style', serif;
-    font-weight: bold;
-  }
-  
-  .nav_items ul button:hover {
-    color: black;
-  }
-  
-  .nav_items ul li:last-child button {
-    background-color: black;
-    border-radius: 20px;
-    padding: 10px 25px;
-    font-size: 16px;
-  }
-  
-  .nav_items ul li:last-child button:hover {
-    color: #CC7722;
-  }
-  
+}
+
+.dropdown-menu.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-menu button {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: left;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  padding: 0;
+  position: relative;
+  z-index: 1100;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(53deg) translate(8px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-50deg) translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
   .hamburger {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25px;
-    height: 20px;
-    padding: 0;
-    position: relative;
-    z-index: 1100;
+    display: flex;
   }
-  
-  .hamburger span {
-    display: block;
-    width: 100%;
-    height: 3px;
-    background: white;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .hamburger.open span:nth-child(1) {
-    transform: rotate(53deg) translate(8px, 5px);
-  }
-  
-  .hamburger.open span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .hamburger.open span:nth-child(3) {
-    transform: rotate(-50deg) translate(5px, -5px);
-  }
- 
-  @media (max-width: 768px) {
-    .hamburger {
-      display: flex;
-      
-    }
-    
-    .nav_items {
-      flex-direction: column;
-      justify-content: flex-start;
-      padding-top: 60px;
-    }
-  }
-  
-  @media (min-width: 769px) {
-    .nav_items {
-      position: static;
-      flex-direction: row;
-      height: auto;
-      width: auto;
-      background: transparent;
-      transition: none;
 
+  .nav_items {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 60px;
+  }
+
+  .dropdown-menu {
+    position: static;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+    margin-top: 10px;
+  }
+
+  .dropdown-menu button {
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav_items {
+    position: static;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    background: transparent;
+    transition: none;
+  }
+
+  .nav_items ul {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-10px);
     }
-  
-    .nav_items ul {
-      flex-direction: row;
-      gap: 32px;
-    }
-  
-    .hamburger {
-      display: none;
-     
+    to {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
     }
   }
-  
+}
+

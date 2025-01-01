@@ -1,116 +1,129 @@
-.footer{
+/* Base styles */
+.footer {
     width: 100%;
     min-height: 100vh;
-    /* background-color: rebeccapurple; */
     background-color: #FFF8E7;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     gap: 20px;
-}
-.footer p a{
+    padding: clamp(20px, 3vw, 40px) 0;
+    box-sizing: border-box;
+  }
+  
+  .footer p a {
     text-decoration: none;
     color: black;
-}
-.footer p{
-    font-size: 14px;
-}
-.footer h1{
-    font-size: 3vh;
-}
-.footerpart1{
-    /* background-color: aqua; */
+  }
+  
+  .footer p {
+    font-size: clamp(12px, 1.5vw, 14px);
+  }
+  
+  .footer h1 {
+    font-size: clamp(18px, 3vh, 24px);
+  }
+  
+  /* Footer Part 1 */
+  .footerpart1 {
     width: 90%;
-    /* height: 40vh; */
     display: flex;
-    gap: 50px;
+    gap: clamp(20px, 4vw, 50px);
     margin-bottom: 10px;
-}
-.footerinfo{
-    width:30% ;
+    flex-wrap: wrap;
+  }
+  
+  .footerinfo {
+    width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
-.footerinfo h1{
-    font-size: 4vh;
-}
-.footerinfo p{
-    line-height: 20px;
-}
-.footerinfo img{
+  }
+  
+  .footerinfo h1 {
+    font-size: clamp(20px, 4vh, 28px);
+  }
+  
+  .footerinfo p {
+    line-height: 1.5;
+  }
+  
+  .footerinfo img {
     width: 50px;
     height: 50px;
     object-fit: cover;
-}
-.socialmedia{
+  }
+  
+  .socialmedia {
     display: flex;
     gap: 20px;
-}
-.footermenu{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width:30% ;
-    height: 100%;
-}
-.allmenus{
-    display: flex;
-    justify-content: space-between;
-}
-.meunpart1{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.meunpart2{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.footercourses{
-    width:30% ;
+    flex-wrap: wrap;
+  }
+  
+  /* Footer Menu */
+  .footermenu {
+    width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
-.courses_list{
+  }
+  
+  .allmenus {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.footerpart2{
-    /* background-color: aqua; */
-    width: 90%;
-    max-height: 40vh;
-    display: flex;
+    justify-content: start;
     gap: 50px;
-}
-.footerpart3{
-    width: 100%;
-    padding: 20px;
-    max-height: 20vh;
+  }
+  
+  .meunpart1,
+  .meunpart2 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top:1px solid black ;
-}
-.locations{
-    width:30% ;
-    height: 100%; 
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .footercourses {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .courses_list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Footer Part 2 */
+  .footerpart2 {
+    width: 90%;
+    max-height: none;
+    display: flex;
+    gap: clamp(20px, 4vw, 50px);
+    flex-wrap: wrap;
+  }
+  
+  /* Locations */
+  .locations,
+  .locationpart2,
+  .exploreteachers {
+    width: 30%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-.loactioncard{
+  }
+  
+  .loactioncard {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-.loactioncard button{
+  }
+  
+  .loactioncard button {
     width: 90px;
     height: 28px;
     border-radius: 8px;
@@ -119,380 +132,212 @@
     border: none;
     font-size: 11px;
     font-weight: 600;
-}
-.locationpart2{
-    width:30% ;
+  }
+  
+  .map-box {
+    width: 100%;
+    height: 230px;
+  }
+  
+  iframe {
+    width: 100%;
     height: 100%;
+  }
+  
+  .teachers {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-.map-box{
+  }
+  
+  /* Footer Part 3 */
+  .footerpart3 {
     width: 100%;
-    height: 130px;
-}
-iframe{
-    width: 100%;
-    height: 100%;
-}
-.exploreteachers{
-    width:30% ;
-    height: 100%;
+    padding: 20px;
+    max-height: none;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.teachers{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.footerbottom{
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid black;
+    box-sizing: border-box;
+  }
+  
+  .footerbottom {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 90%;
-}
-.footernav{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footernav {
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
-}
-@media screen and (max-width: 1024px) {
-    .footer {
-        gap: 20px; 
-        padding: 20px;
-    }
-
-    .footerpart1,
-    .footerpart2 {
-        flex-direction: column; 
-        align-items: center;
-    }
-
-    .footerinfo,
-    .footermenu,
-    .footercourses,
-    .locations,
-    .exploreteachers,
-    .locationpart2 {
-        width: 90%; 
-    }
-
-    .socialmedia {
-        justify-content: center; 
-    }
-
-    .loactioncard button {
-        width: 100%; 
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .footerinfo h1,
-    .footermenu h1,
-    .footercourses h1,
-    .locations h1,
-    .exploreteachers h1 {
-        font-size: 3vh; 
-    }
-
-    .footerinfo p {
-        width: 100%; 
-    }
-
-    .footerpart3 {
-        flex-direction: column; 
-        gap: 15px; 
-        text-align: center; 
-    }
-
-    .footernav {
-        flex-wrap: wrap; 
-        justify-content: center; 
-    }
-
-    .icon {
-        width: 35px; 
-        height: 35px;
-    }
-    .footerinfo img{
-        width: 200px;
-        height: 150px;
-    }
-    span p{
-        font-size: 2.5vh;
-        font-weight: 800;
-        color: #252525;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    
-}
-
-
-
-@media (min-width: 768px) and (max-width: 1024px){
-   
-}
-   
+    flex-wrap: wrap;
+  }
   
-   @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
-    .footerinfo{
-        align-items: start;
-    }
-    .footerinfo img{
-        width: 200px;
-        height: 200px;
-    }
-       .footerinfo h1{
-        font-size: 2vh;
-       }
-       .footerinfo p{
-        font-size: 0.7vh;
-        width: 100%;
-       }
-       .icon{
-        width: 30px;
-        height: 30px;
-       }
-       .socialmedia span p{
-        font-size: 1.5vh;
-        margin-top: 10px;
-        color: black;
-       }
-       .footermenu h1{
-        font-size: 2vh;
-       }
-       .footermenu p a{
-        font-size: 1.5vh;
-       }
-       .meunpart1{
-        width: 50%;
-       }
-       .meunpart2{
-        width: 50%;
-       }
-       .footercourses h1{
-        font-size: 2vh;
-       }
-       .footercourses p a{
-        font-size: 1.5vh;
-        margin-bottom: 5px;
-       }
-       .courses_list{
-        margin-top: 10px;
-        width: 100%;
-       }
-       .locations h1{
-        font-size: 2vh;
-       }
-       .loactioncard p{
-        font-size:1.4vh;
-       }
-       .loactioncard button{
-        width: 30%;
-        font-size: 1.3vh;
-        height: 50px;
-       }
-       .exploreteachers h1{
-         font-size: 2vh;
-       }
-       .footerpart3 p{
-        font-size: 1.3vh;
-       }
-   }
-   
-   @media (min-width: 1920px) {
-       .yogaclassesleft h3{
-           color: green;
-        }
-   }
-   /* .footer {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFF8E7;
-    overflow: hidden;
-    gap: 60px;
-}
-
-.footerpart1 {
-    width: 100%;
-    display: flex;
-    gap: 40px;
-    padding: 15px;
-    height: 40vh;
-    justify-content: center;
-}
-
-.footerinfo {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.footerinfo img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-}
-
-.footerinfo p {
-    font-size: 12px;
-    line-height: 1.4;
-    width: 100%;
-}
-
-.footermenu {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.allmenus {
-    display: flex;
-    gap: 0px;
-}
-
-.meunpart1, .meunpart2 {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.footercourses {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.footerpart2 {
-    padding: 15px;
-    width: 100%;
-    display: flex;
-    gap: 15px;
-    height: 40vh;
-}
-
-
-.locations {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.exploreteachers {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.footerpart3 {
-    width: 100%;
-    border-top: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
-    height: 20vh;
-}
-
-h1 {
-    font-size: 20px;
-   
-}
-
-.socialmedia {
-    display: flex;
-    gap: 12px;
-    
-}
-
-.icon {
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-}
-
-.loactioncard {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.loactioncard button {
-    width: 90px;
-    height: 28px;
-    border-radius: 8px;
-    background-color: #252525;
-    color: white;
-    border: none;
-    font-size: 11px;
-    font-weight: 600;
-}
-
-.footernav {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-}
-.loactioncard p{
-    font-size: 11px;
-}
-
-@media screen and (max-width: 1024px) {
-    .footer {
-        height: auto;
-        min-height: 100vh;
-    }
-    
+  /* Tablet Breakpoint */
+  @media screen and (max-width: 1024px) {
     .footerpart1,
     .footerpart2 {
-        flex-direction: column;
-        height: auto;
+      gap: 30px;
     }
-    
+  
+    .footerinfo,
+    .footermenu,
+    .footercourses {
+      width: 45%;
+    }
+  
+    .locations,
+    .locationpart2,
+    .exploreteachers {
+      width: 45%;
+    }
+  
+    .map-box {
+      height: 200px;
+    }
+  }
+  
+  /* Mobile Breakpoint */
+  @media screen and (max-width: 768px) {
+    .footer {
+      gap: 30px;
+    }
+  
+    .footerpart1,
+    .footerpart2 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+  
     .footerinfo,
     .footermenu,
     .footercourses,
     .locations,
+    .locationpart2,
     .exploreteachers {
-        width: 100%;
+      width: 90%;
+      justify-content: center;
+      /* align-items: center; */
     }
+  
+    .allmenus {
+      gap: 30px;
+    }
+  
+    .footerpart3 {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+  
+    .footerbottom {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .footernav {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .map-box {
+      height: 180px;
+    }
+  }
+  
+  /* Small Mobile Breakpoint */
+  @media screen and (max-width: 480px) {
+    .footer {
+      padding: 20px 10px;
+    }
+  
+    
+    .footerbottom {
+      width: 95%;
+    }
+  
+    .allmenus {
+      flex-direction: row;
+      gap: 20px;
+    }
+  
+    .footernav {
+      gap: 15px;
+    }
+  
+    .map-box {
+      height: 150px;
+    }
+  }
+  
+  /* Large Screens */
+  @media screen and (min-width: 1440px) {
+    .footerpart1,
+    .footerpart2,
+    .footerbottom {
+      max-width: 1400px;
+    }
+  }
+
+
+  /* Base styles */
+.footer {
+  width: 100%;
+  min-height: auto; /* Changed from 100vh to auto */
+  background-color: #FFF8E7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: clamp(20px, 3vw, 40px) 0;
+  box-sizing: border-box;
 }
 
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 18px;
-    }
-    
-    .footerpart3 {
-        flex-direction: column;
-        gap: 10px;
-        height: auto;
-        padding: 10px;
-    }
-    
-    .footernav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-} */
+/* Rest of the existing styles remain the same... */
+
+/* Updated Footer Part 2 */
+.footerpart2 {
+  width: 90%;
+  height: auto; /* Changed from max-height */
+  display: flex;
+  gap: clamp(20px, 4vw, 50px);
+  flex-wrap: wrap;
+}
+
+/* Footer Part 3 */
+.footerpart3 {
+  width: 100%;
+  padding: 20px;
+  height: auto; /* Changed from max-height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid black;
+  box-sizing: border-box;
+  margin-top: auto; /* Push to bottom if needed */
+}
+
+/* Large Screens */
+@media screen and (min-width: 1440px) {
+  .footer {
+    min-height: auto;
+    height: auto;
+  }
+  
+  .footerpart1,
+  .footerpart2,
+  .footerbottom {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+/* Rest of the media queries remain the same... */

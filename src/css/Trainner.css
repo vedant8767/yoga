@@ -132,29 +132,36 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media  (max-width: 768px) {
     .trainner_content p {
-        width: 95%; /* Full width for better fitting */
-        font-size: 2.2vh; /* Reduced font size */
+        width: 95%; 
+        font-size: 2.2vh; 
     }
 
     .trainner_content h2 {
-        font-size: 4vh; /* Further reduced font size */
+        font-size: 4vh;
+        text-align: center;
     }
 
     .trainner_carosal {
-        width: 100%; /* Full width carousel */
+        width: 100%; 
+        margin-left: 22px;
     }
 
     .trainnercard {
-        width: 80%; /* Smaller card size */
-        height: 300px; /* Smaller card height */
+        
+        width: 100%; 
+        height: auto;
+        /* border-radius: 0px; */
     }
+    /* .overlap{
+        border-radius: 0px;
+    } */
 
     .trainnercard img {
         width: 100%;
         height: 100%;
-        border-radius: 15px; /* Adjusted border radius */
+        /* border-radius: 0px;  */
     }
 
     .overlap {
@@ -174,45 +181,23 @@
 }
 
 @media screen and (max-width: 480px) {
-    .trainner_content p {
-        width: 100%; /* Full width for paragraph */
-        font-size: 2vh; /* Reduced font size */
-    }
-
-    .trainner_content h2 {
-        font-size: 3.5vh; /* Adjusted font size */
-    }
-
-    .trainner_carosal {
-        width: 100%; /* Full width carousel */
-    }
-
-    .trainnercard {
-        width: 80%; /* Smaller card size */
-        height: auto; 
-        margin-bottom: 30px;/* Smaller card height */
-    }
-
-    .trainnercard img {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px; /* Smaller border radius */
-    }
-
-    .overlap {
-        font-size: 1.5vh; /* Reduced font size */
-        padding: 5px; /* Reduced padding */
-    }
-
-    .overlapcontent {
-        left: 20px; /* Adjusted position */
-        font-size: 1.5vh; /* Adjusted font size */
-    }
+   
 }
 
 /* portrait mobile and tablet */
 @media (min-width: 768px) and (max-width: 1024px){
    
+   }
+   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    .trainnercard{
+        height: auto;
+    }
+    .overlapcontent h1{
+        font-size: 7vh;
+       }
+       .overlapcontent h2{
+        font-size: 6vh;
+       }
    }
    
    /* desktop mobile view */
@@ -226,8 +211,36 @@
        .trainnercard{
         height: 100%;
        }
+       .overlapcontent h1{
+        font-size: 2.5vh;
+       }
+       .overlapcontent h2{
+        font-size: 2vh;
+       }
+       .trainner_content h1{
+        font-size: 4vh;
+       }
+       .trainner_content h2{
+        font-size: 4.5vh;
+        text-align: center;
+        /* width: 90%; */
+       }
+       .trainner_content p{
+        line-height: 50px;
+       }
    }
-   
+   @media (min-width: 2560px) {
+    .trainner h1{
+        font-size: 7vh;
+    }
+    .trainner p{
+        font-size: 3vh;
+        line-height: 90px;
+    }
+    .overlap h1{
+        font-size: 4vh;
+    }
+   }
    @media (min-width: 1920px) {
        
    }

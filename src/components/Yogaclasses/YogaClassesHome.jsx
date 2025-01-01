@@ -8,7 +8,7 @@ function YogaClassesHome() {
   return (
     <div className='yogaclasses'>
         <div className="headeryoga">
-            <h1> Ashtanga Vinyasa Yoga Classes</h1>
+            <h1>Ashtanga Vinyasa Yoga Classes</h1>
             <div className="line"></div>
         </div>
 

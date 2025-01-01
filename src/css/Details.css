@@ -29,7 +29,7 @@
   border-bottom: 2px solid #CC7722;
 }
 
-.detailcontent {
+.detailcontent2 {
   border-radius: 10px;
   padding: 20px;
 }
@@ -62,7 +62,7 @@
 
 /* Responsive Styles for Tablet and Mobile */
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .container {
       padding: 15px;
   }
@@ -118,5 +118,140 @@
   
   .detailsectionleft p {
       font-size: 14px;
+  }
+} */
+
+
+@media (max-width: 768px) {
+    .container {
+      padding: 15px;
+  }
+
+  .detailnav {
+      gap: 15px;
+      overflow-x: scroll;
+  }
+
+  .nav-item {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .detailsection {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .detailsectionleft {
+      width: 100%;
+  }
+    .container {
+      padding: 10px;
+  }
+
+  .detailnav {
+      gap: 10px;
+      overflow-x: auto;
+  }
+
+  .nav-item {
+      font-size: 12px;
+      padding: 6px;
+  }
+
+  .detailsection {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .detailsectionleft {
+      width: 100%;
+      gap: 20px;
+  }
+
+  .detailsectionleft h2 {
+      font-size: 18px;
+  }
+
+  .detailsectionleft p {
+      font-size: 14px;
+  }
+  .yogaclassesright{
+    width: 100%;
+  }
+}
+/* between tablet and laptop */
+@media (min-width: 768px) and (max-width: 1023px){
+  .container{
+    width: 100%;
+    /* padding: 0px; */
+  }
+  .detailcontent2{
+    width: 100%;
+    /* background-color: #333; */
+    /* display: flex !important;  */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0;
+    overflow: hidden;
+  }
+  .detailsection{
+    flex-direction: row;
+  }
+  .detailsectionleft h2{
+    font-size: 2.5vh;
+    /* color: #CC7722; */
+  }
+  .detailsectionleft p{
+    font-size: 1vh;
+  }
+  .detailsectionleft{
+    width: 50%;
+  }
+  .yogaclassesright{
+    width: 50%;
+  }
+  /* .detailnav button{
+    
+  } */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+  .container{
+    width: 100%;
+    /* padding: 0px; */
+  }
+  .detailcontent2{
+    width: 100%;
+    /* background-color: #333; */
+    /* display: flex !important;  */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0;
+    overflow: hidden;
+  }
+  .detailsection{
+    flex-direction: row;
+  }
+  .detailsectionleft h2{
+    font-size: 7vh;
+  }
+  .detailsectionleft p{
+    font-size: 4vh;
+  }
+}
+@media (min-width: 1366px) and (max-width: 1920px) {
+  .detailsectionleft p{
+    font-size: 3vh;
+    line-height: 45px;
+  }
+}
+@media (min-width: 1920px) {
+ 
+}
+@media (min-width: 2560px) {
+  .detailsectionleft p{
+    font-size: 3vh;
+    line-height: 80px;
   }
 }

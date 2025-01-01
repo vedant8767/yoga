@@ -68,26 +68,32 @@ function Footer() {
                     <button>Get Directions</button>
                 </div>
                 <div className="loactioncard">
-                    <p>Shop No 13, Topaz Center, Tulinj Rd, near Radha Krishna Hotel, Radha Nagar,
-                         Ambawadi, Nalasopara East, Mumbai, Nala Sopara, Maharashtra 401209</p>
-                    <button>Get Directions</button>
-                </div>
-            </div>
-            <div className="locationpart2">
-            <div className="loactioncard">
                     <p>105/106/107 , first floor, dheeraj shopping centre, Evershine City Rd, 
                         Evershine City, Vasai East,
                          Mumbai, Vasai-Virar, Maharashtra 401208</p>
                     <button>Get Directions</button>
                 </div>
+                {/* <div className="loactioncard">
+                    <p>Shop No 13, Topaz Center, Tulinj Rd, near Radha Krishna Hotel, Radha Nagar,
+                         Ambawadi, Nalasopara East, Mumbai, Nala Sopara, Maharashtra 401209</p>
+                    <button>Get Directions</button>
+                </div> */}
+            </div>
+            <div className="locationpart2">
+            {/* <div className="loactioncard">
+                    <p>105/106/107 , first floor, dheeraj shopping centre, Evershine City Rd, 
+                        Evershine City, Vasai East,
+                         Mumbai, Vasai-Virar, Maharashtra 401208</p>
+                    <button>Get Directions</button>
+                </div> */}
                 <div class="map-box">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509375!2d144.95373631531665!3d-37.8172099797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f19911%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sin!4v1694450679015!5m2!1sen!2sin" 
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509375!2d144.95373631531665!3d-37.8172099797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f19911%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sin!4v1694450679015!5m2!1sen!2sin" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
             <div className="exploreteachers">
                     <h1>EXPLORE TEACHER TRAINING</h1>
