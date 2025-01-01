@@ -1,4 +1,4 @@
-.homepage {
+/* .homepage {
   width: 100%;
   height: 100vh;
 }
@@ -18,16 +18,16 @@
 
 @keyframes backgroundChange {
   0%, 13.67% {
-    background-image: url('https://images.pexels.com/photos/37351/silhouette-aerialist-female-woman.jpg?auto=compress&cs=tinysrgb&w=600'); /* First Image */
+    background-image: url('https://images.pexels.com/photos/37351/silhouette-aerialist-female-woman.jpg?auto=compress&cs=tinysrgb&w=600'); 
   }
   16.67%, 47% {
-    background-image: url('../assets/slider2.png'); /* Second Image */
+    background-image: url('../assets/slider2.png'); 
   }
   53%, 80.33% {
-    background-image: url('https://images.pexels.com/photos/37351/silhouette-aerialist-female-woman.jpg?auto=compress&cs=tinysrgb&w=600'); /* Third Image */
+    background-image: url('https://images.pexels.com/photos/37351/silhouette-aerialist-female-woman.jpg?auto=compress&cs=tinysrgb&w=600'); 
   }
   86.33%, 100% {
-    background-image: url('../assets/slider2.png'); /* Third Image */
+    background-image: url('../assets/slider2.png'); 
   }
 }
 
@@ -49,16 +49,16 @@
 
 @keyframes backgroundChangeAfter {
   0%, 13.67% {
-    background-image: url('https://images.pexels.com/photos/37351/silhouette-aerialist-female-woman.jpg?auto=compress&cs=tinysrgb&w=600'); /* First Image */
+    background-image: url('https://images.pexels.com/photos/37351/silhouette-aerialist-female-woman.jpg?auto=compress&cs=tinysrgb&w=600'); 
   }
   16.67%, 47% {
-    background-image: url('../assets/slider2.png'); /* Second Image */
+    background-image: url('../assets/slider2.png'); 
   }
   53%, 80.33% {
-    background-image: url('https://images.pexels.com/photos/37351/silhouette-aerialist-female-woman.jpg?auto=compress&cs=tinysrgb&w=600'); /* Third Image */
+    background-image: url('https://images.pexels.com/photos/37351/silhouette-aerialist-female-woman.jpg?auto=compress&cs=tinysrgb&w=600'); 
   }
   86.33%, 100% {
-    background-image: url('../assets/slider2.png'); /* Third Image */
+    background-image: url('../assets/slider2.png'); 
   }
 }
 
@@ -91,7 +91,6 @@
   font-size: 4vh;
   font-weight: 500;
   margin-top: -15px;
-  /* margin-bottom: 1.5rem; */
 }
 
 .content-overlay button {
@@ -109,8 +108,7 @@
   background-color: #e0e0e0;
 }
 
-/* Media Queries */
-@media (max-width: 1024px) { /* Tablets */
+@media (max-width: 1024px) { 
   .content-overlay img {
     width: 120px;
     height: 120px;
@@ -127,7 +125,7 @@
   }
 }
 
-@media (max-width: 768px) { /* Mobile Landscape */
+@media (max-width: 768px) { 
   .content-overlay img {
     width: 100px;
     height: 100px;
@@ -144,7 +142,7 @@
   }
 }
 
-@media (max-width: 480px) { /* Mobile Portrait */
+@media (max-width: 480px) { 
   .content-overlay img {
     width: 80px;
     height: 80px;
@@ -158,5 +156,149 @@
   .content-overlay button {
     font-size: 0.7rem;
     padding: 0.3rem 0.6rem;
+  }
+} */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full height of the viewport */
+  margin-top: 100px; /* Adjust as needed */
+  overflow: hidden; /* Prevent images from overflowing the container */
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide1 {
+  flex: 0 0 100%; /* Each slide takes 100% of the carousel width */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden; /* Keep images constrained */
+}
+
+.carousel-slide1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fits without cropping */
+  display: block;
+}
+
+.carousel-content {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background: rgba(0, 0, 0, 0.4); */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-logo{
+  width: 200px;
+  height: 200px;
+}
+.carousel-logo img{
+  width: 100%;
+  height: 100%;
+}
+.carousel-content h2 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.carousel-content p {
+  font-size: 1.2rem;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-arrow:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-arrow.prev {
+  left: 10px;
+}
+
+.carousel-arrow.next {
+  right: 10px;
+}
+
+.carousel-dots1 {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+  background: white;
+  transform: scale(1.2);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .carousel-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .carousel-content p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .carousel-logo{
+    width: 100px;
+    height: 100px;
+  }
+
+  .carousel-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-content p {
+    font-size: 0.9rem;
+    text-align: center;
   }
 }
