@@ -179,6 +179,16 @@
     flex-wrap: wrap;
   }
   
+  #phone{
+    transform: scaleX(-1);
+  }
+  .socialmedia span p{
+    color: black;
+    font-weight: 600;
+  }
+  .icon{
+    cursor: pointer;
+  }
   
   @media screen and (max-width: 1024px) {
     .footerpart1,

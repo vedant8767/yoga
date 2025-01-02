@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import '../../css/Navbar.css';
@@ -8,6 +7,7 @@ function Navbar() {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [scrollOnNavClick, setScrollOnNavClick] = useState(false);
   const dropdownRefs = useRef([]);
 
   const handleClickOutside = (event) => {
@@ -22,6 +22,13 @@ function Navbar() {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
+
+  useEffect(() => {
+    if (scrollOnNavClick) {
+      window.scrollTo(0, 0);
+      setScrollOnNavClick(false); // Reset after scrolling
+    }
+  }, [scrollOnNavClick]);
 
   const navItems = [
     { name: 'Home', slug: '/' },
@@ -55,7 +62,7 @@ function Navbar() {
       navigate(slug);
       setIsMenuOpen(false);
       setActiveDropdown(null);
-      window.scrollTo(0, 0);
+      setScrollOnNavClick(true); // Trigger scrolling
     }
   };
 
@@ -64,14 +71,19 @@ function Navbar() {
     navigate(slug);
     setIsMenuOpen(false);
     setActiveDropdown(null);
+    setScrollOnNavClick(true); // Trigger scrolling
+  };
+
+  const handleLogoClick = () => {
+    navigate('/');
   };
 
   return (
     <div className="navbar">
-      <div className="nav_logo">
+      <div className="nav_logo" onClick={handleLogoClick}>
         <img
           src="https://s3-alpha-sig.figma.com/img/5299/f83d/b3254e3488b424f585fe826aa28776c9?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Pr-anjsUbhCrqeo20OGCPeAt9MK2moO94VyBS487My9jqwQUVbT5w93gRszKpenXj9eS7qwdSZ5wlFnbUkpuz308asWjkIH9SQ3wrZlZ7SaF7PPjzN9CPHfjDHLM3KmyCImHk0OmKwd4uudS8-ylLltjB7VS3ezHbfKv~iz3FIh4fC4Q9pBMPhOHcwXNxSEDhzHstIbTSNdtWnF6fOVYpXGnmzznPf8k9mt1Et25tbMvtW895u~YUKPuSxcjAVQJWz4b6afTsZnlOF~ZYmCkcNbGPi2H1WWMQ9KAODplSIbLg3lIPYC0LcZrDbzdfPWYvezw3kq79xPOdkErw~bp0w__"
-          alt=""
+          alt="Logo"
         />
       </div>
       <button
@@ -85,10 +97,10 @@ function Navbar() {
       <div className={`nav_items ${isMenuOpen ? 'open' : ''}`}>
         <ul>
           {navItems.map((item, index) => (
-            <li 
-              key={item.name} 
+            <li
+              key={item.name}
               className={`${item.dropdown ? 'has-dropdown' : ''}`}
-              ref={el => dropdownRefs.current[index] = el}
+              ref={(el) => (dropdownRefs.current[index] = el)}
             >
               <button
                 onClick={() => handleNavItemClick(item.slug, !!item.dropdown, index)}
@@ -99,15 +111,15 @@ function Navbar() {
               >
                 {item.name}
                 {item.dropdown && (
-                  <svg 
+                  <svg
                     className={`dropdown-icon ${activeDropdown === index ? 'rotated' : ''}`}
-                    width="12" 
-                    height="12" 
-                    viewBox="0 0 24 24" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    strokeWidth="2" 
-                    strokeLinecap="round" 
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
                     strokeLinejoin="round"
                   >
                     <polyline points="6 9 12 15 18 9"></polyline>
