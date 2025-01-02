@@ -273,16 +273,19 @@
 /* Responsiveness */
 @media (max-width: 768px) {
   .carousel-content h2 {
-    font-size: 1.8rem;
+    font-size: 3.5vh;
+    /* font-weight: bolder; */
   }
 
   .carousel-content p {
-    font-size: 1rem;
+    font-size: 2vh;
     text-align: center;
+    font-weight: 600;
   }
+
   .carousel-logo{
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
   }
 
   .carousel-arrow {
@@ -290,15 +293,18 @@
     height: 30px;
     font-size: 16px;
   }
+  .carousel-content{
+    bottom: 30%;
+  }
+
 }
 
 @media (max-width: 480px) {
-  .carousel-content h2 {
-    font-size: 1.5rem;
-  }
+  
+  
 
   .carousel-content p {
-    font-size: 0.9rem;
+    font-size: 2vh;
     text-align: center;
   }
 }

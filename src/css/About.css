@@ -37,6 +37,7 @@
 .section1img img{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 .section2{
     width: 100%;
@@ -56,12 +57,14 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
 }
 .imgsection2{
     display: flex;
     width: 100%;
     height: 50%;
     gap: 10px;
+    
 }
 .imgsection3{
     display: flex;
