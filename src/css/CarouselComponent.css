@@ -7,13 +7,15 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: auto; /* Center horizontally */
-    gap: 10px;
+    margin: auto; 
+    gap: 5px;
     padding: 10px;
     /* border: 2px solid #e65c00; */
-    /* background: linear-gradient(135deg, #f8f9fa, #e9ecef); */
+    background-color:  #fff2e6;
+    border: 2px solid #FFDBBA;
+    /* background: linear-gradient(135deg, #FFDBBA, #fff2e6); */
     border-radius: 15px;
-    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
   
   /* Main image styles */
@@ -102,7 +104,7 @@
   }
   
   /* Responsive styles */
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .custom-carousel-container {
       width: 70%; /* Adjust for smaller screens */
       flex-direction: column;
@@ -189,7 +191,7 @@
 /* Rest of your original CSS remains exactly the same until media queries */
 
 /* Only modify the media queries */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .custom-carousel-container {
         width: 90%;
     }
@@ -235,4 +237,37 @@
     .custom-active {
         transform: none; /* Disable active effect */
     }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape){
+  /* .custom-carousel-container{
+    width: 100%;
+        height: 300px;
+    flex-direction: column;
+  }
+  .custom-main-image {
+    height: 300px;
+    width: 100%;
+}
+
+
+.custom-thumbnail {
+    width: 80%;
+    height: 50px;
+}
+.custom-thumbnail:hover {
+    transform: scale(1);
+  }
+  .custom-active {
+    border-color: #ff6600;
+    transform: scale(1);
+  }
+  .custom-thumbnail:hover {
+    transform: none; 
+}
+
+.custom-active {
+    transform: none;
+} */
+
 }
