@@ -38,7 +38,6 @@
   display: flex;
   gap: 50px;
   justify-content: center;
-  /* align-items: center; */
 }
 /* .detailsection img{
   width: 50%;
@@ -74,7 +73,7 @@
 }
 
 
-/* CSS Animations */
+
 .fade1-enter {
   opacity: 0;
   transform: translateY(50px);

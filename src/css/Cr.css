@@ -86,13 +86,13 @@
 }
 
 
-/* portrait mobile and tablet */
+
 @media (min-width: 768px) and (max-width: 1024px){
    
    }
    
-   /* desktop mobile view */
-   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+   
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
      .crheader h1{
         font-size: 5vh;
         color: #CC7722;

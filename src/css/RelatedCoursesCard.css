@@ -1,4 +1,4 @@
-/* Card styles */
+
 .relatedcoursescard {
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
     background-color: #FFC994;
     box-sizing: border-box;
     margin: 0 auto;
-    overflow: hidden; /* Prevent content overflow */
+    overflow: hidden; 
 }
 
 .relatedcoursescard img {
@@ -48,7 +48,7 @@
     outline: none;
     color: white;
     font-weight: bold;
-    width: 120px; /* Reduced width for mobile */
+    width: 120px;
     height: 38px;
     border-radius: 31px;
     cursor: pointer;
@@ -58,13 +58,13 @@
     background-color: #252525;
 }
 
-/* Mobile Specific */
+
 @media screen and (max-width: 767px) {
     .relatedcoursescard {
         width: calc(100% - 20px);
         max-width: 354px;
-        min-width: unset; /* Remove min-width constraint */
-        transform: scale(0.95); /* Slightly reduce size to ensure visibility */
+        min-width: unset; 
+        transform: scale(0.95); 
     }
     
     .rcbuttons {
@@ -77,7 +77,6 @@
     }
 }
 
-/* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .relatedcoursescard {
         width: 100%;
@@ -88,7 +87,7 @@
     }
 }
 
-/* Desktop */
+
 @media screen and (min-width: 1024px) {
     .relatedcoursescard {
         width: 354px;

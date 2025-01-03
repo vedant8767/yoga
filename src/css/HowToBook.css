@@ -1,7 +1,6 @@
 .how-to-book {
     text-align: center;
     padding: 20px;
-    /* font-family: Arial, sans-serif; */
     margin-top: 100px;
     background-color: #FFF8E7;
   }
@@ -14,25 +13,25 @@
   
   .steps-container {
     display: flex;
-    justify-content: space-between; /* Ensures even spacing between cards */
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    gap: 20px; /* Adds space between cards */
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 20px; 
     padding: 10px;
     margin-top: 50px;
   }
   
   .step-card-wrapper {
     position: relative;
-    border: 2px dotted #ffa500; /* Dotted border */
-    padding: 10px; /* Gap between card content and dotted border */
-    border-radius: 18px; /* Rounded border */
+    border: 2px dotted #ffa500; 
+    padding: 10px; 
+    border-radius: 18px; 
     background-color: transparent;
-    flex: 1 1 calc(25% - 20px); /* Ensures 4 cards fit in one row */
-    max-width: calc(25% - 20px); /* Same width as flex-basis */
-    box-sizing: border-box; /* Ensures padding is included in width */
-    display: flex; /* Added */
-    justify-content: center; /* Align card content */
-    align-items: stretch; /* Make the wrapper height adapt to content */
+    flex: 1 1 calc(25% - 20px); 
+    max-width: calc(25% - 20px); 
+    box-sizing: border-box;
+    display: flex; 
+    justify-content: center; 
+    align-items: stretch; 
   }
   
   .step-card {
@@ -40,9 +39,9 @@
     padding: 20px;
     background-color: #FF8E28;
     color: black;
-    border-radius: 15px; /* Slightly smaller radius than wrapper for visual effect */
-    width: 100%; /* Ensures card fits inside the wrapper */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Card shadow */
+    border-radius: 15px; 
+    width: 100%; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
   }
   
   .step-card h3 {
@@ -58,7 +57,7 @@
   
   .step-number {
     position: absolute;
-    top: -35px; /* Slightly above the card */
+    top: -35px; 
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
@@ -77,14 +76,14 @@
   
   @media (max-width: 1024px) {
     .step-card-wrapper {
-      flex: 1 1 calc(50% - 20px); /* Two cards per row for medium screens */
+      flex: 1 1 calc(50% - 20px); 
       max-width: calc(50% - 20px);
     }
   }
   
   @media (max-width: 768px) {
     .step-card-wrapper {
-      flex: 1 1 100%; /* One card per row for smaller screens */
+      flex: 1 1 100%; 
       max-width: 100%;
     }
     .steps-container{

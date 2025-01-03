@@ -357,7 +357,6 @@
     }
     .section2{
         flex-direction: row;
-        /* align-items: start; */
     }
     .section2content h2{
         font-size: 7vh;

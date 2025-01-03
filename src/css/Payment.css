@@ -1,7 +1,6 @@
 .how-to-book1 {
     text-align: center;
     padding: 20px;
-    /* font-family: Arial, sans-serif; */
     background-color: #FFF8E7;
     /* margin-top: 100px; */
   }
@@ -13,23 +12,23 @@
   
   .steps-container1 {
     display: flex;
-    justify-content: space-between; /* Even spacing between cards */
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    gap: 20px; /* Uniform gap between cards */
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 20px; 
     padding: 50px;
     box-sizing: border-box;
     /* border: 2px dotted #ffa500; */
   }
   
   .step-card-wrapper1 {
-    flex: 1 1 calc(50% - 20px); /* Two cards side by side with gap */
+    flex: 1 1 calc(50% - 20px); 
     max-width: calc(50% - 20px);
     display: flex;
     border: 3px dotted orange;
     padding: 7px;
     border-radius: 18px;
-    justify-content: center; /* Center-align card content */
-    align-items: stretch; /* Stretch wrapper to match content height */
+    justify-content: center;
+    align-items: stretch; 
     box-sizing: border-box;
   }
   
@@ -40,8 +39,8 @@
     border: 2px solid #ffa500;
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 100%; /* Ensure card fills wrapper width */
-    text-align: left; /* Align text to the left */
+    width: 100%; 
+    text-align: left;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -59,6 +58,7 @@
     color: rgb(108, 107, 107);
   }
   .step-card1 button{
+    /* position: relative; */
     margin: 0 auto;
     border: none;
     outline: none;
@@ -68,20 +68,38 @@
     border-radius: 5px;
     border: 2px solid #CC7722;
     background-color: transparent;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    gap: 0px;
+    padding: 5px;
+  }
+  .step-card1 button svg{
+    width: 100%;
+    height: 100%;
+  }
+  .step-card1 button span{
+    color: #003087;
+    /* margin-left: -10px; */
+    /* margin-bottom: 5px; */
+    font-size: 3vh;
+    font-weight: 600;
+    /* position: absolute;
+    left: 90px; */
   }
   
-  /* Responsive for medium screens */
+  
   @media (max-width: 1024px) {
     .step-card-wrapper1 {
-      flex: 1 1 100%; /* One card per row on medium screens */
+      flex: 1 1 100%; 
       max-width: 100%;
     }
   }
   
-  /* Responsive for small screens */
+
   @media (max-width: 768px) {
     .step-card-wrapper1 {
-      flex: 1 1 100%; /* One card per row on smaller screens */
+      flex: 1 1 100%; 
       max-width: 100%;
     }
     .steps-container1{

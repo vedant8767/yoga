@@ -1,4 +1,3 @@
-
 .aboutus {
     width: 100%;
     min-height: 100vh;
@@ -9,7 +8,6 @@
     align-items: center;
 }
 
-/* Responsive Styles for Tablet and Mobile */
 @media only screen and (max-width: 768px) {
     .aboutus {
         font-size: 4vh; 

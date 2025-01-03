@@ -62,7 +62,7 @@
     flex-wrap: wrap;
   }
   
-  /* Footer Menu */
+
   .footermenu {
     width: 30%;
     height: 100%;
@@ -98,7 +98,7 @@
     gap: 15px;
   }
   
-  /* Footer Part 2 */
+
   .footerpart2 {
     width: 90%;
     max-height: none;
@@ -107,7 +107,7 @@
     flex-wrap: wrap;
   }
   
-  /* Locations */
+
   .locations,
   .locationpart2,
   .exploreteachers {
@@ -151,7 +151,7 @@
     gap: 10px;
   }
   
-  /* Footer Part 3 */
+
   .footerpart3 {
     width: 100%;
     padding: 20px;

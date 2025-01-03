@@ -1,38 +1,3 @@
-
-.has-dropdown {
-  position: relative;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background: #CC7722;
-  min-width: 200px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  z-index: 1001;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-@media (min-width: 769px) {
-  .has-dropdown:hover .dropdown-menu,
-  .dropdown-menu.show {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .dropdown-menu:hover {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-  }
-}
-
-/* ... rest of your existing CSS ... */
-
 .navbar {
   display: flex;
   flex-direction: row;
@@ -57,7 +22,7 @@
 .nav_items {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: flex-start; */
   align-items: center;
   position: fixed;
   top: 0;
@@ -67,6 +32,8 @@
   background: #CC7722;
   transition: right 0.3s ease-in-out;
   gap: 20px;
+  overflow-y: auto;
+  padding: 100px 20px 40px;
 }
 
 .nav_items.open {
@@ -80,11 +47,17 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  width: 100%;
+  padding-bottom: 40px;
 }
 
 .nav_items ul li {
   text-align: center;
   position: relative;
+  width: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 .nav_items ul button {
@@ -97,15 +70,16 @@
   font-weight: bold;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
 }
 
-.nav_items ul button:hover {
+.nav_items ul li button:hover {
   color: black;
 }
 
 .nav_items ul li:last-child button {
-  background-color:#CC7722;
+  background-color: #CC7722;
   border: 2px solid black;
   color: black;
   border-radius: 20px;
@@ -113,11 +87,19 @@
   font-size: 16px;
 }
 
+.nav_items ul li:nth-child(2){
+  margin-top: 10px;
+}
+.nav_items ul li:nth-child(3){
+  margin-top: 10px;
+}
+.nav_items ul li:nth-child(4){
+  margin-top: 10px;
+}
 .nav_items ul li:last-child button:hover {
   color: #CC7722;
 }
 
-/* Dropdown styles */
 .dropdown-icon {
   width: 12px;
   height: 12px;
@@ -134,38 +116,50 @@
 }
 
 .dropdown-menu {
-  display: none;
   position: absolute;
-  background: #CC7722;
-  min-width: 200px;
+  background:#CC7722;
+  width: 300px !important; /* Increased width */
+  max-height: 400px; /* Limit the height */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 1001;
   opacity: 0;
-  visibility: hidden;
+  display: none;
+  overflow-y: auto; /* Enable vertical scroll when needed */
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  padding: 10px; /* Optional: Add padding for better appearance */
+}
+/* Style the scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+.dropdown-menu::-webkit-scrollbar {
+  width: 4px; /* Thin scrollbar width */
 }
 
-/* Hover functionality for desktop */
-@media (min-width: 769px) {
-  .has-dropdown:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-  }
+.dropdown-menu::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3); /* Scrollbar thumb color */
+  border-radius: 2px; /* Rounded corners */
 }
 
-.dropdown-menu.show {
-  display: block;
-  opacity: 1;
-  visibility: visible;
+.dropdown-menu::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5); /* Darker on hover */
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+  background: transparent; /* Optional: Transparent track */
+}
+
+/* Scrollbar for Firefox (uses CSS scrollbar-width property) */
+.dropdown-menu {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent; /* Thumb and track colors */
 }
 
 .dropdown-menu button {
   width: 100%;
-  padding: 10px 20px;
-  text-align: left;
-  white-space: nowrap;
+  padding: 15px 20px;
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
+  line-height: 1.4;
   transition: background-color 0.3s ease;
 }
 
@@ -183,7 +177,9 @@
   width: 25px;
   height: 20px;
   padding: 0;
-  position: relative;
+  position: fixed;
+  right: 20px;
+  top: 30px;
   z-index: 1100;
 }
 
@@ -223,10 +219,19 @@
     background: rgba(255, 255, 255, 0.1);
     box-shadow: none;
     margin-top: 10px;
+    /* margin-right: 10px; */
+    width: 100%;
   }
 
   .dropdown-menu button {
-    padding-left: 40px;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  
+  .dropdown-menu.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -238,11 +243,18 @@
     width: auto;
     background: transparent;
     transition: none;
+    padding: 0;
+    overflow-y: visible;
   }
 
   .nav_items ul {
     flex-direction: row;
     gap: 32px;
+    padding-bottom: 0;
+  }
+
+  .nav_items ul li {
+    width: auto;
   }
 
   .hamburger {
@@ -251,11 +263,31 @@
 
   .dropdown-menu {
     position: absolute;
-    top: 100%;
+    top: calc(100% + 10px);
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 10px;
-    animation: fadeIn 0.3s ease;
+    width: auto;
+    min-width: 200px;
+  }
+
+  .has-dropdown {
+    padding-bottom: 10px;
+  }
+
+  .dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: transparent;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
   }
 
   @keyframes fadeIn {

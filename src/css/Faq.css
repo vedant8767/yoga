@@ -6,7 +6,7 @@
   gap: clamp(20px, 4vw, 50px);
   background-color: #FFF8E7;
   box-sizing: border-box;
-  margin: 0 auto; /* Center container */
+  margin: 0 auto; 
 }
 
 .faqleft {

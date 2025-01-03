@@ -1,8 +1,7 @@
-/* Container styles */
 .custom-carousel-container {
-    width: 50%; /* Set width to 50% of the parent */
-    max-width: 800px; /* Optional: Set a max width for larger screens */
-    height: auto; /* Allow height to adjust automatically */
+    width: 50%; 
+    max-width: 800px; 
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -10,40 +9,34 @@
     margin: auto; 
     gap: 5px;
     padding: 10px;
-    /* border: 2px solid #e65c00; */
     background-color:  #fff2e6;
     border: 2px solid #FFDBBA;
-    /* background: linear-gradient(135deg, #FFDBBA, #fff2e6); */
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
   
-  /* Main image styles */
-  .custom-main-image {
+
+.custom-main-image {
     flex: 3;
-    width: 100%; /* Ensures it adapts to its container */
-    height: 400px; /* Constant height for the image box */
-    /* background-color: #f0f0f0;  */
+    width: 100%; 
+    height: 400px; 
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 15px;
     overflow: hidden;
-    /* border: 2px solid #e65c00; */
-    /* border: 5px solid #fff; */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
   }
   
-  .custom-image {
+.custom-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image fills the box while maintaining its aspect ratio */
+    object-fit: cover; 
     border-radius: 15px;
     border: 2px solid #e65c00;
-    /* border: 10px solid black; */
   }
   
-  /* Sidebar styles */
+
   .custom-sidebar {
     flex: 1;
     display: flex;
@@ -69,7 +62,6 @@
     background-color: #e65c00;
   }
   
-  /* Thumbnail styles */
   .custom-thumbnails {
     display: flex;
     flex-direction: column;
@@ -85,13 +77,12 @@
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.2s, border-color 0.3s;
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
   }
   
   .custom-thumbnail img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures thumbnails also look neat */
+    object-fit: cover; 
   }
   
   .custom-thumbnail:hover {
@@ -103,10 +94,9 @@
     transform: scale(1.2);
   }
   
-  /* Responsive styles */
   @media (max-width: 767px) {
     .custom-carousel-container {
-      width: 70%; /* Adjust for smaller screens */
+      width: 70%; 
       flex-direction: column;
       padding: 15px;
       gap: 15px;
@@ -132,7 +122,7 @@
   
   @media (max-width: 480px) {
     .custom-carousel-container {
-      width: 90%; /* Adjust for mobile screens */
+      width: 90%; 
     }
   
     .custom-main-image {
@@ -154,7 +144,7 @@
       font-size: 16px;
     }
   }
-  /* Your original CSS stays exactly the same */
+
 .custom-carousel-container {
     width: 50%;
     max-width: 800px;
@@ -188,22 +178,16 @@
     border-radius: 15px;
 }
 
-/* Rest of your original CSS remains exactly the same until media queries */
 
-/* Only modify the media queries */
 @media (max-width: 767px) {
     .custom-carousel-container {
         width: 90%;
     }
 
     .custom-main-image {
-        height: 350px; /* Slightly reduced height for tablets */
+        height: 350px; 
     }
 
-    /* .custom-thumbnail {
-        width: 65px;
-        height: 65px;
-    } */
 }
 
 @media (max-width: 480px) {
@@ -215,7 +199,7 @@
 
     .custom-main-image {
         height: 300px;
-        width: 100%; /* Adjusted height for mobile */
+        width: 100%; 
     }
     
 
@@ -231,11 +215,11 @@
         transform: scale(1);
       }
       .custom-thumbnail:hover {
-        transform: none; /* Disable hover effect */
+        transform: none; 
     }
     
     .custom-active {
-        transform: none; /* Disable active effect */
+        transform: none; 
     }
 }
 

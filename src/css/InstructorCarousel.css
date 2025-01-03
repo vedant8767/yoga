@@ -206,7 +206,7 @@
   background-color: #2563eb;
 }
 
-/* Tablet Breakpoint */
+
 @media screen and (max-width: 1024px) {
   .InstructorCarouselcard {
     width: 95%;
@@ -222,7 +222,7 @@
   }
 }
 
-/* Mobile Breakpoint */
+
 @media screen and (max-width: 768px) {
   .carousel-slides{
     width: 100%;
@@ -300,12 +300,12 @@
   }
 }
 
-/* Small Mobile Breakpoint */
+
 @media screen and (max-width: 480px) {
  
 }
 
-/* Large Screens */
+
 @media screen and (min-width: 1440px) {
   .InstructorCarouselcard,
   .instructor-card {

@@ -1,4 +1,4 @@
-/* Container styles */
+
 .relatedcourses {
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
-    margin-left: 25px; /* Base left margin */
+    margin-left: 25px; 
 }
 
 .relatedcoursesheader h1 {
@@ -35,7 +35,7 @@
     background-color: #CC7722;
 }
 
-/* Rest of the styles remain the same */
+
 .rc-main-container {
     width: 100%;
     position: relative;
@@ -75,11 +75,10 @@
     max-width: 354px;
 }
 
-/* Media Queries */
-/* Mobile specific */
+
 @media screen and (max-width: 767px) {
     .relatedcoursesheader {
-        margin-left: 35px; /* Increased left margin for mobile */
+        margin-left: 35px; 
     }
     
     .relatedcoursesheader h1 {
@@ -87,14 +86,14 @@
     }
 }
 
-/* Tablet */
+
 @media screen and (min-width: 768px) {
     .content-wrapper {
         padding: 0 30px;
     }
     
     .relatedcoursesheader {
-        margin-left: 45px; /* Larger margin for tablet */
+        margin-left: 45px; 
     }
     
     .rcallcards > * {
@@ -106,14 +105,14 @@
     }
 }
 
-/* Desktop */
+
 @media screen and (min-width: 1024px) {
     .content-wrapper {
         padding: 0 40px;
     }
     
     .relatedcoursesheader {
-        margin-left: 60px; /* Largest margin for desktop */
+        margin-left: 60px; 
     }
     
     .rcallcards {
