@@ -38,7 +38,7 @@ function Navbar() {
       dropdown: [
         { name: 'Basic Training', slug: '/TeacherTrainingCourses' },
         { name: 'Advanced Training', slug: '/TeacherTrainingCourses' },
-        { name: 'Specialized Courses', slug: '/TeacherTrainingCourses' }
+        { name: 'Specialized Courses', slug: '/TeacherTrainingCourses' },
       ]
     },
     {
@@ -52,7 +52,9 @@ function Navbar() {
     },
     { name: 'Therapy', slug: '/Therapy' },
     { name: 'About Us', slug: '/AboutUs' },
-    { name: 'Join Us', slug: '/JoinUs' },
+    { name: 'Contact Us', slug: '/Contact' },
+    { name: 'Payment', slug: '/Payment' },
+    { name: 'Join Us', slug: '/Register' },
   ];
 
   const handleNavItemClick = (slug, hasDropdown, index) => {

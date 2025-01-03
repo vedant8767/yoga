@@ -10,6 +10,9 @@ import TherapyPage from './pages/TherapyPage.jsx'
 import JoinUsPage from './pages/JoinUsPage.jsx'
 import HomePage from './pages/HomePage.jsx'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import PaymentPage from './pages/PaymentPage.jsx'
+import ContactUs from './components/Contact/ContactUs.jsx'
+import Register from './components/Register/Register.jsx'
 
 const router = createBrowserRouter([
   {
@@ -43,6 +46,18 @@ const router = createBrowserRouter([
         {
           path:"/JoinUs",
           element:<JoinUsPage/>
+        },
+        {
+          path:"/Payment",
+          element:<PaymentPage/>
+        },
+        {
+          path:"/Contact",
+          element:<ContactUs/>
+        },
+        {
+          path:"/Register",
+          element:<Register/>
         }
       ]
 },

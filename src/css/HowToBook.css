@@ -1,0 +1,98 @@
+.how-to-book {
+    text-align: center;
+    padding: 20px;
+    /* font-family: Arial, sans-serif; */
+    margin-top: 100px;
+    background-color: #FFF8E7;
+  }
+  
+  .how-to-book h2 {
+    margin-top: 50px;
+    font-size: 6vh;
+    margin-bottom: 20px;
+  }
+  
+  .steps-container {
+    display: flex;
+    justify-content: space-between; /* Ensures even spacing between cards */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px; /* Adds space between cards */
+    padding: 10px;
+    margin-top: 50px;
+  }
+  
+  .step-card-wrapper {
+    position: relative;
+    border: 2px dotted #ffa500; /* Dotted border */
+    padding: 10px; /* Gap between card content and dotted border */
+    border-radius: 18px; /* Rounded border */
+    background-color: transparent;
+    flex: 1 1 calc(25% - 20px); /* Ensures 4 cards fit in one row */
+    max-width: calc(25% - 20px); /* Same width as flex-basis */
+    box-sizing: border-box; /* Ensures padding is included in width */
+    display: flex; /* Added */
+    justify-content: center; /* Align card content */
+    align-items: stretch; /* Make the wrapper height adapt to content */
+  }
+  
+  .step-card {
+    position: relative;
+    padding: 20px;
+    background-color: #FF8E28;
+    color: black;
+    border-radius: 15px; /* Slightly smaller radius than wrapper for visual effect */
+    width: 100%; /* Ensures card fits inside the wrapper */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Card shadow */
+  }
+  
+  .step-card h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .step-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .step-number {
+    position: absolute;
+    top: -35px; /* Slightly above the card */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 2px solid #FF5E14;
+    color: #ffa500;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 1024px) {
+    .step-card-wrapper {
+      flex: 1 1 calc(50% - 20px); /* Two cards per row for medium screens */
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .step-card-wrapper {
+      flex: 1 1 100%; /* One card per row for smaller screens */
+      max-width: 100%;
+    }
+    .steps-container{
+      gap: 40px;
+    }
+    .how-to-book h2 {
+      font-size: 4vh;
+      margin-top: 30px;
+    }
+  }
+  

@@ -1,0 +1,109 @@
+.how-to-book1 {
+    text-align: center;
+    padding: 20px;
+    /* font-family: Arial, sans-serif; */
+    background-color: #FFF8E7;
+    /* margin-top: 100px; */
+  }
+  
+  .how-to-book1 h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .steps-container1 {
+    display: flex;
+    justify-content: space-between; /* Even spacing between cards */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px; /* Uniform gap between cards */
+    padding: 50px;
+    box-sizing: border-box;
+    /* border: 2px dotted #ffa500; */
+  }
+  
+  .step-card-wrapper1 {
+    flex: 1 1 calc(50% - 20px); /* Two cards side by side with gap */
+    max-width: calc(50% - 20px);
+    display: flex;
+    border: 3px dotted orange;
+    padding: 7px;
+    border-radius: 18px;
+    justify-content: center; /* Center-align card content */
+    align-items: stretch; /* Stretch wrapper to match content height */
+    box-sizing: border-box;
+  }
+  
+  .step-card1 {
+    background-color:transparent;
+    color: black;
+    padding: 20px;
+    border: 2px solid #ffa500;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Ensure card fills wrapper width */
+    text-align: left; /* Align text to the left */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .step-card1 h3 {
+    font-size: 4.5vh;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .step-card1 p {
+    font-size: 3vh;
+    line-height: 1.5;
+    color: rgb(108, 107, 107);
+  }
+  .step-card1 button{
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 30px;
+    font-size: 2.5vh;
+    border-radius: 5px;
+    border: 2px solid #CC7722;
+    background-color: transparent;
+  }
+  
+  /* Responsive for medium screens */
+  @media (max-width: 1024px) {
+    .step-card-wrapper1 {
+      flex: 1 1 100%; /* One card per row on medium screens */
+      max-width: 100%;
+    }
+  }
+  
+  /* Responsive for small screens */
+  @media (max-width: 768px) {
+    .step-card-wrapper1 {
+      flex: 1 1 100%; /* One card per row on smaller screens */
+      max-width: 100%;
+    }
+    .steps-container1{
+        padding: 10px;
+        gap: 30px;
+    }
+    .step-card1 h3{
+        font-size: 3.5vh;
+    }
+    .steps-container1 p{
+        font-size: 2vh;
+    }
+    .steps-container1 button{
+        font-size: 2.2vh;
+        font-weight: 600;
+        height: 40px;
+    }
+    .how-to-book1 h2{
+        font-size: 4vh;
+        text-align: left;
+        margin-left: 15px;
+        /* text-align: justify; */
+    }
+  }
+  
