@@ -79,11 +79,12 @@
   padding: 20px;
   transform: translateY(100%);
   transition: transform 0.8s ease;
-  gap: 30px;
+  /* gap: 30px; */
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 60px;
   justify-content: center;
+  align-items: center;
 }
 
 
@@ -98,9 +99,11 @@
 .content button{
   border: none;
   outline: none;
-  background-color: #243642;
+  background-color: #252525;
+  color: white;
   padding: 10px 20px;
   border-radius: 20px;
+  font-size: 3vh;
 }
 .hoverbuttons{
   display: flex;
@@ -113,17 +116,27 @@
 }
 .hovercontent h1{
   font-size: 4vh;
+  color: black;
 }
 .hovercontent img{
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
+  border:1px solid #CC7722 ;
 }
 .hovertable{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 .hovertable h4{
+  text-align: justify;
+  font-size: 3.5vh;
+  color: black;
+  margin-top: 20px;
+}
+.hovertable h4 b{
+  text-align: justify;
+  font-size: 3.5vh;
   color: black;
 }
 span{
@@ -303,8 +316,24 @@ span{
   } */
 
   .content button {
-      font-size: 1.6vh;
-      background-color: #CC7722;
+      font-size: 2vh;
+      /* background-color: #CC7722; */
+  }
+  .hovercontent img{
+    width: 130px;
+    height: 130px;
+  }
+  .hovercontent h1{
+    font-size: 3vh;
+  }
+  .hovertable h4{
+    font-size: 2.5vh;
+  }
+  .hovertable h4 b{
+    font-size: 2.5vh;
+  }
+  .content{
+    gap: 30px;
   }
 }
 
@@ -376,3 +405,53 @@ span{
  @media (min-width: 1920px) {
      
  }
+ .workshopcard {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%; /* Adjust width as needed */
+  height: auto;
+  text-align: center;
+}
+
+.workshopcard img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Optional zoom effect */
+}
+
+.workshopcard p {
+  position: relative;
+  margin: 10px 0 0; /* Space below the image */
+}
+
+.workshopcard::after {
+  content: attr(data-hover); /* Dynamic hover content */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: black;
+  font-size: 16px; /* Adjust font size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  text-align: center; /* Center the hover content */
+  padding: 10px; /* Add padding for better readability */
+  box-sizing: border-box;
+}
+
+.workshopcard:hover::after {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.workshopcard:hover img {
+  transform: scale(1.1); /* Optional zoom effect for the image */
+}

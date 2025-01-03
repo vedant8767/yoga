@@ -12,14 +12,14 @@ function WorkShop() {
         <h1>WORKSHOPS YOU MIGHT LIKE:</h1>
         <div className="workshopdisplay">
             <div className="workshop_left" data-aos="fade-up">
-                <div className="workshopcard" >
-                    <img src={left1} alt="" />
-                    <p>How does <span>Arieal Yoga</span> help you?</p>
-                </div>
-                <div className="workshopcard" >
-                    <img src={left2} alt="" />
-                    <p><span>Meditation</span> to ease your soul</p>
-                </div>
+            <div className="workshopcard" data-hover="Discover the benefits of Aerial Yoga!">
+  <img src={left1} alt="" />
+  <p>How does <span>Arieal Yoga</span> help you?</p>
+</div>
+<div className="workshopcard" data-hover="Learn how to achieve mental clarity.">
+  <img src={left2} alt="" />
+  <p>Experience the calmness of yoga.</p>
+</div>
             </div>
             <div className="workshop_center" data-aos="fade-up">
                 <div className='centerworkshopcard'>
@@ -46,11 +46,11 @@ function WorkShop() {
                 </div>
             </div>
             <div className="workshop_left" data-aos="fade-up">
-                <div className="workshopcard" >
-                        <img src={right1} alt="" />
-                        <p>Know the Miracles of <span>Sound Healing</span></p>
-                    </div>
-                <div className="workshopcard" >
+            <div className="workshopcard" data-hover="Build strength with advanced poses.">
+  <img src={right1} alt="" />
+  <p>Strengthen your core with unique poses.</p>
+</div>
+                <div className="workshopcard" data-hover="Build strength with .">
                     <img src={right2} alt="" />
                     <p>What <span>Diet and Nutrition</span> has an effect</p>
                 </div>

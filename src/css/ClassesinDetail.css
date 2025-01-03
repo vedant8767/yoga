@@ -40,14 +40,13 @@
   justify-content: center;
   /* align-items: center; */
 }
-.detailsection img{
+/* .detailsection img{
   width: 50%;
   border-radius: 20px;
   height: auto;
-  /* padding: 10px; */
-  /* border:1px solid #333; */
+  
   border:4px solid #CC7722;
-}
+} */
 
 
 @media only screen and (max-width: 768px) {

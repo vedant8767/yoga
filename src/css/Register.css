@@ -5,7 +5,7 @@
     gap: 20px;
     width: 100%;
     padding: 20px;
-    background-color: white;
+    background-color: #FFF8E7;
     justify-content: center;
     align-items: center;
 }
@@ -20,16 +20,17 @@
     width: 90%;
     display: flex;
     gap: 20px;
-    background-color: #FFD2A9;
+    background-color: #FFF8E7;
     border-radius: 20px;
     padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 .registerform form{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background: #FFF4EA;
+    border: 1px solid #F69F5A;
+    background-color: #FFDDC0;
     border-radius: 40px 0px 40px 0px;
     padding: 40px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -44,14 +45,14 @@
     align-self: center;
     margin: 0 auto;
     margin-top: 40px;
-    background-color: #FF5E14;
+    background-color: #CC7722;
 }
 .formleft select{
     width: 90%;
     height:40px;
     font-size: 2.5vh;
     padding-left: 10px;
-    border: 1.6px solid #FF5E14;
+    border: 1.6px solid #CC7722;
 }
 .formleft label{
     font-size: 3vh;
@@ -66,14 +67,14 @@
     height:40px;
     font-size: 2.5vh;
     padding-left: 10px;
-    border: 1.6px solid #FF5E14;
+    border: 1.6px solid #CC7722;
 }
 .formright input{
     width: 90%;
     height:40px;
     font-size: 2.5vh;
     padding-left: 10px;
-    border: 1.6px solid #FF5E14;
+    border: 1.6px solid #CC7722;
 }
 .formleft{
     width: 50%;
@@ -100,11 +101,13 @@
 
 @media (max-width: 768px) {
     .register h1{
-        font-size: 3.5vh;
+        font-size: 3vh;
         margin-top: 20px;
+        margin-left: 18px;
     }
     .register h4{
-        font-size: 3.5vh;
+        font-size: 3vh;
+        margin-left: 18px;
     }
     .registerform{
         width: 100%;

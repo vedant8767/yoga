@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import "../../css/ClassesinDetail.css";
-import img1 from "../../assets/left2.png";
-import img2 from "../../assets/left1.png";
-import img3 from "../../assets/studio.png";
+import CarouselComponent from "../CarouselComponent";
+import image1 from "../../assets/th1.jpg";
+import image2 from "../../assets/th2.jpg";
+import image3 from "../../assets/img2.jpg";
+import image4 from "../../assets/th3.jpg";
+const images = [image1, image2, image3, image4]
 
 const ClassesinDetail = () => {
   const [activeSection, setActiveSection] = useState("Program details");
@@ -39,7 +42,8 @@ const ClassesinDetail = () => {
                         </tr>
                     </table>
                 </div>
-                <img src='https://s3-alpha-sig.figma.com/img/795e/15be/c3f12904c6eaf323ac36854ecbfc2be3?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kOjRzmVVPpj1rtlmaAF0MPpDCipndfNiKsw1Ttmdp-hpWpcTiOlJTfI0ZlgJ6P7rT4oBmak66HYyBbRaxDgw2eEJTrcfrnCwGTD5AfsJdhrUUKAuBAI5cYagO8mcQjEapGgSNFZDjUZTD9eWVBFJE4glN5jRZ1hrzlYZkt7~cYT-KaTbdWJkSoB9Vtht1QwZl~n99kNJjZlFUVQ6PHZguiHJro81pzt1N5IxmbZvL7olDsFbuBIng8GSZu0hOv2tA82wsvxu~2vnl5SXy1lkjW981HgNOzEmGeeNgvLj-wH-KIMsRvgUVpaDOscVyMSxSKDob0Mmoy9OClKenQ9m4w__' alt="" />
+                <CarouselComponent images={images}/>
+                {/* <img src='https://s3-alpha-sig.figma.com/img/795e/15be/c3f12904c6eaf323ac36854ecbfc2be3?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kOjRzmVVPpj1rtlmaAF0MPpDCipndfNiKsw1Ttmdp-hpWpcTiOlJTfI0ZlgJ6P7rT4oBmak66HYyBbRaxDgw2eEJTrcfrnCwGTD5AfsJdhrUUKAuBAI5cYagO8mcQjEapGgSNFZDjUZTD9eWVBFJE4glN5jRZ1hrzlYZkt7~cYT-KaTbdWJkSoB9Vtht1QwZl~n99kNJjZlFUVQ6PHZguiHJro81pzt1N5IxmbZvL7olDsFbuBIng8GSZu0hOv2tA82wsvxu~2vnl5SXy1lkjW981HgNOzEmGeeNgvLj-wH-KIMsRvgUVpaDOscVyMSxSKDob0Mmoy9OClKenQ9m4w__' alt="" /> */}
           </div>
         ),
         Eligibility: (
@@ -72,7 +76,8 @@ const ClassesinDetail = () => {
                         </tr>
                     </table>
                 </div>
-                <img src='https://s3-alpha-sig.figma.com/img/795e/15be/c3f12904c6eaf323ac36854ecbfc2be3?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kOjRzmVVPpj1rtlmaAF0MPpDCipndfNiKsw1Ttmdp-hpWpcTiOlJTfI0ZlgJ6P7rT4oBmak66HYyBbRaxDgw2eEJTrcfrnCwGTD5AfsJdhrUUKAuBAI5cYagO8mcQjEapGgSNFZDjUZTD9eWVBFJE4glN5jRZ1hrzlYZkt7~cYT-KaTbdWJkSoB9Vtht1QwZl~n99kNJjZlFUVQ6PHZguiHJro81pzt1N5IxmbZvL7olDsFbuBIng8GSZu0hOv2tA82wsvxu~2vnl5SXy1lkjW981HgNOzEmGeeNgvLj-wH-KIMsRvgUVpaDOscVyMSxSKDob0Mmoy9OClKenQ9m4w__' alt="" />
+                <CarouselComponent images={images}/>
+                {/* <img src='https://s3-alpha-sig.figma.com/img/795e/15be/c3f12904c6eaf323ac36854ecbfc2be3?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kOjRzmVVPpj1rtlmaAF0MPpDCipndfNiKsw1Ttmdp-hpWpcTiOlJTfI0ZlgJ6P7rT4oBmak66HYyBbRaxDgw2eEJTrcfrnCwGTD5AfsJdhrUUKAuBAI5cYagO8mcQjEapGgSNFZDjUZTD9eWVBFJE4glN5jRZ1hrzlYZkt7~cYT-KaTbdWJkSoB9Vtht1QwZl~n99kNJjZlFUVQ6PHZguiHJro81pzt1N5IxmbZvL7olDsFbuBIng8GSZu0hOv2tA82wsvxu~2vnl5SXy1lkjW981HgNOzEmGeeNgvLj-wH-KIMsRvgUVpaDOscVyMSxSKDob0Mmoy9OClKenQ9m4w__' alt="" /> */}
           </div>
         ),
         Curriculum: (
@@ -105,7 +110,8 @@ const ClassesinDetail = () => {
                         </tr>
                     </table>
                 </div>
-                <img src='https://s3-alpha-sig.figma.com/img/795e/15be/c3f12904c6eaf323ac36854ecbfc2be3?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kOjRzmVVPpj1rtlmaAF0MPpDCipndfNiKsw1Ttmdp-hpWpcTiOlJTfI0ZlgJ6P7rT4oBmak66HYyBbRaxDgw2eEJTrcfrnCwGTD5AfsJdhrUUKAuBAI5cYagO8mcQjEapGgSNFZDjUZTD9eWVBFJE4glN5jRZ1hrzlYZkt7~cYT-KaTbdWJkSoB9Vtht1QwZl~n99kNJjZlFUVQ6PHZguiHJro81pzt1N5IxmbZvL7olDsFbuBIng8GSZu0hOv2tA82wsvxu~2vnl5SXy1lkjW981HgNOzEmGeeNgvLj-wH-KIMsRvgUVpaDOscVyMSxSKDob0Mmoy9OClKenQ9m4w__' alt="" />
+                <CarouselComponent images={images}/>
+                {/* <img src='https://s3-alpha-sig.figma.com/img/795e/15be/c3f12904c6eaf323ac36854ecbfc2be3?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kOjRzmVVPpj1rtlmaAF0MPpDCipndfNiKsw1Ttmdp-hpWpcTiOlJTfI0ZlgJ6P7rT4oBmak66HYyBbRaxDgw2eEJTrcfrnCwGTD5AfsJdhrUUKAuBAI5cYagO8mcQjEapGgSNFZDjUZTD9eWVBFJE4glN5jRZ1hrzlYZkt7~cYT-KaTbdWJkSoB9Vtht1QwZl~n99kNJjZlFUVQ6PHZguiHJro81pzt1N5IxmbZvL7olDsFbuBIng8GSZu0hOv2tA82wsvxu~2vnl5SXy1lkjW981HgNOzEmGeeNgvLj-wH-KIMsRvgUVpaDOscVyMSxSKDob0Mmoy9OClKenQ9m4w__' alt="" /> */}
           </div>
         ),
         Instructor: (
@@ -138,7 +144,8 @@ const ClassesinDetail = () => {
                         </tr>
                     </table>
                 </div>
-                <img src='https://s3-alpha-sig.figma.com/img/795e/15be/c3f12904c6eaf323ac36854ecbfc2be3?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kOjRzmVVPpj1rtlmaAF0MPpDCipndfNiKsw1Ttmdp-hpWpcTiOlJTfI0ZlgJ6P7rT4oBmak66HYyBbRaxDgw2eEJTrcfrnCwGTD5AfsJdhrUUKAuBAI5cYagO8mcQjEapGgSNFZDjUZTD9eWVBFJE4glN5jRZ1hrzlYZkt7~cYT-KaTbdWJkSoB9Vtht1QwZl~n99kNJjZlFUVQ6PHZguiHJro81pzt1N5IxmbZvL7olDsFbuBIng8GSZu0hOv2tA82wsvxu~2vnl5SXy1lkjW981HgNOzEmGeeNgvLj-wH-KIMsRvgUVpaDOscVyMSxSKDob0Mmoy9OClKenQ9m4w__' alt="" />
+                <CarouselComponent images={images}/>
+                {/* <img src='https://s3-alpha-sig.figma.com/img/795e/15be/c3f12904c6eaf323ac36854ecbfc2be3?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kOjRzmVVPpj1rtlmaAF0MPpDCipndfNiKsw1Ttmdp-hpWpcTiOlJTfI0ZlgJ6P7rT4oBmak66HYyBbRaxDgw2eEJTrcfrnCwGTD5AfsJdhrUUKAuBAI5cYagO8mcQjEapGgSNFZDjUZTD9eWVBFJE4glN5jRZ1hrzlYZkt7~cYT-KaTbdWJkSoB9Vtht1QwZl~n99kNJjZlFUVQ6PHZguiHJro81pzt1N5IxmbZvL7olDsFbuBIng8GSZu0hOv2tA82wsvxu~2vnl5SXy1lkjW981HgNOzEmGeeNgvLj-wH-KIMsRvgUVpaDOscVyMSxSKDob0Mmoy9OClKenQ9m4w__' alt="" /> */}
           </div>
         ),
         "Related Course": (
@@ -171,7 +178,8 @@ const ClassesinDetail = () => {
                         </tr>
                     </table>
                 </div>
-                <img src='https://s3-alpha-sig.figma.com/img/795e/15be/c3f12904c6eaf323ac36854ecbfc2be3?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kOjRzmVVPpj1rtlmaAF0MPpDCipndfNiKsw1Ttmdp-hpWpcTiOlJTfI0ZlgJ6P7rT4oBmak66HYyBbRaxDgw2eEJTrcfrnCwGTD5AfsJdhrUUKAuBAI5cYagO8mcQjEapGgSNFZDjUZTD9eWVBFJE4glN5jRZ1hrzlYZkt7~cYT-KaTbdWJkSoB9Vtht1QwZl~n99kNJjZlFUVQ6PHZguiHJro81pzt1N5IxmbZvL7olDsFbuBIng8GSZu0hOv2tA82wsvxu~2vnl5SXy1lkjW981HgNOzEmGeeNgvLj-wH-KIMsRvgUVpaDOscVyMSxSKDob0Mmoy9OClKenQ9m4w__' alt="" />
+                <CarouselComponent images={images}/>
+                {/* <img src='https://s3-alpha-sig.figma.com/img/795e/15be/c3f12904c6eaf323ac36854ecbfc2be3?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kOjRzmVVPpj1rtlmaAF0MPpDCipndfNiKsw1Ttmdp-hpWpcTiOlJTfI0ZlgJ6P7rT4oBmak66HYyBbRaxDgw2eEJTrcfrnCwGTD5AfsJdhrUUKAuBAI5cYagO8mcQjEapGgSNFZDjUZTD9eWVBFJE4glN5jRZ1hrzlYZkt7~cYT-KaTbdWJkSoB9Vtht1QwZl~n99kNJjZlFUVQ6PHZguiHJro81pzt1N5IxmbZvL7olDsFbuBIng8GSZu0hOv2tA82wsvxu~2vnl5SXy1lkjW981HgNOzEmGeeNgvLj-wH-KIMsRvgUVpaDOscVyMSxSKDob0Mmoy9OClKenQ9m4w__' alt="" /> */}
           </div>
         ),
         FAQ: (
@@ -204,7 +212,8 @@ const ClassesinDetail = () => {
                         </tr>
                     </table>
                 </div>
-                <img src='https://s3-alpha-sig.figma.com/img/795e/15be/c3f12904c6eaf323ac36854ecbfc2be3?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kOjRzmVVPpj1rtlmaAF0MPpDCipndfNiKsw1Ttmdp-hpWpcTiOlJTfI0ZlgJ6P7rT4oBmak66HYyBbRaxDgw2eEJTrcfrnCwGTD5AfsJdhrUUKAuBAI5cYagO8mcQjEapGgSNFZDjUZTD9eWVBFJE4glN5jRZ1hrzlYZkt7~cYT-KaTbdWJkSoB9Vtht1QwZl~n99kNJjZlFUVQ6PHZguiHJro81pzt1N5IxmbZvL7olDsFbuBIng8GSZu0hOv2tA82wsvxu~2vnl5SXy1lkjW981HgNOzEmGeeNgvLj-wH-KIMsRvgUVpaDOscVyMSxSKDob0Mmoy9OClKenQ9m4w__' alt="" />
+                <CarouselComponent images={images}/>
+                {/* <img src='https://s3-alpha-sig.figma.com/img/795e/15be/c3f12904c6eaf323ac36854ecbfc2be3?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kOjRzmVVPpj1rtlmaAF0MPpDCipndfNiKsw1Ttmdp-hpWpcTiOlJTfI0ZlgJ6P7rT4oBmak66HYyBbRaxDgw2eEJTrcfrnCwGTD5AfsJdhrUUKAuBAI5cYagO8mcQjEapGgSNFZDjUZTD9eWVBFJE4glN5jRZ1hrzlYZkt7~cYT-KaTbdWJkSoB9Vtht1QwZl~n99kNJjZlFUVQ6PHZguiHJro81pzt1N5IxmbZvL7olDsFbuBIng8GSZu0hOv2tA82wsvxu~2vnl5SXy1lkjW981HgNOzEmGeeNgvLj-wH-KIMsRvgUVpaDOscVyMSxSKDob0Mmoy9OClKenQ9m4w__' alt="" /> */}
           </div>
         ),
       };

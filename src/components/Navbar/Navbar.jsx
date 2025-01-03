@@ -36,22 +36,37 @@ function Navbar() {
       name: 'Teacher Training Courses',
       slug: '/TeacherTrainingCourses',
       dropdown: [
-        { name: 'Basic Training', slug: '/TeacherTrainingCourses' },
-        { name: 'Advanced Training', slug: '/TeacherTrainingCourses' },
-        { name: 'Specialized Courses', slug: '/TeacherTrainingCourses' },
+        { name: '100 Teacher Training Courses', slug: '/TeacherTrainingCourses' },
+        { name: '200 Teacher Training Courses', slug: '/TeacherTrainingCourses' },
+        { name: '300 Teacher Training Courses', slug: '/TeacherTrainingCourses' },
+        { name: 'Face yoga Teacher Training Courses', slug: '/TeacherTrainingCourses' },
+        { name: 'Mudra Therapy Teacher Training Courses', slug: '/TeacherTrainingCourses' },
       ]
     },
     {
       name: 'Yoga Classes',
       slug: '/YogaClasses',
       dropdown: [
-        { name: 'Beginner Classes', slug: '/YogaClasses' },
-        { name: 'Intermediate Classes', slug: '/YogaClasses' },
-        { name: 'Advanced Classes', slug: '/YogaClasses' }
+        { name: 'Daily Regular Yoga Classes', slug: '/YogaClasses' },
+        { name: 'Advanced Yoga Classes', slug: '/YogaClasses' },
+        { name: 'Ashtanga Vinyasa Yoga Classes', slug: '/YogaClasses' },
+        { name: 'Weight Loss Yoga Classes', slug: '/YogaClasses' },
+        { name: 'Ashtanga Vinyasa Yoga Classes', slug: '/YogaClasses' },
+        { name: 'Daily lusitation', slug: '/YogaClasses' },
+        { name: 'Prenatal Yoga Classes', slug: '/YogaClasses' },
+        { name: 'Face Yoga Classes', slug: '/YogaClasses' },
       ]
     },
-    { name: 'Therapy', slug: '/Therapy' },
-    { name: 'About Us', slug: '/AboutUs' },
+    { name: 'Therapy', slug: '/Therapy',
+      dropdown: [
+        { name: 'Diabeties Reversal Classes', slug: '/Therapy' },
+        { name: 'Hypertension Reversal Classes', slug: '/Therapy' },
+        { name: 'PCOS/PCOD Reversal Classes', slug: '/Therapy' },
+        { name: 'Mental Health Wellness Classes', slug: '/Therapy' },
+        { name: 'Neck and Back Pain Relief Classes', slug: '/Therapy' },
+      ]
+     },
+    // { name: 'About Us', slug: '/AboutUs' },
     { name: 'Contact Us', slug: '/Contact' },
     { name: 'Payment', slug: '/Payment' },
     { name: 'Join Us', slug: '/Register' },

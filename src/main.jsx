@@ -13,6 +13,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import PaymentPage from './pages/PaymentPage.jsx'
 import ContactUs from './components/Contact/ContactUs.jsx'
 import Register from './components/Register/Register.jsx'
+import ContactPage from './pages/ContactPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -53,7 +54,7 @@ const router = createBrowserRouter([
         },
         {
           path:"/Contact",
-          element:<ContactUs/>
+          element:<ContactPage/>
         },
         {
           path:"/Register",

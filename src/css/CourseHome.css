@@ -25,7 +25,32 @@
 }
 .coursehoemright{
     width: 40%;
+    /* height: 350px; */
+    /* border-radius: 40px; */
+    /* border: 2px solid #CC7722; */
+    /* height: 100%; */
+    /* animation: backgroundChange 15s infinite;
+  background-color: black; 
+  will-change: background-image;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  background-size: cover;
+  background-position: center; */
 }
+@keyframes backgroundChange {
+    0%, 13.67% {
+      background-image: url('https://images.pexels.com/photos/37351/silhouette-aerialist-female-woman.jpg?auto=compress&cs=tinysrgb&w=600'); 
+    }
+    16.67%, 47% {
+      background-image: url('../assets/slider2.png'); 
+    }
+    53%, 80.33% {
+      background-image: url('https://images.pexels.com/photos/37351/silhouette-aerialist-female-woman.jpg?auto=compress&cs=tinysrgb&w=600'); 
+    }
+    86.33%, 100% {
+      background-image: url('../assets/slider2.png'); 
+    }
+  }
 .coursehoemright img{
     width: 100%;
     height: 80%;
